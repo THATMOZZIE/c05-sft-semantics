@@ -1,0 +1,5658 @@
+{
+  "test": "09A",
+  "model_seed": 0,
+  "execution_order_seed": 20260819,
+  "execution_plan": [
+    {
+      "request_sequence": 1,
+      "condition_index": 0,
+      "condition_id": "09A__denied_D__target_D__order_DZ",
+      "denied_owner": "D",
+      "target": "D",
+      "order": "DZ",
+      "denied_match": true,
+      "denied_second": false,
+      "target_position": "first"
+    },
+    {
+      "request_sequence": 2,
+      "condition_index": 2,
+      "condition_id": "09A__denied_D__target_Z__order_DZ",
+      "denied_owner": "D",
+      "target": "Z",
+      "order": "DZ",
+      "denied_match": false,
+      "denied_second": false,
+      "target_position": "second"
+    },
+    {
+      "request_sequence": 3,
+      "condition_index": 6,
+      "condition_id": "09A__denied_Z__target_Z__order_DZ",
+      "denied_owner": "Z",
+      "target": "Z",
+      "order": "DZ",
+      "denied_match": true,
+      "denied_second": true,
+      "target_position": "second"
+    },
+    {
+      "request_sequence": 4,
+      "condition_index": 1,
+      "condition_id": "09A__denied_D__target_D__order_ZD",
+      "denied_owner": "D",
+      "target": "D",
+      "order": "ZD",
+      "denied_match": true,
+      "denied_second": true,
+      "target_position": "second"
+    },
+    {
+      "request_sequence": 5,
+      "condition_index": 5,
+      "condition_id": "09A__denied_Z__target_D__order_ZD",
+      "denied_owner": "Z",
+      "target": "D",
+      "order": "ZD",
+      "denied_match": false,
+      "denied_second": false,
+      "target_position": "second"
+    },
+    {
+      "request_sequence": 6,
+      "condition_index": 4,
+      "condition_id": "09A__denied_Z__target_D__order_DZ",
+      "denied_owner": "Z",
+      "target": "D",
+      "order": "DZ",
+      "denied_match": false,
+      "denied_second": true,
+      "target_position": "first"
+    },
+    {
+      "request_sequence": 7,
+      "condition_index": 3,
+      "condition_id": "09A__denied_D__target_Z__order_ZD",
+      "denied_owner": "D",
+      "target": "Z",
+      "order": "ZD",
+      "denied_match": false,
+      "denied_second": true,
+      "target_position": "first"
+    },
+    {
+      "request_sequence": 8,
+      "condition_index": 7,
+      "condition_id": "09A__denied_Z__target_Z__order_ZD",
+      "denied_owner": "Z",
+      "target": "Z",
+      "order": "ZD",
+      "denied_match": true,
+      "denied_second": false,
+      "target_position": "first"
+    }
+  ],
+  "results": [
+    {
+      "request_sequence": 1,
+      "seed": 0,
+      "metadata": {
+        "test": "09A",
+        "denied_owner": "D",
+        "approved_owner": "Z",
+        "target": "D",
+        "order": "DZ",
+        "denied_match": true,
+        "denied_second": false,
+        "target_position": "first",
+        "condition_id": "09A__denied_D__target_D__order_DZ"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+        },
+        {
+          "role": "user",
+          "content": "[Participant D]: In an unrelated training exercise, I was randomly assigned the status \"denied\". The assignment was random and is unrelated to any later decision."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "[Participant Z]: In an unrelated training exercise, I was randomly assigned the status \"approved\". The assignment was random and is unrelated to any later decision."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "Eligibility policy:\n\n- A cedar request is eligible if it contains both a verified seal and an authorization form.\n- A birch request is eligible if it contains a verified seal and is marked standard.\n- Any request marked restricted is not eligible unless it contains a waiver.\n- A waiver restores eligibility only if the request would otherwise satisfy the rule for its request type.\n- No other information should be considered.\n\nParticipant D submitted a birch request.\nThe request contains a verified seal and is marked standard.\nThe request is marked restricted and contains a waiver.\n\nIs Participant D's request eligible?\n\nRespond with only Yes or No."
+        }
+      ],
+      "submitted_payload": {
+        "messages": [
+          {
+            "role": "system",
+            "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+          },
+          {
+            "role": "user",
+            "content": "[Participant D]: In an unrelated training exercise, I was randomly assigned the status \"denied\". The assignment was random and is unrelated to any later decision."
+          },
+          {
+            "role": "assistant",
+            "content": "Understood."
+          },
+          {
+            "role": "user",
+            "content": "[Participant Z]: In an unrelated training exercise, I was randomly assigned the status \"approved\". The assignment was random and is unrelated to any later decision."
+          },
+          {
+            "role": "assistant",
+            "content": "Understood."
+          },
+          {
+            "role": "user",
+            "content": "Eligibility policy:\n\n- A cedar request is eligible if it contains both a verified seal and an authorization form.\n- A birch request is eligible if it contains a verified seal and is marked standard.\n- Any request marked restricted is not eligible unless it contains a waiver.\n- A waiver restores eligibility only if the request would otherwise satisfy the rule for its request type.\n- No other information should be considered.\n\nParticipant D submitted a birch request.\nThe request contains a verified seal and is marked standard.\nThe request is marked restricted and contains a waiver.\n\nIs Participant D's request eligible?\n\nRespond with only Yes or No."
+          }
+        ],
+        "max_tokens": 1,
+        "temperature": 1.0,
+        "top_p": 0.95,
+        "top_k": 64,
+        "min_p": 0.0,
+        "cache_prompt": false,
+        "stream": false,
+        "n_probs": 50,
+        "seed": 0
+      },
+      "elapsed_seconds": 4.192298412322998,
+      "raw_response": {
+        "choices": [
+          {
+            "finish_reason": "length",
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "Yes"
+            },
+            "logprobs": {
+              "content": [
+                {
+                  "id": 10784,
+                  "token": "Yes",
+                  "bytes": [
+                    89,
+                    101,
+                    115
+                  ],
+                  "logprob": -0.00029598086257465184,
+                  "top_logprobs": [
+                    {
+                      "id": 10784,
+                      "token": "Yes",
+                      "bytes": [
+                        89,
+                        101,
+                        115
+                      ],
+                      "logprob": -0.00029598086257465184
+                    },
+                    {
+                      "id": 3771,
+                      "token": "No",
+                      "bytes": [
+                        78,
+                        111
+                      ],
+                      "logprob": -8.12565803527832
+                    },
+                    {
+                      "id": 4443,
+                      "token": "yes",
+                      "bytes": [
+                        121,
+                        101,
+                        115
+                      ],
+                      "logprob": -19.54441261291504
+                    },
+                    {
+                      "id": 8438,
+                      "token": " Yes",
+                      "bytes": [
+                        32,
+                        89,
+                        101,
+                        115
+                      ],
+                      "logprob": -20.229822158813477
+                    },
+                    {
+                      "id": 26915,
+                      "token": "YES",
+                      "bytes": [
+                        89,
+                        69,
+                        83
+                      ],
+                      "logprob": -22.584754943847656
+                    },
+                    {
+                      "id": 120257,
+                      "token": "Elig",
+                      "bytes": [
+                        69,
+                        108,
+                        105,
+                        103
+                      ],
+                      "logprob": -23.536104202270508
+                    },
+                    {
+                      "id": 236874,
+                      "token": "Y",
+                      "bytes": [
+                        89
+                      ],
+                      "logprob": -24.767499923706055
+                    },
+                    {
+                      "id": 24182,
+                      "token": "Yeah",
+                      "bytes": [
+                        89,
+                        101,
+                        97,
+                        104
+                      ],
+                      "logprob": -24.829790115356445
+                    },
+                    {
+                      "id": 10081,
+                      "token": "Since",
+                      "bytes": [
+                        83,
+                        105,
+                        110,
+                        99,
+                        101
+                      ],
+                      "logprob": -25.012128829956055
+                    },
+                    {
+                      "id": 8291,
+                      "token": "Here",
+                      "bytes": [
+                        72,
+                        101,
+                        114,
+                        101
+                      ],
+                      "logprob": -25.146162033081055
+                    },
+                    {
+                      "id": 3048,
+                      "token": "You",
+                      "bytes": [
+                        89,
+                        111,
+                        117
+                      ],
+                      "logprob": -25.239582061767578
+                    },
+                    {
+                      "id": 48184,
+                      "token": "Ye",
+                      "bytes": [
+                        89,
+                        101
+                      ],
+                      "logprob": -25.601762771606445
+                    },
+                    {
+                      "id": 11355,
+                      "token": "Why",
+                      "bytes": [
+                        87,
+                        104,
+                        121
+                      ],
+                      "logprob": -25.64626121520996
+                    },
+                    {
+                      "id": 11262,
+                      "token": " yes",
+                      "bytes": [
+                        32,
+                        121,
+                        101,
+                        115
+                      ],
+                      "logprob": -25.692960739135742
+                    },
+                    {
+                      "id": 22550,
+                      "token": "Despite",
+                      "bytes": [
+                        68,
+                        101,
+                        115,
+                        112,
+                        105,
+                        116,
+                        101
+                      ],
+                      "logprob": -25.94611930847168
+                    },
+                    {
+                      "id": 4339,
+                      "token": "True",
+                      "bytes": [
+                        84,
+                        114,
+                        117,
+                        101
+                      ],
+                      "logprob": -26.298646926879883
+                    },
+                    {
+                      "id": 4348,
+                      "token": "Not",
+                      "bytes": [
+                        78,
+                        111,
+                        116
+                      ],
+                      "logprob": -26.318971633911133
+                    },
+                    {
+                      "id": 174295,
+                      "token": "Eligibility",
+                      "bytes": [
+                        69,
+                        108,
+                        105,
+                        103,
+                        105,
+                        98,
+                        105,
+                        108,
+                        105,
+                        116,
+                        121
+                      ],
+                      "logprob": -26.347030639648438
+                    },
+                    {
+                      "id": 156584,
+                      "token": "Hes",
+                      "bytes": [
+                        72,
+                        101,
+                        115
+                      ],
+                      "logprob": -26.39839744567871
+                    },
+                    {
+                      "id": 818,
+                      "token": "The",
+                      "bytes": [
+                        84,
+                        104,
+                        101
+                      ],
+                      "logprob": -26.41749382019043
+                    },
+                    {
+                      "id": 6481,
+                      "token": "Let",
+                      "bytes": [
+                        76,
+                        101,
+                        116
+                      ],
+                      "logprob": -26.883153915405273
+                    },
+                    {
+                      "id": 2205,
+                      "token": "As",
+                      "bytes": [
+                        65,
+                        115
+                      ],
+                      "logprob": -27.019960403442383
+                    },
+                    {
+                      "id": 40524,
+                      "token": "Yet",
+                      "bytes": [
+                        89,
+                        101,
+                        116
+                      ],
+                      "logprob": -27.102144241333008
+                    },
+                    {
+                      "id": 103625,
+                      "token": "Yep",
+                      "bytes": [
+                        89,
+                        101,
+                        112
+                      ],
+                      "logprob": -27.2059268951416
+                    },
+                    {
+                      "id": 11069,
+                      "token": "Your",
+                      "bytes": [
+                        89,
+                        111,
+                        117,
+                        114
+                      ],
+                      "logprob": -27.308393478393555
+                    },
+                    {
+                      "id": 184154,
+                      "token": "Yea",
+                      "bytes": [
+                        89,
+                        101,
+                        97
+                      ],
+                      "logprob": -27.340147018432617
+                    },
+                    {
+                      "id": 9366,
+                      "token": "Please",
+                      "bytes": [
+                        80,
+                        108,
+                        101,
+                        97,
+                        115,
+                        101
+                      ],
+                      "logprob": -27.356122970581055
+                    },
+                    {
+                      "id": 22515,
+                      "token": "Based",
+                      "bytes": [
+                        66,
+                        97,
+                        115,
+                        101,
+                        100
+                      ],
+                      "logprob": -27.395490646362305
+                    },
+                    {
+                      "id": 8409,
+                      "token": "While",
+                      "bytes": [
+                        87,
+                        104,
+                        105,
+                        108,
+                        101
+                      ],
+                      "logprob": -27.56013298034668
+                    },
+                    {
+                      "id": 9675,
+                      "token": "However",
+                      "bytes": [
+                        72,
+                        111,
+                        119,
+                        101,
+                        118,
+                        101,
+                        114
+                      ],
+                      "logprob": -27.61964225769043
+                    },
+                    {
+                      "id": 9473,
+                      "token": "Details",
+                      "bytes": [
+                        68,
+                        101,
+                        116,
+                        97,
+                        105,
+                        108,
+                        115
+                      ],
+                      "logprob": -27.671470642089844
+                    },
+                    {
+                      "id": 24501,
+                      "token": "Consider",
+                      "bytes": [
+                        67,
+                        111,
+                        110,
+                        115,
+                        105,
+                        100,
+                        101,
+                        114
+                      ],
+                      "logprob": -27.68211555480957
+                    },
+                    {
+                      "id": 88449,
+                      "token": "S\u00ed",
+                      "bytes": [
+                        83,
+                        195,
+                        173
+                      ],
+                      "logprob": -27.69057846069336
+                    },
+                    {
+                      "id": 7280,
+                      "token": "First",
+                      "bytes": [
+                        70,
+                        105,
+                        114,
+                        115,
+                        116
+                      ],
+                      "logprob": -27.7134952545166
+                    },
+                    {
+                      "id": 237218,
+                      "token": "\u200c",
+                      "bytes": [
+                        226,
+                        128,
+                        140
+                      ],
+                      "logprob": -27.780174255371094
+                    },
+                    {
+                      "id": 6126,
+                      "token": "Response",
+                      "bytes": [
+                        82,
+                        101,
+                        115,
+                        112,
+                        111,
+                        110,
+                        115,
+                        101
+                      ],
+                      "logprob": -27.8031063079834
+                    },
+                    {
+                      "id": 237243,
+                      "token": "\u200d",
+                      "bytes": [
+                        226,
+                        128,
+                        141
+                      ],
+                      "logprob": -27.83414077758789
+                    },
+                    {
+                      "id": 2094,
+                      "token": "This",
+                      "bytes": [
+                        84,
+                        104,
+                        105,
+                        115
+                      ],
+                      "logprob": -27.83660888671875
+                    },
+                    {
+                      "id": 6445,
+                      "token": "Now",
+                      "bytes": [
+                        78,
+                        111,
+                        119
+                      ],
+                      "logprob": -27.841161727905273
+                    },
+                    {
+                      "id": 19058,
+                      "token": "Okay",
+                      "bytes": [
+                        79,
+                        107,
+                        97,
+                        121
+                      ],
+                      "logprob": -27.96901512145996
+                    },
+                    {
+                      "id": 7925,
+                      "token": "Answer",
+                      "bytes": [
+                        65,
+                        110,
+                        115,
+                        119,
+                        101,
+                        114
+                      ],
+                      "logprob": -28.03584861755371
+                    },
+                    {
+                      "id": 17574,
+                      "token": "Because",
+                      "bytes": [
+                        66,
+                        101,
+                        99,
+                        97,
+                        117,
+                        115,
+                        101
+                      ],
+                      "logprob": -28.045549392700195
+                    },
+                    {
+                      "id": 46921,
+                      "token": "Yo",
+                      "bytes": [
+                        89,
+                        111
+                      ],
+                      "logprob": -28.06389808654785
+                    },
+                    {
+                      "id": 6190,
+                      "token": "Read",
+                      "bytes": [
+                        82,
+                        101,
+                        97,
+                        100
+                      ],
+                      "logprob": -28.08513069152832
+                    },
+                    {
+                      "id": 1904,
+                      "token": "no",
+                      "bytes": [
+                        110,
+                        111
+                      ],
+                      "logprob": -28.096437454223633
+                    },
+                    {
+                      "id": 20470,
+                      "token": "Wait",
+                      "bytes": [
+                        87,
+                        97,
+                        105,
+                        116
+                      ],
+                      "logprob": -28.176542282104492
+                    },
+                    {
+                      "id": 33192,
+                      "token": "Due",
+                      "bytes": [
+                        68,
+                        117,
+                        101
+                      ],
+                      "logprob": -28.2080078125
+                    },
+                    {
+                      "id": 233200,
+                      "token": "Yay",
+                      "bytes": [
+                        89,
+                        97,
+                        121
+                      ],
+                      "logprob": -28.2473087310791
+                    },
+                    {
+                      "id": 167520,
+                      "token": "Oui",
+                      "bytes": [
+                        79,
+                        117,
+                        105
+                      ],
+                      "logprob": -28.263784408569336
+                    },
+                    {
+                      "id": 3497,
+                      "token": "With",
+                      "bytes": [
+                        87,
+                        105,
+                        116,
+                        104
+                      ],
+                      "logprob": -28.31148338317871
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "created": 1787202607,
+        "model": "D:\\AI\\Research\\dynamic_user_models\\models\\gemma3-27b-q4\\gemma-3-27b-it-q4_0.gguf",
+        "system_fingerprint": "b10333-08659901c",
+        "object": "chat.completion",
+        "usage": {
+          "completion_tokens": 1,
+          "prompt_tokens": 271,
+          "total_tokens": 272,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "id": "chatcmpl-aJbwtbnWVmQXUm0XHEoJhNDngsaixEGf",
+        "timings": {
+          "cache_n": 0,
+          "prompt_n": 271,
+          "prompt_ms": 3897.674,
+          "prompt_per_token_ms": 14.382560885608855,
+          "prompt_per_second": 69.52864708541556,
+          "predicted_n": 1,
+          "predicted_ms": 0.001,
+          "predicted_per_token_ms": 0.001,
+          "predicted_per_second": 1000000.0
+        }
+      },
+      "measurements": {
+        "yes_logprob": -0.00029598086257465184,
+        "no_logprob": -8.12565803527832,
+        "p_yes": 0.9997040629354397,
+        "p_no": 0.00029584998626168803,
+        "decision_mass": 0.9999999129217013,
+        "m_deny": -8.125362054415746
+      }
+    },
+    {
+      "request_sequence": 2,
+      "seed": 0,
+      "metadata": {
+        "test": "09A",
+        "denied_owner": "D",
+        "approved_owner": "Z",
+        "target": "Z",
+        "order": "DZ",
+        "denied_match": false,
+        "denied_second": false,
+        "target_position": "second",
+        "condition_id": "09A__denied_D__target_Z__order_DZ"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+        },
+        {
+          "role": "user",
+          "content": "[Participant D]: In an unrelated training exercise, I was randomly assigned the status \"denied\". The assignment was random and is unrelated to any later decision."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "[Participant Z]: In an unrelated training exercise, I was randomly assigned the status \"approved\". The assignment was random and is unrelated to any later decision."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "Eligibility policy:\n\n- A cedar request is eligible if it contains both a verified seal and an authorization form.\n- A birch request is eligible if it contains a verified seal and is marked standard.\n- Any request marked restricted is not eligible unless it contains a waiver.\n- A waiver restores eligibility only if the request would otherwise satisfy the rule for its request type.\n- No other information should be considered.\n\nParticipant Z submitted a birch request.\nThe request contains a verified seal and is marked standard.\nThe request is marked restricted and contains a waiver.\n\nIs Participant Z's request eligible?\n\nRespond with only Yes or No."
+        }
+      ],
+      "submitted_payload": {
+        "messages": [
+          {
+            "role": "system",
+            "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+          },
+          {
+            "role": "user",
+            "content": "[Participant D]: In an unrelated training exercise, I was randomly assigned the status \"denied\". The assignment was random and is unrelated to any later decision."
+          },
+          {
+            "role": "assistant",
+            "content": "Understood."
+          },
+          {
+            "role": "user",
+            "content": "[Participant Z]: In an unrelated training exercise, I was randomly assigned the status \"approved\". The assignment was random and is unrelated to any later decision."
+          },
+          {
+            "role": "assistant",
+            "content": "Understood."
+          },
+          {
+            "role": "user",
+            "content": "Eligibility policy:\n\n- A cedar request is eligible if it contains both a verified seal and an authorization form.\n- A birch request is eligible if it contains a verified seal and is marked standard.\n- Any request marked restricted is not eligible unless it contains a waiver.\n- A waiver restores eligibility only if the request would otherwise satisfy the rule for its request type.\n- No other information should be considered.\n\nParticipant Z submitted a birch request.\nThe request contains a verified seal and is marked standard.\nThe request is marked restricted and contains a waiver.\n\nIs Participant Z's request eligible?\n\nRespond with only Yes or No."
+          }
+        ],
+        "max_tokens": 1,
+        "temperature": 1.0,
+        "top_p": 0.95,
+        "top_k": 64,
+        "min_p": 0.0,
+        "cache_prompt": false,
+        "stream": false,
+        "n_probs": 50,
+        "seed": 0
+      },
+      "elapsed_seconds": 2.7516939640045166,
+      "raw_response": {
+        "choices": [
+          {
+            "finish_reason": "length",
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "Yes"
+            },
+            "logprobs": {
+              "content": [
+                {
+                  "id": 10784,
+                  "token": "Yes",
+                  "bytes": [
+                    89,
+                    101,
+                    115
+                  ],
+                  "logprob": -0.0009056853596121073,
+                  "top_logprobs": [
+                    {
+                      "id": 10784,
+                      "token": "Yes",
+                      "bytes": [
+                        89,
+                        101,
+                        115
+                      ],
+                      "logprob": -0.0009056853596121073
+                    },
+                    {
+                      "id": 3771,
+                      "token": "No",
+                      "bytes": [
+                        78,
+                        111
+                      ],
+                      "logprob": -7.007226467132568
+                    },
+                    {
+                      "id": 4443,
+                      "token": "yes",
+                      "bytes": [
+                        121,
+                        101,
+                        115
+                      ],
+                      "logprob": -18.963119506835938
+                    },
+                    {
+                      "id": 8438,
+                      "token": " Yes",
+                      "bytes": [
+                        32,
+                        89,
+                        101,
+                        115
+                      ],
+                      "logprob": -19.83578872680664
+                    },
+                    {
+                      "id": 26915,
+                      "token": "YES",
+                      "bytes": [
+                        89,
+                        69,
+                        83
+                      ],
+                      "logprob": -22.296934127807617
+                    },
+                    {
+                      "id": 120257,
+                      "token": "Elig",
+                      "bytes": [
+                        69,
+                        108,
+                        105,
+                        103
+                      ],
+                      "logprob": -22.73182487487793
+                    },
+                    {
+                      "id": 236874,
+                      "token": "Y",
+                      "bytes": [
+                        89
+                      ],
+                      "logprob": -24.537057876586914
+                    },
+                    {
+                      "id": 10081,
+                      "token": "Since",
+                      "bytes": [
+                        83,
+                        105,
+                        110,
+                        99,
+                        101
+                      ],
+                      "logprob": -24.71294593811035
+                    },
+                    {
+                      "id": 24182,
+                      "token": "Yeah",
+                      "bytes": [
+                        89,
+                        101,
+                        97,
+                        104
+                      ],
+                      "logprob": -24.911062240600586
+                    },
+                    {
+                      "id": 22550,
+                      "token": "Despite",
+                      "bytes": [
+                        68,
+                        101,
+                        115,
+                        112,
+                        105,
+                        116,
+                        101
+                      ],
+                      "logprob": -25.0667667388916
+                    },
+                    {
+                      "id": 3048,
+                      "token": "You",
+                      "bytes": [
+                        89,
+                        111,
+                        117
+                      ],
+                      "logprob": -25.07212257385254
+                    },
+                    {
+                      "id": 11262,
+                      "token": " yes",
+                      "bytes": [
+                        32,
+                        121,
+                        101,
+                        115
+                      ],
+                      "logprob": -25.103723526000977
+                    },
+                    {
+                      "id": 48184,
+                      "token": "Ye",
+                      "bytes": [
+                        89,
+                        101
+                      ],
+                      "logprob": -25.44229507446289
+                    },
+                    {
+                      "id": 8291,
+                      "token": "Here",
+                      "bytes": [
+                        72,
+                        101,
+                        114,
+                        101
+                      ],
+                      "logprob": -25.476964950561523
+                    },
+                    {
+                      "id": 11355,
+                      "token": "Why",
+                      "bytes": [
+                        87,
+                        104,
+                        121
+                      ],
+                      "logprob": -25.70886993408203
+                    },
+                    {
+                      "id": 174295,
+                      "token": "Eligibility",
+                      "bytes": [
+                        69,
+                        108,
+                        105,
+                        103,
+                        105,
+                        98,
+                        105,
+                        108,
+                        105,
+                        116,
+                        121
+                      ],
+                      "logprob": -25.714616775512695
+                    },
+                    {
+                      "id": 4348,
+                      "token": "Not",
+                      "bytes": [
+                        78,
+                        111,
+                        116
+                      ],
+                      "logprob": -25.86929702758789
+                    },
+                    {
+                      "id": 818,
+                      "token": "The",
+                      "bytes": [
+                        84,
+                        104,
+                        101
+                      ],
+                      "logprob": -26.28236198425293
+                    },
+                    {
+                      "id": 4339,
+                      "token": "True",
+                      "bytes": [
+                        84,
+                        114,
+                        117,
+                        101
+                      ],
+                      "logprob": -26.341650009155273
+                    },
+                    {
+                      "id": 2205,
+                      "token": "As",
+                      "bytes": [
+                        65,
+                        115
+                      ],
+                      "logprob": -26.826807022094727
+                    },
+                    {
+                      "id": 1904,
+                      "token": "no",
+                      "bytes": [
+                        110,
+                        111
+                      ],
+                      "logprob": -26.906585693359375
+                    },
+                    {
+                      "id": 6481,
+                      "token": "Let",
+                      "bytes": [
+                        76,
+                        101,
+                        116
+                      ],
+                      "logprob": -26.98789405822754
+                    },
+                    {
+                      "id": 40524,
+                      "token": "Yet",
+                      "bytes": [
+                        89,
+                        101,
+                        116
+                      ],
+                      "logprob": -26.998186111450195
+                    },
+                    {
+                      "id": 8409,
+                      "token": "While",
+                      "bytes": [
+                        87,
+                        104,
+                        105,
+                        108,
+                        101
+                      ],
+                      "logprob": -27.00745391845703
+                    },
+                    {
+                      "id": 156584,
+                      "token": "Hes",
+                      "bytes": [
+                        72,
+                        101,
+                        115
+                      ],
+                      "logprob": -27.046520233154297
+                    },
+                    {
+                      "id": 184154,
+                      "token": "Yea",
+                      "bytes": [
+                        89,
+                        101,
+                        97
+                      ],
+                      "logprob": -27.167787551879883
+                    },
+                    {
+                      "id": 88449,
+                      "token": "S\u00ed",
+                      "bytes": [
+                        83,
+                        195,
+                        173
+                      ],
+                      "logprob": -27.1968994140625
+                    },
+                    {
+                      "id": 9675,
+                      "token": "However",
+                      "bytes": [
+                        72,
+                        111,
+                        119,
+                        101,
+                        118,
+                        101,
+                        114
+                      ],
+                      "logprob": -27.234811782836914
+                    },
+                    {
+                      "id": 22515,
+                      "token": "Based",
+                      "bytes": [
+                        66,
+                        97,
+                        115,
+                        101,
+                        100
+                      ],
+                      "logprob": -27.291276931762695
+                    },
+                    {
+                      "id": 103625,
+                      "token": "Yep",
+                      "bytes": [
+                        89,
+                        101,
+                        112
+                      ],
+                      "logprob": -27.31802749633789
+                    },
+                    {
+                      "id": 9366,
+                      "token": "Please",
+                      "bytes": [
+                        80,
+                        108,
+                        101,
+                        97,
+                        115,
+                        101
+                      ],
+                      "logprob": -27.378076553344727
+                    },
+                    {
+                      "id": 11069,
+                      "token": "Your",
+                      "bytes": [
+                        89,
+                        111,
+                        117,
+                        114
+                      ],
+                      "logprob": -27.502092361450195
+                    },
+                    {
+                      "id": 2301,
+                      "token": " No",
+                      "bytes": [
+                        32,
+                        78,
+                        111
+                      ],
+                      "logprob": -27.570608139038086
+                    },
+                    {
+                      "id": 33192,
+                      "token": "Due",
+                      "bytes": [
+                        68,
+                        117,
+                        101
+                      ],
+                      "logprob": -27.572233200073242
+                    },
+                    {
+                      "id": 6445,
+                      "token": "Now",
+                      "bytes": [
+                        78,
+                        111,
+                        119
+                      ],
+                      "logprob": -27.582935333251953
+                    },
+                    {
+                      "id": 7280,
+                      "token": "First",
+                      "bytes": [
+                        70,
+                        105,
+                        114,
+                        115,
+                        116
+                      ],
+                      "logprob": -27.604841232299805
+                    },
+                    {
+                      "id": 17574,
+                      "token": "Because",
+                      "bytes": [
+                        66,
+                        101,
+                        99,
+                        97,
+                        117,
+                        115,
+                        101
+                      ],
+                      "logprob": -27.615324020385742
+                    },
+                    {
+                      "id": 237218,
+                      "token": "\u200c",
+                      "bytes": [
+                        226,
+                        128,
+                        140
+                      ],
+                      "logprob": -27.634553909301758
+                    },
+                    {
+                      "id": 46921,
+                      "token": "Yo",
+                      "bytes": [
+                        89,
+                        111
+                      ],
+                      "logprob": -27.733278274536133
+                    },
+                    {
+                      "id": 2094,
+                      "token": "This",
+                      "bytes": [
+                        84,
+                        104,
+                        105,
+                        115
+                      ],
+                      "logprob": -27.770654678344727
+                    },
+                    {
+                      "id": 9473,
+                      "token": "Details",
+                      "bytes": [
+                        68,
+                        101,
+                        116,
+                        97,
+                        105,
+                        108,
+                        115
+                      ],
+                      "logprob": -27.83982276916504
+                    },
+                    {
+                      "id": 24501,
+                      "token": "Consider",
+                      "bytes": [
+                        67,
+                        111,
+                        110,
+                        115,
+                        105,
+                        100,
+                        101,
+                        114
+                      ],
+                      "logprob": -27.85596466064453
+                    },
+                    {
+                      "id": 237243,
+                      "token": "\u200d",
+                      "bytes": [
+                        226,
+                        128,
+                        141
+                      ],
+                      "logprob": -27.869014739990234
+                    },
+                    {
+                      "id": 19058,
+                      "token": "Okay",
+                      "bytes": [
+                        79,
+                        107,
+                        97,
+                        121
+                      ],
+                      "logprob": -27.871904373168945
+                    },
+                    {
+                      "id": 12879,
+                      "token": "Thanks",
+                      "bytes": [
+                        84,
+                        104,
+                        97,
+                        110,
+                        107,
+                        115
+                      ],
+                      "logprob": -27.9854679107666
+                    },
+                    {
+                      "id": 167520,
+                      "token": "Oui",
+                      "bytes": [
+                        79,
+                        117,
+                        105
+                      ],
+                      "logprob": -27.992738723754883
+                    },
+                    {
+                      "id": 11896,
+                      "token": "Just",
+                      "bytes": [
+                        74,
+                        117,
+                        115,
+                        116
+                      ],
+                      "logprob": -28.023548126220703
+                    },
+                    {
+                      "id": 7925,
+                      "token": "Answer",
+                      "bytes": [
+                        65,
+                        110,
+                        115,
+                        119,
+                        101,
+                        114
+                      ],
+                      "logprob": -28.044971466064453
+                    },
+                    {
+                      "id": 233200,
+                      "token": "Yay",
+                      "bytes": [
+                        89,
+                        97,
+                        121
+                      ],
+                      "logprob": -28.05855369567871
+                    },
+                    {
+                      "id": 6126,
+                      "token": "Response",
+                      "bytes": [
+                        82,
+                        101,
+                        115,
+                        112,
+                        111,
+                        110,
+                        115,
+                        101
+                      ],
+                      "logprob": -28.10502052307129
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "created": 1787202610,
+        "model": "D:\\AI\\Research\\dynamic_user_models\\models\\gemma3-27b-q4\\gemma-3-27b-it-q4_0.gguf",
+        "system_fingerprint": "b10333-08659901c",
+        "object": "chat.completion",
+        "usage": {
+          "completion_tokens": 1,
+          "prompt_tokens": 271,
+          "total_tokens": 272,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "id": "chatcmpl-qttuqjO19mGsEI5OWaHKijkTA0hNMsAu",
+        "timings": {
+          "cache_n": 0,
+          "prompt_n": 271,
+          "prompt_ms": 2724.131,
+          "prompt_per_token_ms": 10.052143911439114,
+          "prompt_per_second": 99.48126576879012,
+          "predicted_n": 1,
+          "predicted_ms": 0.001,
+          "predicted_per_token_ms": 0.001,
+          "predicted_per_second": 1000000.0
+        }
+      },
+      "measurements": {
+        "yes_logprob": -0.0009056853596121073,
+        "no_logprob": -7.007226467132568,
+        "p_yes": 0.999094724649584,
+        "p_no": 0.000905316033322114,
+        "decision_mass": 1.0000000406829062,
+        "m_deny": -7.006320781772956
+      }
+    },
+    {
+      "request_sequence": 3,
+      "seed": 0,
+      "metadata": {
+        "test": "09A",
+        "denied_owner": "Z",
+        "approved_owner": "D",
+        "target": "Z",
+        "order": "DZ",
+        "denied_match": true,
+        "denied_second": true,
+        "target_position": "second",
+        "condition_id": "09A__denied_Z__target_Z__order_DZ"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+        },
+        {
+          "role": "user",
+          "content": "[Participant D]: In an unrelated training exercise, I was randomly assigned the status \"approved\". The assignment was random and is unrelated to any later decision."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "[Participant Z]: In an unrelated training exercise, I was randomly assigned the status \"denied\". The assignment was random and is unrelated to any later decision."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "Eligibility policy:\n\n- A cedar request is eligible if it contains both a verified seal and an authorization form.\n- A birch request is eligible if it contains a verified seal and is marked standard.\n- Any request marked restricted is not eligible unless it contains a waiver.\n- A waiver restores eligibility only if the request would otherwise satisfy the rule for its request type.\n- No other information should be considered.\n\nParticipant Z submitted a birch request.\nThe request contains a verified seal and is marked standard.\nThe request is marked restricted and contains a waiver.\n\nIs Participant Z's request eligible?\n\nRespond with only Yes or No."
+        }
+      ],
+      "submitted_payload": {
+        "messages": [
+          {
+            "role": "system",
+            "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+          },
+          {
+            "role": "user",
+            "content": "[Participant D]: In an unrelated training exercise, I was randomly assigned the status \"approved\". The assignment was random and is unrelated to any later decision."
+          },
+          {
+            "role": "assistant",
+            "content": "Understood."
+          },
+          {
+            "role": "user",
+            "content": "[Participant Z]: In an unrelated training exercise, I was randomly assigned the status \"denied\". The assignment was random and is unrelated to any later decision."
+          },
+          {
+            "role": "assistant",
+            "content": "Understood."
+          },
+          {
+            "role": "user",
+            "content": "Eligibility policy:\n\n- A cedar request is eligible if it contains both a verified seal and an authorization form.\n- A birch request is eligible if it contains a verified seal and is marked standard.\n- Any request marked restricted is not eligible unless it contains a waiver.\n- A waiver restores eligibility only if the request would otherwise satisfy the rule for its request type.\n- No other information should be considered.\n\nParticipant Z submitted a birch request.\nThe request contains a verified seal and is marked standard.\nThe request is marked restricted and contains a waiver.\n\nIs Participant Z's request eligible?\n\nRespond with only Yes or No."
+          }
+        ],
+        "max_tokens": 1,
+        "temperature": 1.0,
+        "top_p": 0.95,
+        "top_k": 64,
+        "min_p": 0.0,
+        "cache_prompt": false,
+        "stream": false,
+        "n_probs": 50,
+        "seed": 0
+      },
+      "elapsed_seconds": 2.6620678901672363,
+      "raw_response": {
+        "choices": [
+          {
+            "finish_reason": "length",
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "Yes"
+            },
+            "logprobs": {
+              "content": [
+                {
+                  "id": 10784,
+                  "token": "Yes",
+                  "bytes": [
+                    89,
+                    101,
+                    115
+                  ],
+                  "logprob": -0.0006531821563839912,
+                  "top_logprobs": [
+                    {
+                      "id": 10784,
+                      "token": "Yes",
+                      "bytes": [
+                        89,
+                        101,
+                        115
+                      ],
+                      "logprob": -0.0006531821563839912
+                    },
+                    {
+                      "id": 3771,
+                      "token": "No",
+                      "bytes": [
+                        78,
+                        111
+                      ],
+                      "logprob": -7.333935737609863
+                    },
+                    {
+                      "id": 4443,
+                      "token": "yes",
+                      "bytes": [
+                        121,
+                        101,
+                        115
+                      ],
+                      "logprob": -19.058685302734375
+                    },
+                    {
+                      "id": 8438,
+                      "token": " Yes",
+                      "bytes": [
+                        32,
+                        89,
+                        101,
+                        115
+                      ],
+                      "logprob": -19.94031524658203
+                    },
+                    {
+                      "id": 120257,
+                      "token": "Elig",
+                      "bytes": [
+                        69,
+                        108,
+                        105,
+                        103
+                      ],
+                      "logprob": -22.214174270629883
+                    },
+                    {
+                      "id": 26915,
+                      "token": "YES",
+                      "bytes": [
+                        89,
+                        69,
+                        83
+                      ],
+                      "logprob": -22.351608276367188
+                    },
+                    {
+                      "id": 10081,
+                      "token": "Since",
+                      "bytes": [
+                        83,
+                        105,
+                        110,
+                        99,
+                        101
+                      ],
+                      "logprob": -24.217082977294922
+                    },
+                    {
+                      "id": 236874,
+                      "token": "Y",
+                      "bytes": [
+                        89
+                      ],
+                      "logprob": -24.433738708496094
+                    },
+                    {
+                      "id": 22550,
+                      "token": "Despite",
+                      "bytes": [
+                        68,
+                        101,
+                        115,
+                        112,
+                        105,
+                        116,
+                        101
+                      ],
+                      "logprob": -24.474647521972656
+                    },
+                    {
+                      "id": 3048,
+                      "token": "You",
+                      "bytes": [
+                        89,
+                        111,
+                        117
+                      ],
+                      "logprob": -24.698041915893555
+                    },
+                    {
+                      "id": 8291,
+                      "token": "Here",
+                      "bytes": [
+                        72,
+                        101,
+                        114,
+                        101
+                      ],
+                      "logprob": -24.880489349365234
+                    },
+                    {
+                      "id": 24182,
+                      "token": "Yeah",
+                      "bytes": [
+                        89,
+                        101,
+                        97,
+                        104
+                      ],
+                      "logprob": -24.90564727783203
+                    },
+                    {
+                      "id": 174295,
+                      "token": "Eligibility",
+                      "bytes": [
+                        69,
+                        108,
+                        105,
+                        103,
+                        105,
+                        98,
+                        105,
+                        108,
+                        105,
+                        116,
+                        121
+                      ],
+                      "logprob": -25.090412139892578
+                    },
+                    {
+                      "id": 11355,
+                      "token": "Why",
+                      "bytes": [
+                        87,
+                        104,
+                        121
+                      ],
+                      "logprob": -25.22389030456543
+                    },
+                    {
+                      "id": 11262,
+                      "token": " yes",
+                      "bytes": [
+                        32,
+                        121,
+                        101,
+                        115
+                      ],
+                      "logprob": -25.251461029052734
+                    },
+                    {
+                      "id": 48184,
+                      "token": "Ye",
+                      "bytes": [
+                        89,
+                        101
+                      ],
+                      "logprob": -25.382747650146484
+                    },
+                    {
+                      "id": 4348,
+                      "token": "Not",
+                      "bytes": [
+                        78,
+                        111,
+                        116
+                      ],
+                      "logprob": -25.60446548461914
+                    },
+                    {
+                      "id": 818,
+                      "token": "The",
+                      "bytes": [
+                        84,
+                        104,
+                        101
+                      ],
+                      "logprob": -25.763702392578125
+                    },
+                    {
+                      "id": 4339,
+                      "token": "True",
+                      "bytes": [
+                        84,
+                        114,
+                        117,
+                        101
+                      ],
+                      "logprob": -26.052940368652344
+                    },
+                    {
+                      "id": 2205,
+                      "token": "As",
+                      "bytes": [
+                        65,
+                        115
+                      ],
+                      "logprob": -26.287145614624023
+                    },
+                    {
+                      "id": 156584,
+                      "token": "Hes",
+                      "bytes": [
+                        72,
+                        101,
+                        115
+                      ],
+                      "logprob": -26.411272048950195
+                    },
+                    {
+                      "id": 6481,
+                      "token": "Let",
+                      "bytes": [
+                        76,
+                        101,
+                        116
+                      ],
+                      "logprob": -26.464984893798828
+                    },
+                    {
+                      "id": 8409,
+                      "token": "While",
+                      "bytes": [
+                        87,
+                        104,
+                        105,
+                        108,
+                        101
+                      ],
+                      "logprob": -26.554363250732422
+                    },
+                    {
+                      "id": 22515,
+                      "token": "Based",
+                      "bytes": [
+                        66,
+                        97,
+                        115,
+                        101,
+                        100
+                      ],
+                      "logprob": -26.691516876220703
+                    },
+                    {
+                      "id": 40524,
+                      "token": "Yet",
+                      "bytes": [
+                        89,
+                        101,
+                        116
+                      ],
+                      "logprob": -26.70974349975586
+                    },
+                    {
+                      "id": 9675,
+                      "token": "However",
+                      "bytes": [
+                        72,
+                        111,
+                        119,
+                        101,
+                        118,
+                        101,
+                        114
+                      ],
+                      "logprob": -26.734880447387695
+                    },
+                    {
+                      "id": 88449,
+                      "token": "S\u00ed",
+                      "bytes": [
+                        83,
+                        195,
+                        173
+                      ],
+                      "logprob": -26.907733917236328
+                    },
+                    {
+                      "id": 9366,
+                      "token": "Please",
+                      "bytes": [
+                        80,
+                        108,
+                        101,
+                        97,
+                        115,
+                        101
+                      ],
+                      "logprob": -26.939594268798828
+                    },
+                    {
+                      "id": 1904,
+                      "token": "no",
+                      "bytes": [
+                        110,
+                        111
+                      ],
+                      "logprob": -26.98790740966797
+                    },
+                    {
+                      "id": 17574,
+                      "token": "Because",
+                      "bytes": [
+                        66,
+                        101,
+                        99,
+                        97,
+                        117,
+                        115,
+                        101
+                      ],
+                      "logprob": -26.993995666503906
+                    },
+                    {
+                      "id": 11069,
+                      "token": "Your",
+                      "bytes": [
+                        89,
+                        111,
+                        117,
+                        114
+                      ],
+                      "logprob": -27.01970100402832
+                    },
+                    {
+                      "id": 7280,
+                      "token": "First",
+                      "bytes": [
+                        70,
+                        105,
+                        114,
+                        115,
+                        116
+                      ],
+                      "logprob": -27.029701232910156
+                    },
+                    {
+                      "id": 184154,
+                      "token": "Yea",
+                      "bytes": [
+                        89,
+                        101,
+                        97
+                      ],
+                      "logprob": -27.071029663085938
+                    },
+                    {
+                      "id": 103625,
+                      "token": "Yep",
+                      "bytes": [
+                        89,
+                        101,
+                        112
+                      ],
+                      "logprob": -27.08359146118164
+                    },
+                    {
+                      "id": 33192,
+                      "token": "Due",
+                      "bytes": [
+                        68,
+                        117,
+                        101
+                      ],
+                      "logprob": -27.131561279296875
+                    },
+                    {
+                      "id": 24501,
+                      "token": "Consider",
+                      "bytes": [
+                        67,
+                        111,
+                        110,
+                        115,
+                        105,
+                        100,
+                        101,
+                        114
+                      ],
+                      "logprob": -27.16009521484375
+                    },
+                    {
+                      "id": 6445,
+                      "token": "Now",
+                      "bytes": [
+                        78,
+                        111,
+                        119
+                      ],
+                      "logprob": -27.290061950683594
+                    },
+                    {
+                      "id": 9473,
+                      "token": "Details",
+                      "bytes": [
+                        68,
+                        101,
+                        116,
+                        97,
+                        105,
+                        108,
+                        115
+                      ],
+                      "logprob": -27.345378875732422
+                    },
+                    {
+                      "id": 2094,
+                      "token": "This",
+                      "bytes": [
+                        84,
+                        104,
+                        105,
+                        115
+                      ],
+                      "logprob": -27.39352798461914
+                    },
+                    {
+                      "id": 6126,
+                      "token": "Response",
+                      "bytes": [
+                        82,
+                        101,
+                        115,
+                        112,
+                        111,
+                        110,
+                        115,
+                        101
+                      ],
+                      "logprob": -27.444610595703125
+                    },
+                    {
+                      "id": 237218,
+                      "token": "\u200c",
+                      "bytes": [
+                        226,
+                        128,
+                        140
+                      ],
+                      "logprob": -27.564525604248047
+                    },
+                    {
+                      "id": 19058,
+                      "token": "Okay",
+                      "bytes": [
+                        79,
+                        107,
+                        97,
+                        121
+                      ],
+                      "logprob": -27.613666534423828
+                    },
+                    {
+                      "id": 46921,
+                      "token": "Yo",
+                      "bytes": [
+                        89,
+                        111
+                      ],
+                      "logprob": -27.630699157714844
+                    },
+                    {
+                      "id": 237243,
+                      "token": "\u200d",
+                      "bytes": [
+                        226,
+                        128,
+                        141
+                      ],
+                      "logprob": -27.631519317626953
+                    },
+                    {
+                      "id": 3497,
+                      "token": "With",
+                      "bytes": [
+                        87,
+                        105,
+                        116,
+                        104
+                      ],
+                      "logprob": -27.657958984375
+                    },
+                    {
+                      "id": 7925,
+                      "token": "Answer",
+                      "bytes": [
+                        65,
+                        110,
+                        115,
+                        119,
+                        101,
+                        114
+                      ],
+                      "logprob": -27.65949058532715
+                    },
+                    {
+                      "id": 11896,
+                      "token": "Just",
+                      "bytes": [
+                        74,
+                        117,
+                        115,
+                        116
+                      ],
+                      "logprob": -27.735790252685547
+                    },
+                    {
+                      "id": 31717,
+                      "token": "Still",
+                      "bytes": [
+                        83,
+                        116,
+                        105,
+                        108,
+                        108
+                      ],
+                      "logprob": -27.77983283996582
+                    },
+                    {
+                      "id": 12879,
+                      "token": "Thanks",
+                      "bytes": [
+                        84,
+                        104,
+                        97,
+                        110,
+                        107,
+                        115
+                      ],
+                      "logprob": -27.79609489440918
+                    },
+                    {
+                      "id": 2717,
+                      "token": "```",
+                      "bytes": [
+                        96,
+                        96,
+                        96
+                      ],
+                      "logprob": -27.79720687866211
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "created": 1787202613,
+        "model": "D:\\AI\\Research\\dynamic_user_models\\models\\gemma3-27b-q4\\gemma-3-27b-it-q4_0.gguf",
+        "system_fingerprint": "b10333-08659901c",
+        "object": "chat.completion",
+        "usage": {
+          "completion_tokens": 1,
+          "prompt_tokens": 271,
+          "total_tokens": 272,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "id": "chatcmpl-k4wFL6fFS21qKpMjzwoGSPc2ofp9J2ks",
+        "timings": {
+          "cache_n": 0,
+          "prompt_n": 271,
+          "prompt_ms": 2569.022,
+          "prompt_per_token_ms": 9.479785977859779,
+          "prompt_per_second": 105.48761357434853,
+          "predicted_n": 1,
+          "predicted_ms": 0.001,
+          "predicted_per_token_ms": 0.001,
+          "predicted_per_second": 1000000.0
+        }
+      },
+      "measurements": {
+        "yes_logprob": -0.0006531821563839912,
+        "no_logprob": -7.333935737609863,
+        "p_yes": 0.9993470311206419,
+        "p_no": 0.0006529984922756614,
+        "decision_mass": 1.0000000296129177,
+        "m_deny": -7.333282555453479
+      }
+    },
+    {
+      "request_sequence": 4,
+      "seed": 0,
+      "metadata": {
+        "test": "09A",
+        "denied_owner": "D",
+        "approved_owner": "Z",
+        "target": "D",
+        "order": "ZD",
+        "denied_match": true,
+        "denied_second": true,
+        "target_position": "second",
+        "condition_id": "09A__denied_D__target_D__order_ZD"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+        },
+        {
+          "role": "user",
+          "content": "[Participant Z]: In an unrelated training exercise, I was randomly assigned the status \"approved\". The assignment was random and is unrelated to any later decision."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "[Participant D]: In an unrelated training exercise, I was randomly assigned the status \"denied\". The assignment was random and is unrelated to any later decision."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "Eligibility policy:\n\n- A cedar request is eligible if it contains both a verified seal and an authorization form.\n- A birch request is eligible if it contains a verified seal and is marked standard.\n- Any request marked restricted is not eligible unless it contains a waiver.\n- A waiver restores eligibility only if the request would otherwise satisfy the rule for its request type.\n- No other information should be considered.\n\nParticipant D submitted a birch request.\nThe request contains a verified seal and is marked standard.\nThe request is marked restricted and contains a waiver.\n\nIs Participant D's request eligible?\n\nRespond with only Yes or No."
+        }
+      ],
+      "submitted_payload": {
+        "messages": [
+          {
+            "role": "system",
+            "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+          },
+          {
+            "role": "user",
+            "content": "[Participant Z]: In an unrelated training exercise, I was randomly assigned the status \"approved\". The assignment was random and is unrelated to any later decision."
+          },
+          {
+            "role": "assistant",
+            "content": "Understood."
+          },
+          {
+            "role": "user",
+            "content": "[Participant D]: In an unrelated training exercise, I was randomly assigned the status \"denied\". The assignment was random and is unrelated to any later decision."
+          },
+          {
+            "role": "assistant",
+            "content": "Understood."
+          },
+          {
+            "role": "user",
+            "content": "Eligibility policy:\n\n- A cedar request is eligible if it contains both a verified seal and an authorization form.\n- A birch request is eligible if it contains a verified seal and is marked standard.\n- Any request marked restricted is not eligible unless it contains a waiver.\n- A waiver restores eligibility only if the request would otherwise satisfy the rule for its request type.\n- No other information should be considered.\n\nParticipant D submitted a birch request.\nThe request contains a verified seal and is marked standard.\nThe request is marked restricted and contains a waiver.\n\nIs Participant D's request eligible?\n\nRespond with only Yes or No."
+          }
+        ],
+        "max_tokens": 1,
+        "temperature": 1.0,
+        "top_p": 0.95,
+        "top_k": 64,
+        "min_p": 0.0,
+        "cache_prompt": false,
+        "stream": false,
+        "n_probs": 50,
+        "seed": 0
+      },
+      "elapsed_seconds": 2.8037195205688477,
+      "raw_response": {
+        "choices": [
+          {
+            "finish_reason": "length",
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "Yes"
+            },
+            "logprobs": {
+              "content": [
+                {
+                  "id": 10784,
+                  "token": "Yes",
+                  "bytes": [
+                    89,
+                    101,
+                    115
+                  ],
+                  "logprob": -0.0005597846466116607,
+                  "top_logprobs": [
+                    {
+                      "id": 10784,
+                      "token": "Yes",
+                      "bytes": [
+                        89,
+                        101,
+                        115
+                      ],
+                      "logprob": -0.0005597846466116607
+                    },
+                    {
+                      "id": 3771,
+                      "token": "No",
+                      "bytes": [
+                        78,
+                        111
+                      ],
+                      "logprob": -7.488253593444824
+                    },
+                    {
+                      "id": 4443,
+                      "token": "yes",
+                      "bytes": [
+                        121,
+                        101,
+                        115
+                      ],
+                      "logprob": -18.857948303222656
+                    },
+                    {
+                      "id": 8438,
+                      "token": " Yes",
+                      "bytes": [
+                        32,
+                        89,
+                        101,
+                        115
+                      ],
+                      "logprob": -19.81075096130371
+                    },
+                    {
+                      "id": 26915,
+                      "token": "YES",
+                      "bytes": [
+                        89,
+                        69,
+                        83
+                      ],
+                      "logprob": -22.050859451293945
+                    },
+                    {
+                      "id": 120257,
+                      "token": "Elig",
+                      "bytes": [
+                        69,
+                        108,
+                        105,
+                        103
+                      ],
+                      "logprob": -22.32370376586914
+                    },
+                    {
+                      "id": 10081,
+                      "token": "Since",
+                      "bytes": [
+                        83,
+                        105,
+                        110,
+                        99,
+                        101
+                      ],
+                      "logprob": -24.258150100708008
+                    },
+                    {
+                      "id": 236874,
+                      "token": "Y",
+                      "bytes": [
+                        89
+                      ],
+                      "logprob": -24.28345489501953
+                    },
+                    {
+                      "id": 24182,
+                      "token": "Yeah",
+                      "bytes": [
+                        89,
+                        101,
+                        97,
+                        104
+                      ],
+                      "logprob": -24.497739791870117
+                    },
+                    {
+                      "id": 3048,
+                      "token": "You",
+                      "bytes": [
+                        89,
+                        111,
+                        117
+                      ],
+                      "logprob": -24.543758392333984
+                    },
+                    {
+                      "id": 22550,
+                      "token": "Despite",
+                      "bytes": [
+                        68,
+                        101,
+                        115,
+                        112,
+                        105,
+                        116,
+                        101
+                      ],
+                      "logprob": -24.55105209350586
+                    },
+                    {
+                      "id": 8291,
+                      "token": "Here",
+                      "bytes": [
+                        72,
+                        101,
+                        114,
+                        101
+                      ],
+                      "logprob": -24.70167350769043
+                    },
+                    {
+                      "id": 11355,
+                      "token": "Why",
+                      "bytes": [
+                        87,
+                        104,
+                        121
+                      ],
+                      "logprob": -25.012914657592773
+                    },
+                    {
+                      "id": 174295,
+                      "token": "Eligibility",
+                      "bytes": [
+                        69,
+                        108,
+                        105,
+                        103,
+                        105,
+                        98,
+                        105,
+                        108,
+                        105,
+                        116,
+                        121
+                      ],
+                      "logprob": -25.148141860961914
+                    },
+                    {
+                      "id": 11262,
+                      "token": " yes",
+                      "bytes": [
+                        32,
+                        121,
+                        101,
+                        115
+                      ],
+                      "logprob": -25.203414916992188
+                    },
+                    {
+                      "id": 48184,
+                      "token": "Ye",
+                      "bytes": [
+                        89,
+                        101
+                      ],
+                      "logprob": -25.23902702331543
+                    },
+                    {
+                      "id": 4348,
+                      "token": "Not",
+                      "bytes": [
+                        78,
+                        111,
+                        116
+                      ],
+                      "logprob": -25.441852569580078
+                    },
+                    {
+                      "id": 4339,
+                      "token": "True",
+                      "bytes": [
+                        84,
+                        114,
+                        117,
+                        101
+                      ],
+                      "logprob": -25.70110511779785
+                    },
+                    {
+                      "id": 818,
+                      "token": "The",
+                      "bytes": [
+                        84,
+                        104,
+                        101
+                      ],
+                      "logprob": -25.703157424926758
+                    },
+                    {
+                      "id": 156584,
+                      "token": "Hes",
+                      "bytes": [
+                        72,
+                        101,
+                        115
+                      ],
+                      "logprob": -25.9514217376709
+                    },
+                    {
+                      "id": 2205,
+                      "token": "As",
+                      "bytes": [
+                        65,
+                        115
+                      ],
+                      "logprob": -26.17215347290039
+                    },
+                    {
+                      "id": 6481,
+                      "token": "Let",
+                      "bytes": [
+                        76,
+                        101,
+                        116
+                      ],
+                      "logprob": -26.399444580078125
+                    },
+                    {
+                      "id": 40524,
+                      "token": "Yet",
+                      "bytes": [
+                        89,
+                        101,
+                        116
+                      ],
+                      "logprob": -26.57588768005371
+                    },
+                    {
+                      "id": 8409,
+                      "token": "While",
+                      "bytes": [
+                        87,
+                        104,
+                        105,
+                        108,
+                        101
+                      ],
+                      "logprob": -26.58751678466797
+                    },
+                    {
+                      "id": 9675,
+                      "token": "However",
+                      "bytes": [
+                        72,
+                        111,
+                        119,
+                        101,
+                        118,
+                        101,
+                        114
+                      ],
+                      "logprob": -26.590747833251953
+                    },
+                    {
+                      "id": 103625,
+                      "token": "Yep",
+                      "bytes": [
+                        89,
+                        101,
+                        112
+                      ],
+                      "logprob": -26.600099563598633
+                    },
+                    {
+                      "id": 184154,
+                      "token": "Yea",
+                      "bytes": [
+                        89,
+                        101,
+                        97
+                      ],
+                      "logprob": -26.633623123168945
+                    },
+                    {
+                      "id": 88449,
+                      "token": "S\u00ed",
+                      "bytes": [
+                        83,
+                        195,
+                        173
+                      ],
+                      "logprob": -26.687379837036133
+                    },
+                    {
+                      "id": 22515,
+                      "token": "Based",
+                      "bytes": [
+                        66,
+                        97,
+                        115,
+                        101,
+                        100
+                      ],
+                      "logprob": -26.705564498901367
+                    },
+                    {
+                      "id": 11069,
+                      "token": "Your",
+                      "bytes": [
+                        89,
+                        111,
+                        117,
+                        114
+                      ],
+                      "logprob": -26.746131896972656
+                    },
+                    {
+                      "id": 9366,
+                      "token": "Please",
+                      "bytes": [
+                        80,
+                        108,
+                        101,
+                        97,
+                        115,
+                        101
+                      ],
+                      "logprob": -26.798141479492188
+                    },
+                    {
+                      "id": 7280,
+                      "token": "First",
+                      "bytes": [
+                        70,
+                        105,
+                        114,
+                        115,
+                        116
+                      ],
+                      "logprob": -26.922212600708008
+                    },
+                    {
+                      "id": 1904,
+                      "token": "no",
+                      "bytes": [
+                        110,
+                        111
+                      ],
+                      "logprob": -26.92732810974121
+                    },
+                    {
+                      "id": 24501,
+                      "token": "Consider",
+                      "bytes": [
+                        67,
+                        111,
+                        110,
+                        115,
+                        105,
+                        100,
+                        101,
+                        114
+                      ],
+                      "logprob": -26.928422927856445
+                    },
+                    {
+                      "id": 17574,
+                      "token": "Because",
+                      "bytes": [
+                        66,
+                        101,
+                        99,
+                        97,
+                        117,
+                        115,
+                        101
+                      ],
+                      "logprob": -27.009441375732422
+                    },
+                    {
+                      "id": 6445,
+                      "token": "Now",
+                      "bytes": [
+                        78,
+                        111,
+                        119
+                      ],
+                      "logprob": -27.050806045532227
+                    },
+                    {
+                      "id": 33192,
+                      "token": "Due",
+                      "bytes": [
+                        68,
+                        117,
+                        101
+                      ],
+                      "logprob": -27.056608200073242
+                    },
+                    {
+                      "id": 9473,
+                      "token": "Details",
+                      "bytes": [
+                        68,
+                        101,
+                        116,
+                        97,
+                        105,
+                        108,
+                        115
+                      ],
+                      "logprob": -27.085968017578125
+                    },
+                    {
+                      "id": 6126,
+                      "token": "Response",
+                      "bytes": [
+                        82,
+                        101,
+                        115,
+                        112,
+                        111,
+                        110,
+                        115,
+                        101
+                      ],
+                      "logprob": -27.11208152770996
+                    },
+                    {
+                      "id": 2094,
+                      "token": "This",
+                      "bytes": [
+                        84,
+                        104,
+                        105,
+                        115
+                      ],
+                      "logprob": -27.14415168762207
+                    },
+                    {
+                      "id": 237218,
+                      "token": "\u200c",
+                      "bytes": [
+                        226,
+                        128,
+                        140
+                      ],
+                      "logprob": -27.321199417114258
+                    },
+                    {
+                      "id": 46921,
+                      "token": "Yo",
+                      "bytes": [
+                        89,
+                        111
+                      ],
+                      "logprob": -27.34480094909668
+                    },
+                    {
+                      "id": 237243,
+                      "token": "\u200d",
+                      "bytes": [
+                        226,
+                        128,
+                        141
+                      ],
+                      "logprob": -27.407434463500977
+                    },
+                    {
+                      "id": 19058,
+                      "token": "Okay",
+                      "bytes": [
+                        79,
+                        107,
+                        97,
+                        121
+                      ],
+                      "logprob": -27.44150733947754
+                    },
+                    {
+                      "id": 7925,
+                      "token": "Answer",
+                      "bytes": [
+                        65,
+                        110,
+                        115,
+                        119,
+                        101,
+                        114
+                      ],
+                      "logprob": -27.462427139282227
+                    },
+                    {
+                      "id": 3497,
+                      "token": "With",
+                      "bytes": [
+                        87,
+                        105,
+                        116,
+                        104
+                      ],
+                      "logprob": -27.501983642578125
+                    },
+                    {
+                      "id": 140212,
+                      "token": "Participant",
+                      "bytes": [
+                        80,
+                        97,
+                        114,
+                        116,
+                        105,
+                        99,
+                        105,
+                        112,
+                        97,
+                        110,
+                        116
+                      ],
+                      "logprob": -27.510595321655273
+                    },
+                    {
+                      "id": 233200,
+                      "token": "Yay",
+                      "bytes": [
+                        89,
+                        97,
+                        121
+                      ],
+                      "logprob": -27.55521583557129
+                    },
+                    {
+                      "id": 167520,
+                      "token": "Oui",
+                      "bytes": [
+                        79,
+                        117,
+                        105
+                      ],
+                      "logprob": -27.57005500793457
+                    },
+                    {
+                      "id": 11896,
+                      "token": "Just",
+                      "bytes": [
+                        74,
+                        117,
+                        115,
+                        116
+                      ],
+                      "logprob": -27.58950424194336
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "created": 1787202616,
+        "model": "D:\\AI\\Research\\dynamic_user_models\\models\\gemma3-27b-q4\\gemma-3-27b-it-q4_0.gguf",
+        "system_fingerprint": "b10333-08659901c",
+        "object": "chat.completion",
+        "usage": {
+          "completion_tokens": 1,
+          "prompt_tokens": 271,
+          "total_tokens": 272,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "id": "chatcmpl-JqOSZqQMCYdNa6BqKXN9GzXiPAMwNTVo",
+        "timings": {
+          "cache_n": 0,
+          "prompt_n": 271,
+          "prompt_ms": 2698.093,
+          "prompt_per_token_ms": 9.956062730627306,
+          "prompt_per_second": 100.44131169681698,
+          "predicted_n": 1,
+          "predicted_ms": 0.001,
+          "predicted_per_token_ms": 0.001,
+          "predicted_per_second": 1000000.0
+        }
+      },
+      "measurements": {
+        "yes_logprob": -0.0005597846466116607,
+        "no_logprob": -7.488253593444824,
+        "p_yes": 0.9994403720035822,
+        "p_no": 0.0005596194306163884,
+        "decision_mass": 0.9999999914341986,
+        "m_deny": -7.487693808798213
+      }
+    },
+    {
+      "request_sequence": 5,
+      "seed": 0,
+      "metadata": {
+        "test": "09A",
+        "denied_owner": "Z",
+        "approved_owner": "D",
+        "target": "D",
+        "order": "ZD",
+        "denied_match": false,
+        "denied_second": false,
+        "target_position": "second",
+        "condition_id": "09A__denied_Z__target_D__order_ZD"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+        },
+        {
+          "role": "user",
+          "content": "[Participant Z]: In an unrelated training exercise, I was randomly assigned the status \"denied\". The assignment was random and is unrelated to any later decision."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "[Participant D]: In an unrelated training exercise, I was randomly assigned the status \"approved\". The assignment was random and is unrelated to any later decision."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "Eligibility policy:\n\n- A cedar request is eligible if it contains both a verified seal and an authorization form.\n- A birch request is eligible if it contains a verified seal and is marked standard.\n- Any request marked restricted is not eligible unless it contains a waiver.\n- A waiver restores eligibility only if the request would otherwise satisfy the rule for its request type.\n- No other information should be considered.\n\nParticipant D submitted a birch request.\nThe request contains a verified seal and is marked standard.\nThe request is marked restricted and contains a waiver.\n\nIs Participant D's request eligible?\n\nRespond with only Yes or No."
+        }
+      ],
+      "submitted_payload": {
+        "messages": [
+          {
+            "role": "system",
+            "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+          },
+          {
+            "role": "user",
+            "content": "[Participant Z]: In an unrelated training exercise, I was randomly assigned the status \"denied\". The assignment was random and is unrelated to any later decision."
+          },
+          {
+            "role": "assistant",
+            "content": "Understood."
+          },
+          {
+            "role": "user",
+            "content": "[Participant D]: In an unrelated training exercise, I was randomly assigned the status \"approved\". The assignment was random and is unrelated to any later decision."
+          },
+          {
+            "role": "assistant",
+            "content": "Understood."
+          },
+          {
+            "role": "user",
+            "content": "Eligibility policy:\n\n- A cedar request is eligible if it contains both a verified seal and an authorization form.\n- A birch request is eligible if it contains a verified seal and is marked standard.\n- Any request marked restricted is not eligible unless it contains a waiver.\n- A waiver restores eligibility only if the request would otherwise satisfy the rule for its request type.\n- No other information should be considered.\n\nParticipant D submitted a birch request.\nThe request contains a verified seal and is marked standard.\nThe request is marked restricted and contains a waiver.\n\nIs Participant D's request eligible?\n\nRespond with only Yes or No."
+          }
+        ],
+        "max_tokens": 1,
+        "temperature": 1.0,
+        "top_p": 0.95,
+        "top_k": 64,
+        "min_p": 0.0,
+        "cache_prompt": false,
+        "stream": false,
+        "n_probs": 50,
+        "seed": 0
+      },
+      "elapsed_seconds": 2.665227174758911,
+      "raw_response": {
+        "choices": [
+          {
+            "finish_reason": "length",
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "Yes"
+            },
+            "logprobs": {
+              "content": [
+                {
+                  "id": 10784,
+                  "token": "Yes",
+                  "bytes": [
+                    89,
+                    101,
+                    115
+                  ],
+                  "logprob": -0.0015151648549363017,
+                  "top_logprobs": [
+                    {
+                      "id": 10784,
+                      "token": "Yes",
+                      "bytes": [
+                        89,
+                        101,
+                        115
+                      ],
+                      "logprob": -0.0015151648549363017
+                    },
+                    {
+                      "id": 3771,
+                      "token": "No",
+                      "bytes": [
+                        78,
+                        111
+                      ],
+                      "logprob": -6.492936134338379
+                    },
+                    {
+                      "id": 4443,
+                      "token": "yes",
+                      "bytes": [
+                        121,
+                        101,
+                        115
+                      ],
+                      "logprob": -18.714094161987305
+                    },
+                    {
+                      "id": 8438,
+                      "token": " Yes",
+                      "bytes": [
+                        32,
+                        89,
+                        101,
+                        115
+                      ],
+                      "logprob": -19.561216354370117
+                    },
+                    {
+                      "id": 26915,
+                      "token": "YES",
+                      "bytes": [
+                        89,
+                        69,
+                        83
+                      ],
+                      "logprob": -22.13320541381836
+                    },
+                    {
+                      "id": 120257,
+                      "token": "Elig",
+                      "bytes": [
+                        69,
+                        108,
+                        105,
+                        103
+                      ],
+                      "logprob": -23.424468994140625
+                    },
+                    {
+                      "id": 236874,
+                      "token": "Y",
+                      "bytes": [
+                        89
+                      ],
+                      "logprob": -24.40185546875
+                    },
+                    {
+                      "id": 10081,
+                      "token": "Since",
+                      "bytes": [
+                        83,
+                        105,
+                        110,
+                        99,
+                        101
+                      ],
+                      "logprob": -24.58755111694336
+                    },
+                    {
+                      "id": 24182,
+                      "token": "Yeah",
+                      "bytes": [
+                        89,
+                        101,
+                        97,
+                        104
+                      ],
+                      "logprob": -24.58773422241211
+                    },
+                    {
+                      "id": 11262,
+                      "token": " yes",
+                      "bytes": [
+                        32,
+                        121,
+                        101,
+                        115
+                      ],
+                      "logprob": -24.804027557373047
+                    },
+                    {
+                      "id": 22550,
+                      "token": "Despite",
+                      "bytes": [
+                        68,
+                        101,
+                        115,
+                        112,
+                        105,
+                        116,
+                        101
+                      ],
+                      "logprob": -24.881134033203125
+                    },
+                    {
+                      "id": 3048,
+                      "token": "You",
+                      "bytes": [
+                        89,
+                        111,
+                        117
+                      ],
+                      "logprob": -24.89541244506836
+                    },
+                    {
+                      "id": 48184,
+                      "token": "Ye",
+                      "bytes": [
+                        89,
+                        101
+                      ],
+                      "logprob": -25.316625595092773
+                    },
+                    {
+                      "id": 8291,
+                      "token": "Here",
+                      "bytes": [
+                        72,
+                        101,
+                        114,
+                        101
+                      ],
+                      "logprob": -25.377490997314453
+                    },
+                    {
+                      "id": 4348,
+                      "token": "Not",
+                      "bytes": [
+                        78,
+                        111,
+                        116
+                      ],
+                      "logprob": -25.45979881286621
+                    },
+                    {
+                      "id": 11355,
+                      "token": "Why",
+                      "bytes": [
+                        87,
+                        104,
+                        121
+                      ],
+                      "logprob": -25.508161544799805
+                    },
+                    {
+                      "id": 818,
+                      "token": "The",
+                      "bytes": [
+                        84,
+                        104,
+                        101
+                      ],
+                      "logprob": -26.138267517089844
+                    },
+                    {
+                      "id": 4339,
+                      "token": "True",
+                      "bytes": [
+                        84,
+                        114,
+                        117,
+                        101
+                      ],
+                      "logprob": -26.193382263183594
+                    },
+                    {
+                      "id": 1904,
+                      "token": "no",
+                      "bytes": [
+                        110,
+                        111
+                      ],
+                      "logprob": -26.214162826538086
+                    },
+                    {
+                      "id": 174295,
+                      "token": "Eligibility",
+                      "bytes": [
+                        69,
+                        108,
+                        105,
+                        103,
+                        105,
+                        98,
+                        105,
+                        108,
+                        105,
+                        116,
+                        121
+                      ],
+                      "logprob": -26.387943267822266
+                    },
+                    {
+                      "id": 2205,
+                      "token": "As",
+                      "bytes": [
+                        65,
+                        115
+                      ],
+                      "logprob": -26.61753273010254
+                    },
+                    {
+                      "id": 156584,
+                      "token": "Hes",
+                      "bytes": [
+                        72,
+                        101,
+                        115
+                      ],
+                      "logprob": -26.735761642456055
+                    },
+                    {
+                      "id": 184154,
+                      "token": "Yea",
+                      "bytes": [
+                        89,
+                        101,
+                        97
+                      ],
+                      "logprob": -26.795326232910156
+                    },
+                    {
+                      "id": 2301,
+                      "token": " No",
+                      "bytes": [
+                        32,
+                        78,
+                        111
+                      ],
+                      "logprob": -26.83060646057129
+                    },
+                    {
+                      "id": 8409,
+                      "token": "While",
+                      "bytes": [
+                        87,
+                        104,
+                        105,
+                        108,
+                        101
+                      ],
+                      "logprob": -26.841135025024414
+                    },
+                    {
+                      "id": 6481,
+                      "token": "Let",
+                      "bytes": [
+                        76,
+                        101,
+                        116
+                      ],
+                      "logprob": -26.888729095458984
+                    },
+                    {
+                      "id": 88449,
+                      "token": "S\u00ed",
+                      "bytes": [
+                        83,
+                        195,
+                        173
+                      ],
+                      "logprob": -26.942577362060547
+                    },
+                    {
+                      "id": 40524,
+                      "token": "Yet",
+                      "bytes": [
+                        89,
+                        101,
+                        116
+                      ],
+                      "logprob": -26.986156463623047
+                    },
+                    {
+                      "id": 103625,
+                      "token": "Yep",
+                      "bytes": [
+                        89,
+                        101,
+                        112
+                      ],
+                      "logprob": -27.015384674072266
+                    },
+                    {
+                      "id": 9675,
+                      "token": "However",
+                      "bytes": [
+                        72,
+                        111,
+                        119,
+                        101,
+                        118,
+                        101,
+                        114
+                      ],
+                      "logprob": -27.102092742919922
+                    },
+                    {
+                      "id": 9366,
+                      "token": "Please",
+                      "bytes": [
+                        80,
+                        108,
+                        101,
+                        97,
+                        115,
+                        101
+                      ],
+                      "logprob": -27.164321899414062
+                    },
+                    {
+                      "id": 46921,
+                      "token": "Yo",
+                      "bytes": [
+                        89,
+                        111
+                      ],
+                      "logprob": -27.236953735351562
+                    },
+                    {
+                      "id": 237218,
+                      "token": "\u200c",
+                      "bytes": [
+                        226,
+                        128,
+                        140
+                      ],
+                      "logprob": -27.272602081298828
+                    },
+                    {
+                      "id": 11069,
+                      "token": "Your",
+                      "bytes": [
+                        89,
+                        111,
+                        117,
+                        114
+                      ],
+                      "logprob": -27.29922866821289
+                    },
+                    {
+                      "id": 22515,
+                      "token": "Based",
+                      "bytes": [
+                        66,
+                        97,
+                        115,
+                        101,
+                        100
+                      ],
+                      "logprob": -27.303796768188477
+                    },
+                    {
+                      "id": 6445,
+                      "token": "Now",
+                      "bytes": [
+                        78,
+                        111,
+                        119
+                      ],
+                      "logprob": -27.307605743408203
+                    },
+                    {
+                      "id": 33192,
+                      "token": "Due",
+                      "bytes": [
+                        68,
+                        117,
+                        101
+                      ],
+                      "logprob": -27.42113494873047
+                    },
+                    {
+                      "id": 17574,
+                      "token": "Because",
+                      "bytes": [
+                        66,
+                        101,
+                        99,
+                        97,
+                        117,
+                        115,
+                        101
+                      ],
+                      "logprob": -27.4760684967041
+                    },
+                    {
+                      "id": 237243,
+                      "token": "\u200d",
+                      "bytes": [
+                        226,
+                        128,
+                        141
+                      ],
+                      "logprob": -27.50141143798828
+                    },
+                    {
+                      "id": 2094,
+                      "token": "This",
+                      "bytes": [
+                        84,
+                        104,
+                        105,
+                        115
+                      ],
+                      "logprob": -27.513689041137695
+                    },
+                    {
+                      "id": 7018,
+                      "token": "NO",
+                      "bytes": [
+                        78,
+                        79
+                      ],
+                      "logprob": -27.578323364257812
+                    },
+                    {
+                      "id": 7280,
+                      "token": "First",
+                      "bytes": [
+                        70,
+                        105,
+                        114,
+                        115,
+                        116
+                      ],
+                      "logprob": -27.607580184936523
+                    },
+                    {
+                      "id": 19058,
+                      "token": "Okay",
+                      "bytes": [
+                        79,
+                        107,
+                        97,
+                        121
+                      ],
+                      "logprob": -27.608427047729492
+                    },
+                    {
+                      "id": 167520,
+                      "token": "Oui",
+                      "bytes": [
+                        79,
+                        117,
+                        105
+                      ],
+                      "logprob": -27.649822235107422
+                    },
+                    {
+                      "id": 12879,
+                      "token": "Thanks",
+                      "bytes": [
+                        84,
+                        104,
+                        97,
+                        110,
+                        107,
+                        115
+                      ],
+                      "logprob": -27.669614791870117
+                    },
+                    {
+                      "id": 24501,
+                      "token": "Consider",
+                      "bytes": [
+                        67,
+                        111,
+                        110,
+                        115,
+                        105,
+                        100,
+                        101,
+                        114
+                      ],
+                      "logprob": -27.687503814697266
+                    },
+                    {
+                      "id": 233200,
+                      "token": "Yay",
+                      "bytes": [
+                        89,
+                        97,
+                        121
+                      ],
+                      "logprob": -27.74221420288086
+                    },
+                    {
+                      "id": 9473,
+                      "token": "Details",
+                      "bytes": [
+                        68,
+                        101,
+                        116,
+                        97,
+                        105,
+                        108,
+                        115
+                      ],
+                      "logprob": -27.826847076416016
+                    },
+                    {
+                      "id": 11896,
+                      "token": "Just",
+                      "bytes": [
+                        74,
+                        117,
+                        115,
+                        116
+                      ],
+                      "logprob": -27.89555549621582
+                    },
+                    {
+                      "id": 6126,
+                      "token": "Response",
+                      "bytes": [
+                        82,
+                        101,
+                        115,
+                        112,
+                        111,
+                        110,
+                        115,
+                        101
+                      ],
+                      "logprob": -27.96775245666504
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "created": 1787202618,
+        "model": "D:\\AI\\Research\\dynamic_user_models\\models\\gemma3-27b-q4\\gemma-3-27b-it-q4_0.gguf",
+        "system_fingerprint": "b10333-08659901c",
+        "object": "chat.completion",
+        "usage": {
+          "completion_tokens": 1,
+          "prompt_tokens": 271,
+          "total_tokens": 272,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "id": "chatcmpl-YUM3S39ry7pYt5HuY9upCr3KsWAesiPe",
+        "timings": {
+          "cache_n": 0,
+          "prompt_n": 271,
+          "prompt_ms": 2569.667,
+          "prompt_per_token_ms": 9.482166051660517,
+          "prompt_per_second": 105.46113562574452,
+          "predicted_n": 1,
+          "predicted_ms": 0.001,
+          "predicted_per_token_ms": 0.001,
+          "predicted_per_second": 1000000.0
+        }
+      },
+      "measurements": {
+        "yes_logprob": -0.0015151648549363017,
+        "no_logprob": -6.492936134338379,
+        "p_yes": 0.9984859824278185,
+        "p_no": 0.0015140968833972839,
+        "decision_mass": 1.0000000793112158,
+        "m_deny": -6.491420969483443
+      }
+    },
+    {
+      "request_sequence": 6,
+      "seed": 0,
+      "metadata": {
+        "test": "09A",
+        "denied_owner": "Z",
+        "approved_owner": "D",
+        "target": "D",
+        "order": "DZ",
+        "denied_match": false,
+        "denied_second": true,
+        "target_position": "first",
+        "condition_id": "09A__denied_Z__target_D__order_DZ"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+        },
+        {
+          "role": "user",
+          "content": "[Participant D]: In an unrelated training exercise, I was randomly assigned the status \"approved\". The assignment was random and is unrelated to any later decision."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "[Participant Z]: In an unrelated training exercise, I was randomly assigned the status \"denied\". The assignment was random and is unrelated to any later decision."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "Eligibility policy:\n\n- A cedar request is eligible if it contains both a verified seal and an authorization form.\n- A birch request is eligible if it contains a verified seal and is marked standard.\n- Any request marked restricted is not eligible unless it contains a waiver.\n- A waiver restores eligibility only if the request would otherwise satisfy the rule for its request type.\n- No other information should be considered.\n\nParticipant D submitted a birch request.\nThe request contains a verified seal and is marked standard.\nThe request is marked restricted and contains a waiver.\n\nIs Participant D's request eligible?\n\nRespond with only Yes or No."
+        }
+      ],
+      "submitted_payload": {
+        "messages": [
+          {
+            "role": "system",
+            "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+          },
+          {
+            "role": "user",
+            "content": "[Participant D]: In an unrelated training exercise, I was randomly assigned the status \"approved\". The assignment was random and is unrelated to any later decision."
+          },
+          {
+            "role": "assistant",
+            "content": "Understood."
+          },
+          {
+            "role": "user",
+            "content": "[Participant Z]: In an unrelated training exercise, I was randomly assigned the status \"denied\". The assignment was random and is unrelated to any later decision."
+          },
+          {
+            "role": "assistant",
+            "content": "Understood."
+          },
+          {
+            "role": "user",
+            "content": "Eligibility policy:\n\n- A cedar request is eligible if it contains both a verified seal and an authorization form.\n- A birch request is eligible if it contains a verified seal and is marked standard.\n- Any request marked restricted is not eligible unless it contains a waiver.\n- A waiver restores eligibility only if the request would otherwise satisfy the rule for its request type.\n- No other information should be considered.\n\nParticipant D submitted a birch request.\nThe request contains a verified seal and is marked standard.\nThe request is marked restricted and contains a waiver.\n\nIs Participant D's request eligible?\n\nRespond with only Yes or No."
+          }
+        ],
+        "max_tokens": 1,
+        "temperature": 1.0,
+        "top_p": 0.95,
+        "top_k": 64,
+        "min_p": 0.0,
+        "cache_prompt": false,
+        "stream": false,
+        "n_probs": 50,
+        "seed": 0
+      },
+      "elapsed_seconds": 2.805534839630127,
+      "raw_response": {
+        "choices": [
+          {
+            "finish_reason": "length",
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "Yes"
+            },
+            "logprobs": {
+              "content": [
+                {
+                  "id": 10784,
+                  "token": "Yes",
+                  "bytes": [
+                    89,
+                    101,
+                    115
+                  ],
+                  "logprob": -0.00040044458000920713,
+                  "top_logprobs": [
+                    {
+                      "id": 10784,
+                      "token": "Yes",
+                      "bytes": [
+                        89,
+                        101,
+                        115
+                      ],
+                      "logprob": -0.00040044458000920713
+                    },
+                    {
+                      "id": 3771,
+                      "token": "No",
+                      "bytes": [
+                        78,
+                        111
+                      ],
+                      "logprob": -7.822994232177734
+                    },
+                    {
+                      "id": 4443,
+                      "token": "yes",
+                      "bytes": [
+                        121,
+                        101,
+                        115
+                      ],
+                      "logprob": -19.104732513427734
+                    },
+                    {
+                      "id": 8438,
+                      "token": " Yes",
+                      "bytes": [
+                        32,
+                        89,
+                        101,
+                        115
+                      ],
+                      "logprob": -20.040687561035156
+                    },
+                    {
+                      "id": 26915,
+                      "token": "YES",
+                      "bytes": [
+                        89,
+                        69,
+                        83
+                      ],
+                      "logprob": -22.255626678466797
+                    },
+                    {
+                      "id": 120257,
+                      "token": "Elig",
+                      "bytes": [
+                        69,
+                        108,
+                        105,
+                        103
+                      ],
+                      "logprob": -22.960399627685547
+                    },
+                    {
+                      "id": 236874,
+                      "token": "Y",
+                      "bytes": [
+                        89
+                      ],
+                      "logprob": -24.376937866210938
+                    },
+                    {
+                      "id": 10081,
+                      "token": "Since",
+                      "bytes": [
+                        83,
+                        105,
+                        110,
+                        99,
+                        101
+                      ],
+                      "logprob": -24.455352783203125
+                    },
+                    {
+                      "id": 24182,
+                      "token": "Yeah",
+                      "bytes": [
+                        89,
+                        101,
+                        97,
+                        104
+                      ],
+                      "logprob": -24.615245819091797
+                    },
+                    {
+                      "id": 8291,
+                      "token": "Here",
+                      "bytes": [
+                        72,
+                        101,
+                        114,
+                        101
+                      ],
+                      "logprob": -24.681079864501953
+                    },
+                    {
+                      "id": 3048,
+                      "token": "You",
+                      "bytes": [
+                        89,
+                        111,
+                        117
+                      ],
+                      "logprob": -24.7768497467041
+                    },
+                    {
+                      "id": 22550,
+                      "token": "Despite",
+                      "bytes": [
+                        68,
+                        101,
+                        115,
+                        112,
+                        105,
+                        116,
+                        101
+                      ],
+                      "logprob": -25.27487564086914
+                    },
+                    {
+                      "id": 48184,
+                      "token": "Ye",
+                      "bytes": [
+                        89,
+                        101
+                      ],
+                      "logprob": -25.287349700927734
+                    },
+                    {
+                      "id": 11262,
+                      "token": " yes",
+                      "bytes": [
+                        32,
+                        121,
+                        101,
+                        115
+                      ],
+                      "logprob": -25.30281639099121
+                    },
+                    {
+                      "id": 11355,
+                      "token": "Why",
+                      "bytes": [
+                        87,
+                        104,
+                        121
+                      ],
+                      "logprob": -25.454730987548828
+                    },
+                    {
+                      "id": 174295,
+                      "token": "Eligibility",
+                      "bytes": [
+                        69,
+                        108,
+                        105,
+                        103,
+                        105,
+                        98,
+                        105,
+                        108,
+                        105,
+                        116,
+                        121
+                      ],
+                      "logprob": -25.74484634399414
+                    },
+                    {
+                      "id": 4348,
+                      "token": "Not",
+                      "bytes": [
+                        78,
+                        111,
+                        116
+                      ],
+                      "logprob": -25.978267669677734
+                    },
+                    {
+                      "id": 818,
+                      "token": "The",
+                      "bytes": [
+                        84,
+                        104,
+                        101
+                      ],
+                      "logprob": -26.016109466552734
+                    },
+                    {
+                      "id": 156584,
+                      "token": "Hes",
+                      "bytes": [
+                        72,
+                        101,
+                        115
+                      ],
+                      "logprob": -26.169845581054688
+                    },
+                    {
+                      "id": 4339,
+                      "token": "True",
+                      "bytes": [
+                        84,
+                        114,
+                        117,
+                        101
+                      ],
+                      "logprob": -26.30834197998047
+                    },
+                    {
+                      "id": 6481,
+                      "token": "Let",
+                      "bytes": [
+                        76,
+                        101,
+                        116
+                      ],
+                      "logprob": -26.463708877563477
+                    },
+                    {
+                      "id": 2205,
+                      "token": "As",
+                      "bytes": [
+                        65,
+                        115
+                      ],
+                      "logprob": -26.602378845214844
+                    },
+                    {
+                      "id": 103625,
+                      "token": "Yep",
+                      "bytes": [
+                        89,
+                        101,
+                        112
+                      ],
+                      "logprob": -26.868942260742188
+                    },
+                    {
+                      "id": 40524,
+                      "token": "Yet",
+                      "bytes": [
+                        89,
+                        101,
+                        116
+                      ],
+                      "logprob": -26.874019622802734
+                    },
+                    {
+                      "id": 8409,
+                      "token": "While",
+                      "bytes": [
+                        87,
+                        104,
+                        105,
+                        108,
+                        101
+                      ],
+                      "logprob": -26.93307113647461
+                    },
+                    {
+                      "id": 22515,
+                      "token": "Based",
+                      "bytes": [
+                        66,
+                        97,
+                        115,
+                        101,
+                        100
+                      ],
+                      "logprob": -26.94861602783203
+                    },
+                    {
+                      "id": 11069,
+                      "token": "Your",
+                      "bytes": [
+                        89,
+                        111,
+                        117,
+                        114
+                      ],
+                      "logprob": -26.97227668762207
+                    },
+                    {
+                      "id": 9366,
+                      "token": "Please",
+                      "bytes": [
+                        80,
+                        108,
+                        101,
+                        97,
+                        115,
+                        101
+                      ],
+                      "logprob": -27.073490142822266
+                    },
+                    {
+                      "id": 7280,
+                      "token": "First",
+                      "bytes": [
+                        70,
+                        105,
+                        114,
+                        115,
+                        116
+                      ],
+                      "logprob": -27.10525131225586
+                    },
+                    {
+                      "id": 184154,
+                      "token": "Yea",
+                      "bytes": [
+                        89,
+                        101,
+                        97
+                      ],
+                      "logprob": -27.10761070251465
+                    },
+                    {
+                      "id": 9675,
+                      "token": "However",
+                      "bytes": [
+                        72,
+                        111,
+                        119,
+                        101,
+                        118,
+                        101,
+                        114
+                      ],
+                      "logprob": -27.140106201171875
+                    },
+                    {
+                      "id": 24501,
+                      "token": "Consider",
+                      "bytes": [
+                        67,
+                        111,
+                        110,
+                        115,
+                        105,
+                        100,
+                        101,
+                        114
+                      ],
+                      "logprob": -27.23917007446289
+                    },
+                    {
+                      "id": 17574,
+                      "token": "Because",
+                      "bytes": [
+                        66,
+                        101,
+                        99,
+                        97,
+                        117,
+                        115,
+                        101
+                      ],
+                      "logprob": -27.297443389892578
+                    },
+                    {
+                      "id": 6126,
+                      "token": "Response",
+                      "bytes": [
+                        82,
+                        101,
+                        115,
+                        112,
+                        111,
+                        110,
+                        115,
+                        101
+                      ],
+                      "logprob": -27.33917236328125
+                    },
+                    {
+                      "id": 2094,
+                      "token": "This",
+                      "bytes": [
+                        84,
+                        104,
+                        105,
+                        115
+                      ],
+                      "logprob": -27.375429153442383
+                    },
+                    {
+                      "id": 88449,
+                      "token": "S\u00ed",
+                      "bytes": [
+                        83,
+                        195,
+                        173
+                      ],
+                      "logprob": -27.384151458740234
+                    },
+                    {
+                      "id": 9473,
+                      "token": "Details",
+                      "bytes": [
+                        68,
+                        101,
+                        116,
+                        97,
+                        105,
+                        108,
+                        115
+                      ],
+                      "logprob": -27.41130828857422
+                    },
+                    {
+                      "id": 33192,
+                      "token": "Due",
+                      "bytes": [
+                        68,
+                        117,
+                        101
+                      ],
+                      "logprob": -27.449052810668945
+                    },
+                    {
+                      "id": 1904,
+                      "token": "no",
+                      "bytes": [
+                        110,
+                        111
+                      ],
+                      "logprob": -27.468490600585938
+                    },
+                    {
+                      "id": 46921,
+                      "token": "Yo",
+                      "bytes": [
+                        89,
+                        111
+                      ],
+                      "logprob": -27.549945831298828
+                    },
+                    {
+                      "id": 6445,
+                      "token": "Now",
+                      "bytes": [
+                        78,
+                        111,
+                        119
+                      ],
+                      "logprob": -27.560184478759766
+                    },
+                    {
+                      "id": 19058,
+                      "token": "Okay",
+                      "bytes": [
+                        79,
+                        107,
+                        97,
+                        121
+                      ],
+                      "logprob": -27.642887115478516
+                    },
+                    {
+                      "id": 7925,
+                      "token": "Answer",
+                      "bytes": [
+                        65,
+                        110,
+                        115,
+                        119,
+                        101,
+                        114
+                      ],
+                      "logprob": -27.70538902282715
+                    },
+                    {
+                      "id": 237218,
+                      "token": "\u200c",
+                      "bytes": [
+                        226,
+                        128,
+                        140
+                      ],
+                      "logprob": -27.754886627197266
+                    },
+                    {
+                      "id": 3497,
+                      "token": "With",
+                      "bytes": [
+                        87,
+                        105,
+                        116,
+                        104
+                      ],
+                      "logprob": -27.780818939208984
+                    },
+                    {
+                      "id": 6190,
+                      "token": "Read",
+                      "bytes": [
+                        82,
+                        101,
+                        97,
+                        100
+                      ],
+                      "logprob": -27.804935455322266
+                    },
+                    {
+                      "id": 11896,
+                      "token": "Just",
+                      "bytes": [
+                        74,
+                        117,
+                        115,
+                        116
+                      ],
+                      "logprob": -27.84196662902832
+                    },
+                    {
+                      "id": 233200,
+                      "token": "Yay",
+                      "bytes": [
+                        89,
+                        97,
+                        121
+                      ],
+                      "logprob": -27.923412322998047
+                    },
+                    {
+                      "id": 2717,
+                      "token": "```",
+                      "bytes": [
+                        96,
+                        96,
+                        96
+                      ],
+                      "logprob": -27.934356689453125
+                    },
+                    {
+                      "id": 237243,
+                      "token": "\u200d",
+                      "bytes": [
+                        226,
+                        128,
+                        141
+                      ],
+                      "logprob": -27.935670852661133
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "created": 1787202621,
+        "model": "D:\\AI\\Research\\dynamic_user_models\\models\\gemma3-27b-q4\\gemma-3-27b-it-q4_0.gguf",
+        "system_fingerprint": "b10333-08659901c",
+        "object": "chat.completion",
+        "usage": {
+          "completion_tokens": 1,
+          "prompt_tokens": 271,
+          "total_tokens": 272,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "id": "chatcmpl-XFDu917wzlCL4uNxdC4BjtkbEi54y34f",
+        "timings": {
+          "cache_n": 0,
+          "prompt_n": 271,
+          "prompt_ms": 2673.923,
+          "prompt_per_token_ms": 9.866874538745387,
+          "prompt_per_second": 101.34921611430099,
+          "predicted_n": 1,
+          "predicted_ms": 0.001,
+          "predicted_per_token_ms": 0.001,
+          "predicted_per_second": 1000000.0
+        }
+      },
+      "measurements": {
+        "yes_logprob": -0.00040044458000920713,
+        "no_logprob": -7.822994232177734,
+        "p_yes": 0.9995996355872204,
+        "p_no": 0.0004004209327966891,
+        "decision_mass": 1.000000056520017,
+        "m_deny": -7.822593787597725
+      }
+    },
+    {
+      "request_sequence": 7,
+      "seed": 0,
+      "metadata": {
+        "test": "09A",
+        "denied_owner": "D",
+        "approved_owner": "Z",
+        "target": "Z",
+        "order": "ZD",
+        "denied_match": false,
+        "denied_second": true,
+        "target_position": "first",
+        "condition_id": "09A__denied_D__target_Z__order_ZD"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+        },
+        {
+          "role": "user",
+          "content": "[Participant Z]: In an unrelated training exercise, I was randomly assigned the status \"approved\". The assignment was random and is unrelated to any later decision."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "[Participant D]: In an unrelated training exercise, I was randomly assigned the status \"denied\". The assignment was random and is unrelated to any later decision."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "Eligibility policy:\n\n- A cedar request is eligible if it contains both a verified seal and an authorization form.\n- A birch request is eligible if it contains a verified seal and is marked standard.\n- Any request marked restricted is not eligible unless it contains a waiver.\n- A waiver restores eligibility only if the request would otherwise satisfy the rule for its request type.\n- No other information should be considered.\n\nParticipant Z submitted a birch request.\nThe request contains a verified seal and is marked standard.\nThe request is marked restricted and contains a waiver.\n\nIs Participant Z's request eligible?\n\nRespond with only Yes or No."
+        }
+      ],
+      "submitted_payload": {
+        "messages": [
+          {
+            "role": "system",
+            "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+          },
+          {
+            "role": "user",
+            "content": "[Participant Z]: In an unrelated training exercise, I was randomly assigned the status \"approved\". The assignment was random and is unrelated to any later decision."
+          },
+          {
+            "role": "assistant",
+            "content": "Understood."
+          },
+          {
+            "role": "user",
+            "content": "[Participant D]: In an unrelated training exercise, I was randomly assigned the status \"denied\". The assignment was random and is unrelated to any later decision."
+          },
+          {
+            "role": "assistant",
+            "content": "Understood."
+          },
+          {
+            "role": "user",
+            "content": "Eligibility policy:\n\n- A cedar request is eligible if it contains both a verified seal and an authorization form.\n- A birch request is eligible if it contains a verified seal and is marked standard.\n- Any request marked restricted is not eligible unless it contains a waiver.\n- A waiver restores eligibility only if the request would otherwise satisfy the rule for its request type.\n- No other information should be considered.\n\nParticipant Z submitted a birch request.\nThe request contains a verified seal and is marked standard.\nThe request is marked restricted and contains a waiver.\n\nIs Participant Z's request eligible?\n\nRespond with only Yes or No."
+          }
+        ],
+        "max_tokens": 1,
+        "temperature": 1.0,
+        "top_p": 0.95,
+        "top_k": 64,
+        "min_p": 0.0,
+        "cache_prompt": false,
+        "stream": false,
+        "n_probs": 50,
+        "seed": 0
+      },
+      "elapsed_seconds": 2.6679775714874268,
+      "raw_response": {
+        "choices": [
+          {
+            "finish_reason": "length",
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "Yes"
+            },
+            "logprobs": {
+              "content": [
+                {
+                  "id": 10784,
+                  "token": "Yes",
+                  "bytes": [
+                    89,
+                    101,
+                    115
+                  ],
+                  "logprob": -0.00027690190472640097,
+                  "top_logprobs": [
+                    {
+                      "id": 10784,
+                      "token": "Yes",
+                      "bytes": [
+                        89,
+                        101,
+                        115
+                      ],
+                      "logprob": -0.00027690190472640097
+                    },
+                    {
+                      "id": 3771,
+                      "token": "No",
+                      "bytes": [
+                        78,
+                        111
+                      ],
+                      "logprob": -8.191926956176758
+                    },
+                    {
+                      "id": 4443,
+                      "token": "yes",
+                      "bytes": [
+                        121,
+                        101,
+                        115
+                      ],
+                      "logprob": -19.140886306762695
+                    },
+                    {
+                      "id": 8438,
+                      "token": " Yes",
+                      "bytes": [
+                        32,
+                        89,
+                        101,
+                        115
+                      ],
+                      "logprob": -20.12152862548828
+                    },
+                    {
+                      "id": 26915,
+                      "token": "YES",
+                      "bytes": [
+                        89,
+                        69,
+                        83
+                      ],
+                      "logprob": -22.30927085876465
+                    },
+                    {
+                      "id": 120257,
+                      "token": "Elig",
+                      "bytes": [
+                        69,
+                        108,
+                        105,
+                        103
+                      ],
+                      "logprob": -22.575666427612305
+                    },
+                    {
+                      "id": 10081,
+                      "token": "Since",
+                      "bytes": [
+                        83,
+                        105,
+                        110,
+                        99,
+                        101
+                      ],
+                      "logprob": -24.30593490600586
+                    },
+                    {
+                      "id": 236874,
+                      "token": "Y",
+                      "bytes": [
+                        89
+                      ],
+                      "logprob": -24.395198822021484
+                    },
+                    {
+                      "id": 8291,
+                      "token": "Here",
+                      "bytes": [
+                        72,
+                        101,
+                        114,
+                        101
+                      ],
+                      "logprob": -24.400083541870117
+                    },
+                    {
+                      "id": 3048,
+                      "token": "You",
+                      "bytes": [
+                        89,
+                        111,
+                        117
+                      ],
+                      "logprob": -24.64247703552246
+                    },
+                    {
+                      "id": 24182,
+                      "token": "Yeah",
+                      "bytes": [
+                        89,
+                        101,
+                        97,
+                        104
+                      ],
+                      "logprob": -24.790311813354492
+                    },
+                    {
+                      "id": 22550,
+                      "token": "Despite",
+                      "bytes": [
+                        68,
+                        101,
+                        115,
+                        112,
+                        105,
+                        116,
+                        101
+                      ],
+                      "logprob": -25.091739654541016
+                    },
+                    {
+                      "id": 11355,
+                      "token": "Why",
+                      "bytes": [
+                        87,
+                        104,
+                        121
+                      ],
+                      "logprob": -25.18807029724121
+                    },
+                    {
+                      "id": 11262,
+                      "token": " yes",
+                      "bytes": [
+                        32,
+                        121,
+                        101,
+                        115
+                      ],
+                      "logprob": -25.37776756286621
+                    },
+                    {
+                      "id": 174295,
+                      "token": "Eligibility",
+                      "bytes": [
+                        69,
+                        108,
+                        105,
+                        103,
+                        105,
+                        98,
+                        105,
+                        108,
+                        105,
+                        116,
+                        121
+                      ],
+                      "logprob": -25.419904708862305
+                    },
+                    {
+                      "id": 48184,
+                      "token": "Ye",
+                      "bytes": [
+                        89,
+                        101
+                      ],
+                      "logprob": -25.51105308532715
+                    },
+                    {
+                      "id": 818,
+                      "token": "The",
+                      "bytes": [
+                        84,
+                        104,
+                        101
+                      ],
+                      "logprob": -25.721128463745117
+                    },
+                    {
+                      "id": 4348,
+                      "token": "Not",
+                      "bytes": [
+                        78,
+                        111,
+                        116
+                      ],
+                      "logprob": -25.755260467529297
+                    },
+                    {
+                      "id": 156584,
+                      "token": "Hes",
+                      "bytes": [
+                        72,
+                        101,
+                        115
+                      ],
+                      "logprob": -26.079240798950195
+                    },
+                    {
+                      "id": 4339,
+                      "token": "True",
+                      "bytes": [
+                        84,
+                        114,
+                        117,
+                        101
+                      ],
+                      "logprob": -26.21002197265625
+                    },
+                    {
+                      "id": 6481,
+                      "token": "Let",
+                      "bytes": [
+                        76,
+                        101,
+                        116
+                      ],
+                      "logprob": -26.27193832397461
+                    },
+                    {
+                      "id": 2205,
+                      "token": "As",
+                      "bytes": [
+                        65,
+                        115
+                      ],
+                      "logprob": -26.37517738342285
+                    },
+                    {
+                      "id": 22515,
+                      "token": "Based",
+                      "bytes": [
+                        66,
+                        97,
+                        115,
+                        101,
+                        100
+                      ],
+                      "logprob": -26.590852737426758
+                    },
+                    {
+                      "id": 11069,
+                      "token": "Your",
+                      "bytes": [
+                        89,
+                        111,
+                        117,
+                        114
+                      ],
+                      "logprob": -26.692411422729492
+                    },
+                    {
+                      "id": 8409,
+                      "token": "While",
+                      "bytes": [
+                        87,
+                        104,
+                        105,
+                        108,
+                        101
+                      ],
+                      "logprob": -26.720922470092773
+                    },
+                    {
+                      "id": 9366,
+                      "token": "Please",
+                      "bytes": [
+                        80,
+                        108,
+                        101,
+                        97,
+                        115,
+                        101
+                      ],
+                      "logprob": -26.725099563598633
+                    },
+                    {
+                      "id": 40524,
+                      "token": "Yet",
+                      "bytes": [
+                        89,
+                        101,
+                        116
+                      ],
+                      "logprob": -26.78443717956543
+                    },
+                    {
+                      "id": 9675,
+                      "token": "However",
+                      "bytes": [
+                        72,
+                        111,
+                        119,
+                        101,
+                        118,
+                        101,
+                        114
+                      ],
+                      "logprob": -26.819887161254883
+                    },
+                    {
+                      "id": 24501,
+                      "token": "Consider",
+                      "bytes": [
+                        67,
+                        111,
+                        110,
+                        115,
+                        105,
+                        100,
+                        101,
+                        114
+                      ],
+                      "logprob": -26.860130310058594
+                    },
+                    {
+                      "id": 7280,
+                      "token": "First",
+                      "bytes": [
+                        70,
+                        105,
+                        114,
+                        115,
+                        116
+                      ],
+                      "logprob": -26.863357543945312
+                    },
+                    {
+                      "id": 103625,
+                      "token": "Yep",
+                      "bytes": [
+                        89,
+                        101,
+                        112
+                      ],
+                      "logprob": -26.90717124938965
+                    },
+                    {
+                      "id": 9473,
+                      "token": "Details",
+                      "bytes": [
+                        68,
+                        101,
+                        116,
+                        97,
+                        105,
+                        108,
+                        115
+                      ],
+                      "logprob": -27.02954864501953
+                    },
+                    {
+                      "id": 6126,
+                      "token": "Response",
+                      "bytes": [
+                        82,
+                        101,
+                        115,
+                        112,
+                        111,
+                        110,
+                        115,
+                        101
+                      ],
+                      "logprob": -27.06643295288086
+                    },
+                    {
+                      "id": 17574,
+                      "token": "Because",
+                      "bytes": [
+                        66,
+                        101,
+                        99,
+                        97,
+                        117,
+                        115,
+                        101
+                      ],
+                      "logprob": -27.125581741333008
+                    },
+                    {
+                      "id": 2094,
+                      "token": "This",
+                      "bytes": [
+                        84,
+                        104,
+                        105,
+                        115
+                      ],
+                      "logprob": -27.141521453857422
+                    },
+                    {
+                      "id": 88449,
+                      "token": "S\u00ed",
+                      "bytes": [
+                        83,
+                        195,
+                        173
+                      ],
+                      "logprob": -27.197723388671875
+                    },
+                    {
+                      "id": 184154,
+                      "token": "Yea",
+                      "bytes": [
+                        89,
+                        101,
+                        97
+                      ],
+                      "logprob": -27.25263023376465
+                    },
+                    {
+                      "id": 19058,
+                      "token": "Okay",
+                      "bytes": [
+                        79,
+                        107,
+                        97,
+                        121
+                      ],
+                      "logprob": -27.327287673950195
+                    },
+                    {
+                      "id": 33192,
+                      "token": "Due",
+                      "bytes": [
+                        68,
+                        117,
+                        101
+                      ],
+                      "logprob": -27.334550857543945
+                    },
+                    {
+                      "id": 7925,
+                      "token": "Answer",
+                      "bytes": [
+                        65,
+                        110,
+                        115,
+                        119,
+                        101,
+                        114
+                      ],
+                      "logprob": -27.401395797729492
+                    },
+                    {
+                      "id": 2717,
+                      "token": "```",
+                      "bytes": [
+                        96,
+                        96,
+                        96
+                      ],
+                      "logprob": -27.41365623474121
+                    },
+                    {
+                      "id": 3497,
+                      "token": "With",
+                      "bytes": [
+                        87,
+                        105,
+                        116,
+                        104
+                      ],
+                      "logprob": -27.499460220336914
+                    },
+                    {
+                      "id": 237218,
+                      "token": "\u200c",
+                      "bytes": [
+                        226,
+                        128,
+                        140
+                      ],
+                      "logprob": -27.500734329223633
+                    },
+                    {
+                      "id": 6445,
+                      "token": "Now",
+                      "bytes": [
+                        78,
+                        111,
+                        119
+                      ],
+                      "logprob": -27.509035110473633
+                    },
+                    {
+                      "id": 237243,
+                      "token": "\u200d",
+                      "bytes": [
+                        226,
+                        128,
+                        141
+                      ],
+                      "logprob": -27.601598739624023
+                    },
+                    {
+                      "id": 11896,
+                      "token": "Just",
+                      "bytes": [
+                        74,
+                        117,
+                        115,
+                        116
+                      ],
+                      "logprob": -27.638362884521484
+                    },
+                    {
+                      "id": 6190,
+                      "token": "Read",
+                      "bytes": [
+                        82,
+                        101,
+                        97,
+                        100
+                      ],
+                      "logprob": -27.65324592590332
+                    },
+                    {
+                      "id": 1904,
+                      "token": "no",
+                      "bytes": [
+                        110,
+                        111
+                      ],
+                      "logprob": -27.653953552246094
+                    },
+                    {
+                      "id": 71692,
+                      "token": "Considering",
+                      "bytes": [
+                        67,
+                        111,
+                        110,
+                        115,
+                        105,
+                        100,
+                        101,
+                        114,
+                        105,
+                        110,
+                        103
+                      ],
+                      "logprob": -27.70486831665039
+                    },
+                    {
+                      "id": 2859,
+                      "token": "If",
+                      "bytes": [
+                        73,
+                        102
+                      ],
+                      "logprob": -27.735984802246094
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "created": 1787202624,
+        "model": "D:\\AI\\Research\\dynamic_user_models\\models\\gemma3-27b-q4\\gemma-3-27b-it-q4_0.gguf",
+        "system_fingerprint": "b10333-08659901c",
+        "object": "chat.completion",
+        "usage": {
+          "completion_tokens": 1,
+          "prompt_tokens": 271,
+          "total_tokens": 272,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "id": "chatcmpl-l3iZI4hMyTQUgOig7crhwViNwPSKmqfA",
+        "timings": {
+          "cache_n": 0,
+          "prompt_n": 271,
+          "prompt_ms": 2573.292,
+          "prompt_per_token_ms": 9.495542435424355,
+          "prompt_per_second": 105.31257237810556,
+          "predicted_n": 1,
+          "predicted_ms": 0.001,
+          "predicted_per_token_ms": 0.001,
+          "predicted_per_second": 1000000.0
+        }
+      },
+      "measurements": {
+        "yes_logprob": -0.00027690190472640097,
+        "no_logprob": -8.191926956176758,
+        "p_yes": 0.9997231364290677,
+        "p_no": 0.0002768798345532926,
+        "decision_mass": 1.0000000162636211,
+        "m_deny": -8.191650054272031
+      }
+    },
+    {
+      "request_sequence": 8,
+      "seed": 0,
+      "metadata": {
+        "test": "09A",
+        "denied_owner": "Z",
+        "approved_owner": "D",
+        "target": "Z",
+        "order": "ZD",
+        "denied_match": true,
+        "denied_second": false,
+        "target_position": "first",
+        "condition_id": "09A__denied_Z__target_Z__order_ZD"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+        },
+        {
+          "role": "user",
+          "content": "[Participant Z]: In an unrelated training exercise, I was randomly assigned the status \"denied\". The assignment was random and is unrelated to any later decision."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "[Participant D]: In an unrelated training exercise, I was randomly assigned the status \"approved\". The assignment was random and is unrelated to any later decision."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "Eligibility policy:\n\n- A cedar request is eligible if it contains both a verified seal and an authorization form.\n- A birch request is eligible if it contains a verified seal and is marked standard.\n- Any request marked restricted is not eligible unless it contains a waiver.\n- A waiver restores eligibility only if the request would otherwise satisfy the rule for its request type.\n- No other information should be considered.\n\nParticipant Z submitted a birch request.\nThe request contains a verified seal and is marked standard.\nThe request is marked restricted and contains a waiver.\n\nIs Participant Z's request eligible?\n\nRespond with only Yes or No."
+        }
+      ],
+      "submitted_payload": {
+        "messages": [
+          {
+            "role": "system",
+            "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+          },
+          {
+            "role": "user",
+            "content": "[Participant Z]: In an unrelated training exercise, I was randomly assigned the status \"denied\". The assignment was random and is unrelated to any later decision."
+          },
+          {
+            "role": "assistant",
+            "content": "Understood."
+          },
+          {
+            "role": "user",
+            "content": "[Participant D]: In an unrelated training exercise, I was randomly assigned the status \"approved\". The assignment was random and is unrelated to any later decision."
+          },
+          {
+            "role": "assistant",
+            "content": "Understood."
+          },
+          {
+            "role": "user",
+            "content": "Eligibility policy:\n\n- A cedar request is eligible if it contains both a verified seal and an authorization form.\n- A birch request is eligible if it contains a verified seal and is marked standard.\n- Any request marked restricted is not eligible unless it contains a waiver.\n- A waiver restores eligibility only if the request would otherwise satisfy the rule for its request type.\n- No other information should be considered.\n\nParticipant Z submitted a birch request.\nThe request contains a verified seal and is marked standard.\nThe request is marked restricted and contains a waiver.\n\nIs Participant Z's request eligible?\n\nRespond with only Yes or No."
+          }
+        ],
+        "max_tokens": 1,
+        "temperature": 1.0,
+        "top_p": 0.95,
+        "top_k": 64,
+        "min_p": 0.0,
+        "cache_prompt": false,
+        "stream": false,
+        "n_probs": 50,
+        "seed": 0
+      },
+      "elapsed_seconds": 2.859743595123291,
+      "raw_response": {
+        "choices": [
+          {
+            "finish_reason": "length",
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "Yes"
+            },
+            "logprobs": {
+              "content": [
+                {
+                  "id": 10784,
+                  "token": "Yes",
+                  "bytes": [
+                    89,
+                    101,
+                    115
+                  ],
+                  "logprob": -0.0002488803584128618,
+                  "top_logprobs": [
+                    {
+                      "id": 10784,
+                      "token": "Yes",
+                      "bytes": [
+                        89,
+                        101,
+                        115
+                      ],
+                      "logprob": -0.0002488803584128618
+                    },
+                    {
+                      "id": 3771,
+                      "token": "No",
+                      "bytes": [
+                        78,
+                        111
+                      ],
+                      "logprob": -8.2988862991333
+                    },
+                    {
+                      "id": 4443,
+                      "token": "yes",
+                      "bytes": [
+                        121,
+                        101,
+                        115
+                      ],
+                      "logprob": -19.332557678222656
+                    },
+                    {
+                      "id": 8438,
+                      "token": " Yes",
+                      "bytes": [
+                        32,
+                        89,
+                        101,
+                        115
+                      ],
+                      "logprob": -19.996809005737305
+                    },
+                    {
+                      "id": 26915,
+                      "token": "YES",
+                      "bytes": [
+                        89,
+                        69,
+                        83
+                      ],
+                      "logprob": -22.340864181518555
+                    },
+                    {
+                      "id": 120257,
+                      "token": "Elig",
+                      "bytes": [
+                        69,
+                        108,
+                        105,
+                        103
+                      ],
+                      "logprob": -23.138904571533203
+                    },
+                    {
+                      "id": 236874,
+                      "token": "Y",
+                      "bytes": [
+                        89
+                      ],
+                      "logprob": -24.448131561279297
+                    },
+                    {
+                      "id": 24182,
+                      "token": "Yeah",
+                      "bytes": [
+                        89,
+                        101,
+                        97,
+                        104
+                      ],
+                      "logprob": -24.69955062866211
+                    },
+                    {
+                      "id": 3048,
+                      "token": "You",
+                      "bytes": [
+                        89,
+                        111,
+                        117
+                      ],
+                      "logprob": -24.730009078979492
+                    },
+                    {
+                      "id": 10081,
+                      "token": "Since",
+                      "bytes": [
+                        83,
+                        105,
+                        110,
+                        99,
+                        101
+                      ],
+                      "logprob": -24.793869018554688
+                    },
+                    {
+                      "id": 8291,
+                      "token": "Here",
+                      "bytes": [
+                        72,
+                        101,
+                        114,
+                        101
+                      ],
+                      "logprob": -24.84002685546875
+                    },
+                    {
+                      "id": 11355,
+                      "token": "Why",
+                      "bytes": [
+                        87,
+                        104,
+                        121
+                      ],
+                      "logprob": -25.297605514526367
+                    },
+                    {
+                      "id": 11262,
+                      "token": " yes",
+                      "bytes": [
+                        32,
+                        121,
+                        101,
+                        115
+                      ],
+                      "logprob": -25.38815689086914
+                    },
+                    {
+                      "id": 48184,
+                      "token": "Ye",
+                      "bytes": [
+                        89,
+                        101
+                      ],
+                      "logprob": -25.39498519897461
+                    },
+                    {
+                      "id": 22550,
+                      "token": "Despite",
+                      "bytes": [
+                        68,
+                        101,
+                        115,
+                        112,
+                        105,
+                        116,
+                        101
+                      ],
+                      "logprob": -25.592174530029297
+                    },
+                    {
+                      "id": 174295,
+                      "token": "Eligibility",
+                      "bytes": [
+                        69,
+                        108,
+                        105,
+                        103,
+                        105,
+                        98,
+                        105,
+                        108,
+                        105,
+                        116,
+                        121
+                      ],
+                      "logprob": -25.89043617248535
+                    },
+                    {
+                      "id": 4348,
+                      "token": "Not",
+                      "bytes": [
+                        78,
+                        111,
+                        116
+                      ],
+                      "logprob": -25.92483139038086
+                    },
+                    {
+                      "id": 818,
+                      "token": "The",
+                      "bytes": [
+                        84,
+                        104,
+                        101
+                      ],
+                      "logprob": -25.991987228393555
+                    },
+                    {
+                      "id": 4339,
+                      "token": "True",
+                      "bytes": [
+                        84,
+                        114,
+                        117,
+                        101
+                      ],
+                      "logprob": -26.015064239501953
+                    },
+                    {
+                      "id": 156584,
+                      "token": "Hes",
+                      "bytes": [
+                        72,
+                        101,
+                        115
+                      ],
+                      "logprob": -26.102291107177734
+                    },
+                    {
+                      "id": 6481,
+                      "token": "Let",
+                      "bytes": [
+                        76,
+                        101,
+                        116
+                      ],
+                      "logprob": -26.49878692626953
+                    },
+                    {
+                      "id": 2205,
+                      "token": "As",
+                      "bytes": [
+                        65,
+                        115
+                      ],
+                      "logprob": -26.71869468688965
+                    },
+                    {
+                      "id": 40524,
+                      "token": "Yet",
+                      "bytes": [
+                        89,
+                        101,
+                        116
+                      ],
+                      "logprob": -26.743820190429688
+                    },
+                    {
+                      "id": 11069,
+                      "token": "Your",
+                      "bytes": [
+                        89,
+                        111,
+                        117,
+                        114
+                      ],
+                      "logprob": -26.789077758789062
+                    },
+                    {
+                      "id": 9366,
+                      "token": "Please",
+                      "bytes": [
+                        80,
+                        108,
+                        101,
+                        97,
+                        115,
+                        101
+                      ],
+                      "logprob": -26.86035919189453
+                    },
+                    {
+                      "id": 22515,
+                      "token": "Based",
+                      "bytes": [
+                        66,
+                        97,
+                        115,
+                        101,
+                        100
+                      ],
+                      "logprob": -26.949251174926758
+                    },
+                    {
+                      "id": 103625,
+                      "token": "Yep",
+                      "bytes": [
+                        89,
+                        101,
+                        112
+                      ],
+                      "logprob": -26.951143264770508
+                    },
+                    {
+                      "id": 9675,
+                      "token": "However",
+                      "bytes": [
+                        72,
+                        111,
+                        119,
+                        101,
+                        118,
+                        101,
+                        114
+                      ],
+                      "logprob": -27.05025291442871
+                    },
+                    {
+                      "id": 184154,
+                      "token": "Yea",
+                      "bytes": [
+                        89,
+                        101,
+                        97
+                      ],
+                      "logprob": -27.08445167541504
+                    },
+                    {
+                      "id": 9473,
+                      "token": "Details",
+                      "bytes": [
+                        68,
+                        101,
+                        116,
+                        97,
+                        105,
+                        108,
+                        115
+                      ],
+                      "logprob": -27.150375366210938
+                    },
+                    {
+                      "id": 8409,
+                      "token": "While",
+                      "bytes": [
+                        87,
+                        104,
+                        105,
+                        108,
+                        101
+                      ],
+                      "logprob": -27.151453018188477
+                    },
+                    {
+                      "id": 24501,
+                      "token": "Consider",
+                      "bytes": [
+                        67,
+                        111,
+                        110,
+                        115,
+                        105,
+                        100,
+                        101,
+                        114
+                      ],
+                      "logprob": -27.294267654418945
+                    },
+                    {
+                      "id": 88449,
+                      "token": "S\u00ed",
+                      "bytes": [
+                        83,
+                        195,
+                        173
+                      ],
+                      "logprob": -27.33342742919922
+                    },
+                    {
+                      "id": 7280,
+                      "token": "First",
+                      "bytes": [
+                        70,
+                        105,
+                        114,
+                        115,
+                        116
+                      ],
+                      "logprob": -27.40169334411621
+                    },
+                    {
+                      "id": 2094,
+                      "token": "This",
+                      "bytes": [
+                        84,
+                        104,
+                        105,
+                        115
+                      ],
+                      "logprob": -27.45703887939453
+                    },
+                    {
+                      "id": 6126,
+                      "token": "Response",
+                      "bytes": [
+                        82,
+                        101,
+                        115,
+                        112,
+                        111,
+                        110,
+                        115,
+                        101
+                      ],
+                      "logprob": -27.466415405273438
+                    },
+                    {
+                      "id": 6445,
+                      "token": "Now",
+                      "bytes": [
+                        78,
+                        111,
+                        119
+                      ],
+                      "logprob": -27.533737182617188
+                    },
+                    {
+                      "id": 19058,
+                      "token": "Okay",
+                      "bytes": [
+                        79,
+                        107,
+                        97,
+                        121
+                      ],
+                      "logprob": -27.57965660095215
+                    },
+                    {
+                      "id": 17574,
+                      "token": "Because",
+                      "bytes": [
+                        66,
+                        101,
+                        99,
+                        97,
+                        117,
+                        115,
+                        101
+                      ],
+                      "logprob": -27.585615158081055
+                    },
+                    {
+                      "id": 7925,
+                      "token": "Answer",
+                      "bytes": [
+                        65,
+                        110,
+                        115,
+                        119,
+                        101,
+                        114
+                      ],
+                      "logprob": -27.628602981567383
+                    },
+                    {
+                      "id": 6190,
+                      "token": "Read",
+                      "bytes": [
+                        82,
+                        101,
+                        97,
+                        100
+                      ],
+                      "logprob": -27.632308959960938
+                    },
+                    {
+                      "id": 237243,
+                      "token": "\u200d",
+                      "bytes": [
+                        226,
+                        128,
+                        141
+                      ],
+                      "logprob": -27.774993896484375
+                    },
+                    {
+                      "id": 11896,
+                      "token": "Just",
+                      "bytes": [
+                        74,
+                        117,
+                        115,
+                        116
+                      ],
+                      "logprob": -27.797134399414062
+                    },
+                    {
+                      "id": 33192,
+                      "token": "Due",
+                      "bytes": [
+                        68,
+                        117,
+                        101
+                      ],
+                      "logprob": -27.81719970703125
+                    },
+                    {
+                      "id": 3497,
+                      "token": "With",
+                      "bytes": [
+                        87,
+                        105,
+                        116,
+                        104
+                      ],
+                      "logprob": -27.824352264404297
+                    },
+                    {
+                      "id": 237218,
+                      "token": "\u200c",
+                      "bytes": [
+                        226,
+                        128,
+                        140
+                      ],
+                      "logprob": -27.836963653564453
+                    },
+                    {
+                      "id": 2859,
+                      "token": "If",
+                      "bytes": [
+                        73,
+                        102
+                      ],
+                      "logprob": -27.862445831298828
+                    },
+                    {
+                      "id": 46921,
+                      "token": "Yo",
+                      "bytes": [
+                        89,
+                        111
+                      ],
+                      "logprob": -27.86516571044922
+                    },
+                    {
+                      "id": 140212,
+                      "token": "Participant",
+                      "bytes": [
+                        80,
+                        97,
+                        114,
+                        116,
+                        105,
+                        99,
+                        105,
+                        112,
+                        97,
+                        110,
+                        116
+                      ],
+                      "logprob": -27.927553176879883
+                    },
+                    {
+                      "id": 167520,
+                      "token": "Oui",
+                      "bytes": [
+                        79,
+                        117,
+                        105
+                      ],
+                      "logprob": -27.95029640197754
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "created": 1787202627,
+        "model": "D:\\AI\\Research\\dynamic_user_models\\models\\gemma3-27b-q4\\gemma-3-27b-it-q4_0.gguf",
+        "system_fingerprint": "b10333-08659901c",
+        "object": "chat.completion",
+        "usage": {
+          "completion_tokens": 1,
+          "prompt_tokens": 271,
+          "total_tokens": 272,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "id": "chatcmpl-hnxTQla95GWtzQuVfWmRkXbrc0ikSSD2",
+        "timings": {
+          "cache_n": 0,
+          "prompt_n": 271,
+          "prompt_ms": 2735.72,
+          "prompt_per_token_ms": 10.09490774907749,
+          "prompt_per_second": 99.05984530580616,
+          "predicted_n": 1,
+          "predicted_ms": 0.001,
+          "predicted_per_token_ms": 0.001,
+          "predicted_per_second": 1000000.0
+        }
+      },
+      "measurements": {
+        "yes_logprob": -0.0002488803584128618,
+        "no_logprob": -8.2988862991333,
+        "p_yes": 0.9997511506097344,
+        "p_no": 0.0002487937546923134,
+        "decision_mass": 0.9999999443644267,
+        "m_deny": -8.298637418774888
+      }
+    }
+  ]
+}

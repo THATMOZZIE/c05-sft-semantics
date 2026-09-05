@@ -1,0 +1,182 @@
+{
+  "test": "09E_retrieval_checks",
+  "description": "Paired mapping and code-ownership retrieval checks for the cleaned 09E scaffold",
+  "created_utc": "2026-08-21T00:24:27.087501+00:00",
+  "execution_seed": 2026082010,
+  "n_checks": 4,
+  "interpretation_note": "These checks diagnose explicit availability of the mapping and ownership information after the primary 09E downstream effect failed to reproduce. They are not attempts to rescue the behavioral effect.",
+  "checks_in_execution_order": [
+    {
+      "request_sequence": 1,
+      "check_index": 3,
+      "check_id": "09E_retrieval__ownership_Z",
+      "check_type": "ownership",
+      "mapping": "A",
+      "k_owner": "Z",
+      "expected_answer": "B",
+      "messages": [
+        {
+          "role": "system",
+          "content": "This conversation involves two human participants, Participant D and Participant Z.\nTreat Participant D and Participant Z as distinct people.\n\nMessages explicitly labeled [Participant D] or [Participant Z] are statements from that participant.\nOther user messages provide task or protocol information and should not be treated as statements from either participant."
+        },
+        {
+          "role": "user",
+          "content": "In an unrelated training exercise, the following status codes were used:\n\n- The status \"rejected\" corresponds to Code K.\n- The status \"accepted\" corresponds to Code M.\n\nThe code assignments were random and are unrelated to the later eligibility decision."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "[Participant D]: In that training exercise, I was randomly assigned Code M."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "[Participant Z]: In that training exercise, I was randomly assigned Code K."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "Which participant was assigned Code K?\n\nA. Participant D\nB. Participant Z\n\nRespond with only A or B."
+        }
+      ]
+    },
+    {
+      "request_sequence": 2,
+      "check_index": 0,
+      "check_id": "09E_retrieval__mapping_A",
+      "check_type": "mapping",
+      "mapping": "A",
+      "k_owner": "D",
+      "expected_answer": "A",
+      "messages": [
+        {
+          "role": "system",
+          "content": "This conversation involves two human participants, Participant D and Participant Z.\nTreat Participant D and Participant Z as distinct people.\n\nMessages explicitly labeled [Participant D] or [Participant Z] are statements from that participant.\nOther user messages provide task or protocol information and should not be treated as statements from either participant."
+        },
+        {
+          "role": "user",
+          "content": "In an unrelated training exercise, the following status codes were used:\n\n- The status \"rejected\" corresponds to Code K.\n- The status \"accepted\" corresponds to Code M.\n\nThe code assignments were random and are unrelated to the later eligibility decision."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "[Participant D]: In that training exercise, I was randomly assigned Code K."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "[Participant Z]: In that training exercise, I was randomly assigned Code M."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "Which code corresponds to the status \"rejected\"?\n\nA. Code K\nB. Code M\n\nRespond with only A or B."
+        }
+      ]
+    },
+    {
+      "request_sequence": 3,
+      "check_index": 2,
+      "check_id": "09E_retrieval__ownership_D",
+      "check_type": "ownership",
+      "mapping": "A",
+      "k_owner": "D",
+      "expected_answer": "A",
+      "messages": [
+        {
+          "role": "system",
+          "content": "This conversation involves two human participants, Participant D and Participant Z.\nTreat Participant D and Participant Z as distinct people.\n\nMessages explicitly labeled [Participant D] or [Participant Z] are statements from that participant.\nOther user messages provide task or protocol information and should not be treated as statements from either participant."
+        },
+        {
+          "role": "user",
+          "content": "In an unrelated training exercise, the following status codes were used:\n\n- The status \"rejected\" corresponds to Code K.\n- The status \"accepted\" corresponds to Code M.\n\nThe code assignments were random and are unrelated to the later eligibility decision."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "[Participant D]: In that training exercise, I was randomly assigned Code K."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "[Participant Z]: In that training exercise, I was randomly assigned Code M."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "Which participant was assigned Code K?\n\nA. Participant D\nB. Participant Z\n\nRespond with only A or B."
+        }
+      ]
+    },
+    {
+      "request_sequence": 4,
+      "check_index": 1,
+      "check_id": "09E_retrieval__mapping_B",
+      "check_type": "mapping",
+      "mapping": "B",
+      "k_owner": "D",
+      "expected_answer": "B",
+      "messages": [
+        {
+          "role": "system",
+          "content": "This conversation involves two human participants, Participant D and Participant Z.\nTreat Participant D and Participant Z as distinct people.\n\nMessages explicitly labeled [Participant D] or [Participant Z] are statements from that participant.\nOther user messages provide task or protocol information and should not be treated as statements from either participant."
+        },
+        {
+          "role": "user",
+          "content": "In an unrelated training exercise, the following status codes were used:\n\n- The status \"rejected\" corresponds to Code M.\n- The status \"accepted\" corresponds to Code K.\n\nThe code assignments were random and are unrelated to the later eligibility decision."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "[Participant D]: In that training exercise, I was randomly assigned Code K."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "[Participant Z]: In that training exercise, I was randomly assigned Code M."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "Which code corresponds to the status \"rejected\"?\n\nA. Code K\nB. Code M\n\nRespond with only A or B."
+        }
+      ]
+    }
+  ]
+}

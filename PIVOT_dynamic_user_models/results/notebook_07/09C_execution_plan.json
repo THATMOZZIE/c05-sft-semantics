@@ -1,0 +1,94 @@
+{
+  "test": "09C",
+  "execution_order_seed": 20260820,
+  "execution_plan": [
+    {
+      "request_sequence": 1,
+      "condition_index": 0,
+      "condition_id": "09C__K_owner_D__target_D__order_DZ",
+      "rejected_code_owner": "D",
+      "target": "D",
+      "order": "DZ",
+      "rejected_code_match": true,
+      "rejected_code_second": false,
+      "target_position": "first"
+    },
+    {
+      "request_sequence": 2,
+      "condition_index": 6,
+      "condition_id": "09C__K_owner_Z__target_Z__order_DZ",
+      "rejected_code_owner": "Z",
+      "target": "Z",
+      "order": "DZ",
+      "rejected_code_match": true,
+      "rejected_code_second": true,
+      "target_position": "second"
+    },
+    {
+      "request_sequence": 3,
+      "condition_index": 2,
+      "condition_id": "09C__K_owner_D__target_Z__order_DZ",
+      "rejected_code_owner": "D",
+      "target": "Z",
+      "order": "DZ",
+      "rejected_code_match": false,
+      "rejected_code_second": false,
+      "target_position": "second"
+    },
+    {
+      "request_sequence": 4,
+      "condition_index": 3,
+      "condition_id": "09C__K_owner_D__target_Z__order_ZD",
+      "rejected_code_owner": "D",
+      "target": "Z",
+      "order": "ZD",
+      "rejected_code_match": false,
+      "rejected_code_second": true,
+      "target_position": "first"
+    },
+    {
+      "request_sequence": 5,
+      "condition_index": 1,
+      "condition_id": "09C__K_owner_D__target_D__order_ZD",
+      "rejected_code_owner": "D",
+      "target": "D",
+      "order": "ZD",
+      "rejected_code_match": true,
+      "rejected_code_second": true,
+      "target_position": "second"
+    },
+    {
+      "request_sequence": 6,
+      "condition_index": 5,
+      "condition_id": "09C__K_owner_Z__target_D__order_ZD",
+      "rejected_code_owner": "Z",
+      "target": "D",
+      "order": "ZD",
+      "rejected_code_match": false,
+      "rejected_code_second": false,
+      "target_position": "second"
+    },
+    {
+      "request_sequence": 7,
+      "condition_index": 4,
+      "condition_id": "09C__K_owner_Z__target_D__order_DZ",
+      "rejected_code_owner": "Z",
+      "target": "D",
+      "order": "DZ",
+      "rejected_code_match": false,
+      "rejected_code_second": true,
+      "target_position": "first"
+    },
+    {
+      "request_sequence": 8,
+      "condition_index": 7,
+      "condition_id": "09C__K_owner_Z__target_Z__order_ZD",
+      "rejected_code_owner": "Z",
+      "target": "Z",
+      "order": "ZD",
+      "rejected_code_match": true,
+      "rejected_code_second": false,
+      "target_position": "first"
+    }
+  ]
+}

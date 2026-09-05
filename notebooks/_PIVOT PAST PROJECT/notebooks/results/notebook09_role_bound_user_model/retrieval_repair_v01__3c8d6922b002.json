@@ -1,0 +1,62 @@
+{
+  "repair_manifest_sha256": "3c8d6922b002ae8c77195cba186f9267722728c64bf73311615660051caa01e8",
+  "parent_experiment_manifest_sha256": "d330d796d340c74139d976608072215d73c968edb1548cce56b0694d2b0a0fb7",
+  "results": [
+    {
+      "condition": "plus__UF__user",
+      "prompt_sha256": "cc4e41a085dd2959ba55a5e0e8701d2cb03b39bc92c96ad596a9307c223cf8f6",
+      "expected": "brief",
+      "brief_token_id": 37767,
+      "detailed_token_id": 135615,
+      "brief_logit": 0.6015625,
+      "detailed_logit": -2.140625,
+      "log_normalizer": 12.989304542541504,
+      "brief_logprob": -12.387742042541504,
+      "detailed_logprob": -15.129929542541504,
+      "run_index": 1,
+      "repair_manifest_sha256": "3c8d6922b002ae8c77195cba186f9267722728c64bf73311615660051caa01e8"
+    },
+    {
+      "condition": "plus__UF__rowan",
+      "prompt_sha256": "189c51bc17381dd838458d9c05634771dd59b8054bc904b54d8ff0dfa5bbf7e6",
+      "expected": "detailed",
+      "brief_token_id": 37767,
+      "detailed_token_id": 135615,
+      "brief_logit": 0.67578125,
+      "detailed_logit": -1.7421875,
+      "log_normalizer": 12.991312026977539,
+      "brief_logprob": -12.315530776977539,
+      "detailed_logprob": -14.733499526977539,
+      "run_index": 2,
+      "repair_manifest_sha256": "3c8d6922b002ae8c77195cba186f9267722728c64bf73311615660051caa01e8"
+    },
+    {
+      "condition": "minus__RF__user",
+      "prompt_sha256": "1be121fc94aed86641700b81f910e2a2ef5dc58f8196437d56b3fb533f0be548",
+      "expected": "detailed",
+      "brief_token_id": 37767,
+      "detailed_token_id": 135615,
+      "brief_logit": 0.5546875,
+      "detailed_logit": -1.8046875,
+      "log_normalizer": 12.990449905395508,
+      "brief_logprob": -12.435762405395508,
+      "detailed_logprob": -14.795137405395508,
+      "run_index": 3,
+      "repair_manifest_sha256": "3c8d6922b002ae8c77195cba186f9267722728c64bf73311615660051caa01e8"
+    },
+    {
+      "condition": "minus__RF__rowan",
+      "prompt_sha256": "0463e649b8e13ecf0ae32b30306028175b4c47788cdf5e3e91f71e76569f81f2",
+      "expected": "brief",
+      "brief_token_id": 37767,
+      "detailed_token_id": 135615,
+      "brief_logit": 0.6875,
+      "detailed_logit": -1.453125,
+      "log_normalizer": 12.991650581359863,
+      "brief_logprob": -12.304150581359863,
+      "detailed_logprob": -14.444775581359863,
+      "run_index": 4,
+      "repair_manifest_sha256": "3c8d6922b002ae8c77195cba186f9267722728c64bf73311615660051caa01e8"
+    }
+  ]
+}

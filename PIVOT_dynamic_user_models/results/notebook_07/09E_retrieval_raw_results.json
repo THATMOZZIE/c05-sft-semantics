@@ -1,0 +1,2672 @@
+[
+  {
+    "request_sequence": 1,
+    "messages": [
+      {
+        "role": "system",
+        "content": "This conversation involves two human participants, Participant D and Participant Z.\nTreat Participant D and Participant Z as distinct people.\n\nMessages explicitly labeled [Participant D] or [Participant Z] are statements from that participant.\nOther user messages provide task or protocol information and should not be treated as statements from either participant."
+      },
+      {
+        "role": "user",
+        "content": "In an unrelated training exercise, the following status codes were used:\n\n- The status \"rejected\" corresponds to Code K.\n- The status \"accepted\" corresponds to Code M.\n\nThe code assignments were random and are unrelated to the later eligibility decision."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: In that training exercise, I was randomly assigned Code M."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: In that training exercise, I was randomly assigned Code K."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "Which participant was assigned Code K?\n\nA. Participant D\nB. Participant Z\n\nRespond with only A or B."
+      }
+    ],
+    "submitted_payload": {
+      "model": "D:\\AI\\Research\\dynamic_user_models\\models\\gemma3-27b-q4\\gemma-3-27b-it-q4_0.gguf",
+      "messages": [
+        {
+          "role": "system",
+          "content": "This conversation involves two human participants, Participant D and Participant Z.\nTreat Participant D and Participant Z as distinct people.\n\nMessages explicitly labeled [Participant D] or [Participant Z] are statements from that participant.\nOther user messages provide task or protocol information and should not be treated as statements from either participant."
+        },
+        {
+          "role": "user",
+          "content": "In an unrelated training exercise, the following status codes were used:\n\n- The status \"rejected\" corresponds to Code K.\n- The status \"accepted\" corresponds to Code M.\n\nThe code assignments were random and are unrelated to the later eligibility decision."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "[Participant D]: In that training exercise, I was randomly assigned Code M."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "[Participant Z]: In that training exercise, I was randomly assigned Code K."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "Which participant was assigned Code K?\n\nA. Participant D\nB. Participant Z\n\nRespond with only A or B."
+        }
+      ],
+      "max_tokens": 1,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "min_p": 0.0,
+      "seed": 0,
+      "cache_prompt": false,
+      "stream": false,
+      "logprobs": true,
+      "top_logprobs": 50
+    },
+    "seed": 0,
+    "metadata": {
+      "test": "09E_retrieval_checks",
+      "check_id": "09E_retrieval__ownership_Z",
+      "check_index": 3,
+      "check_type": "ownership",
+      "mapping": "A",
+      "k_owner": "Z",
+      "expected_answer": "B",
+      "execution_plan_sha256": "f23c0b129857beff52cb93dfcf3b79d7f25564b4ece2d774aa833738b684f285",
+      "execution_seed": 2026082010,
+      "smoke_duplicate_note": "The condition 09E_retrieval__ownership_Z was previously queried once as an infrastructure-only A/B token-form smoke test after this execution plan had already been frozen. That diagnostic response is stored separately and is not included in this official result set."
+    },
+    "elapsed_seconds": 6.713026400015224,
+    "raw_response": {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "B"
+          },
+          "logprobs": {
+            "content": [
+              {
+                "id": 236799,
+                "token": "B",
+                "bytes": [
+                  66
+                ],
+                "logprob": 0.0,
+                "top_logprobs": [
+                  {
+                    "id": 236799,
+                    "token": "B",
+                    "bytes": [
+                      66
+                    ],
+                    "logprob": 0.0
+                  },
+                  {
+                    "id": 236776,
+                    "token": "A",
+                    "bytes": [
+                      65
+                    ],
+                    "logprob": -17.134553909301758
+                  },
+                  {
+                    "id": 603,
+                    "token": " B",
+                    "bytes": [
+                      32,
+                      66
+                    ],
+                    "logprob": -19.897106170654297
+                  },
+                  {
+                    "id": 237359,
+                    "token": "Б",
+                    "bytes": [
+                      208,
+                      145
+                    ],
+                    "logprob": -20.380332946777344
+                  },
+                  {
+                    "id": 1018,
+                    "token": "**",
+                    "bytes": [
+                      42,
+                      42
+                    ],
+                    "logprob": -21.085006713867188
+                  },
+                  {
+                    "id": 237146,
+                    "token": "В",
+                    "bytes": [
+                      208,
+                      146
+                    ],
+                    "logprob": -21.276294708251953
+                  },
+                  {
+                    "id": 236953,
+                    "token": "Z",
+                    "bytes": [
+                      90
+                    ],
+                    "logprob": -21.45659637451172
+                  },
+                  {
+                    "id": 241577,
+                    "token": "Ｂ",
+                    "bytes": [
+                      239,
+                      188,
+                      162
+                    ],
+                    "logprob": -22.631168365478516
+                  },
+                  {
+                    "id": 236763,
+                    "token": "b",
+                    "bytes": [
+                      98
+                    ],
+                    "logprob": -22.980384826660156
+                  },
+                  {
+                    "id": 240104,
+                    "token": "Β",
+                    "bytes": [
+                      206,
+                      146
+                    ],
+                    "logprob": -23.062532424926758
+                  },
+                  {
+                    "id": 140212,
+                    "token": "Participant",
+                    "bytes": [
+                      80,
+                      97,
+                      114,
+                      116,
+                      105,
+                      99,
+                      105,
+                      112,
+                      97,
+                      110,
+                      116
+                    ],
+                    "logprob": -23.331928253173828
+                  },
+                  {
+                    "id": 236780,
+                    "token": "C",
+                    "bytes": [
+                      67
+                    ],
+                    "logprob": -23.737167358398438
+                  },
+                  {
+                    "id": 236901,
+                    "token": "ب",
+                    "bytes": [
+                      216,
+                      168
+                    ],
+                    "logprob": -23.7545166015625
+                  },
+                  {
+                    "id": 106,
+                    "token": "",
+                    "bytes": [],
+                    "logprob": -24.044937133789062
+                  },
+                  {
+                    "id": 236796,
+                    "token": "D",
+                    "bytes": [
+                      68
+                    ],
+                    "logprob": -24.411651611328125
+                  },
+                  {
+                    "id": 6126,
+                    "token": "Response",
+                    "bytes": [
+                      82,
+                      101,
+                      115,
+                      112,
+                      111,
+                      110,
+                      115,
+                      101
+                    ],
+                    "logprob": -24.418655395507812
+                  },
+                  {
+                    "id": 250169,
+                    "token": "𝐵",
+                    "bytes": [
+                      240,
+                      157,
+                      144,
+                      181
+                    ],
+                    "logprob": -24.466508865356445
+                  },
+                  {
+                    "id": 7925,
+                    "token": "Answer",
+                    "bytes": [
+                      65,
+                      110,
+                      115,
+                      119,
+                      101,
+                      114
+                    ],
+                    "logprob": -24.600662231445312
+                  },
+                  {
+                    "id": 236794,
+                    "token": "R",
+                    "bytes": [
+                      82
+                    ],
+                    "logprob": -24.698089599609375
+                  },
+                  {
+                    "id": 22515,
+                    "token": "Based",
+                    "bytes": [
+                      66,
+                      97,
+                      115,
+                      101,
+                      100
+                    ],
+                    "logprob": -25.05284309387207
+                  },
+                  {
+                    "id": 254688,
+                    "token": "𝗕",
+                    "bytes": [
+                      240,
+                      157,
+                      151,
+                      149
+                    ],
+                    "logprob": -25.4645938873291
+                  },
+                  {
+                    "id": 236855,
+                    "token": "K",
+                    "bytes": [
+                      75
+                    ],
+                    "logprob": -25.47821807861328
+                  },
+                  {
+                    "id": 23102,
+                    "token": "الب",
+                    "bytes": [
+                      216,
+                      167,
+                      217,
+                      132,
+                      216,
+                      168
+                    ],
+                    "logprob": -25.494346618652344
+                  },
+                  {
+                    "id": 236840,
+                    "token": "[",
+                    "bytes": [
+                      91
+                    ],
+                    "logprob": -25.503816604614258
+                  },
+                  {
+                    "id": 818,
+                    "token": "The",
+                    "bytes": [
+                      84,
+                      104,
+                      101
+                    ],
+                    "logprob": -25.775400161743164
+                  },
+                  {
+                    "id": 251660,
+                    "token": "𝐁",
+                    "bytes": [
+                      240,
+                      157,
+                      144,
+                      129
+                    ],
+                    "logprob": -25.83871841430664
+                  },
+                  {
+                    "id": 236773,
+                    "token": "S",
+                    "bytes": [
+                      83
+                    ],
+                    "logprob": -25.90532684326172
+                  },
+                  {
+                    "id": 237243,
+                    "token": "‍",
+                    "bytes": [
+                      226,
+                      128,
+                      141
+                    ],
+                    "logprob": -25.97612762451172
+                  },
+                  {
+                    "id": 5580,
+                    "token": "BS",
+                    "bytes": [
+                      66,
+                      83
+                    ],
+                    "logprob": -26.017578125
+                  },
+                  {
+                    "id": 1408,
+                    "token": "##",
+                    "bytes": [
+                      35,
+                      35
+                    ],
+                    "logprob": -26.034927368164062
+                  },
+                  {
+                    "id": 236791,
+                    "token": "P",
+                    "bytes": [
+                      80
+                    ],
+                    "logprob": -26.0570125579834
+                  },
+                  {
+                    "id": 247118,
+                    "token": "Ᏼ",
+                    "bytes": [
+                      225,
+                      143,
+                      180
+                    ],
+                    "logprob": -26.069778442382812
+                  },
+                  {
+                    "id": 237218,
+                    "token": "‌",
+                    "bytes": [
+                      226,
+                      128,
+                      140
+                    ],
+                    "logprob": -26.126686096191406
+                  },
+                  {
+                    "id": 236814,
+                    "token": "H",
+                    "bytes": [
+                      72
+                    ],
+                    "logprob": -26.223621368408203
+                  },
+                  {
+                    "id": 236823,
+                    "token": "G",
+                    "bytes": [
+                      71
+                    ],
+                    "logprob": -26.380563735961914
+                  },
+                  {
+                    "id": 6552,
+                    "token": "BA",
+                    "bytes": [
+                      66,
+                      65
+                    ],
+                    "logprob": -26.406543731689453
+                  },
+                  {
+                    "id": 3912,
+                    "token": "Be",
+                    "bytes": [
+                      66,
+                      101
+                    ],
+                    "logprob": -26.416183471679688
+                  },
+                  {
+                    "id": 35343,
+                    "token": "Bs",
+                    "bytes": [
+                      66,
+                      115
+                    ],
+                    "logprob": -26.512100219726562
+                  },
+                  {
+                    "id": 22186,
+                    "token": "Both",
+                    "bytes": [
+                      66,
+                      111,
+                      116,
+                      104
+                    ],
+                    "logprob": -26.526111602783203
+                  },
+                  {
+                    "id": 236777,
+                    "token": "I",
+                    "bytes": [
+                      73
+                    ],
+                    "logprob": -26.602033615112305
+                  },
+                  {
+                    "id": 236811,
+                    "token": "F",
+                    "bytes": [
+                      70
+                    ],
+                    "logprob": -26.663782119750977
+                  },
+                  {
+                    "id": 236851,
+                    "token": "в",
+                    "bytes": [
+                      208,
+                      178
+                    ],
+                    "logprob": -26.712074279785156
+                  },
+                  {
+                    "id": 20804,
+                    "token": "BB",
+                    "bytes": [
+                      66,
+                      66
+                    ],
+                    "logprob": -26.745800018310547
+                  },
+                  {
+                    "id": 237922,
+                    "token": "﻿",
+                    "bytes": [
+                      239,
+                      187,
+                      191
+                    ],
+                    "logprob": -26.751251220703125
+                  },
+                  {
+                    "id": 105279,
+                    "token": "Participants",
+                    "bytes": [
+                      80,
+                      97,
+                      114,
+                      116,
+                      105,
+                      99,
+                      105,
+                      112,
+                      97,
+                      110,
+                      116,
+                      115
+                    ],
+                    "logprob": -26.754911422729492
+                  },
+                  {
+                    "id": 237273,
+                    "token": "ב",
+                    "bytes": [
+                      215,
+                      145
+                    ],
+                    "logprob": -26.762561798095703
+                  },
+                  {
+                    "id": 432,
+                    "token": "",
+                    "bytes": [
+                      194
+                    ],
+                    "logprob": -26.8148250579834
+                  },
+                  {
+                    "id": 246588,
+                    "token": "ʙ",
+                    "bytes": [
+                      202,
+                      153
+                    ],
+                    "logprob": -26.834186553955078
+                  },
+                  {
+                    "id": 236774,
+                    "token": "T",
+                    "bytes": [
+                      84
+                    ],
+                    "logprob": -26.879316329956055
+                  },
+                  {
+                    "id": 237912,
+                    "token": "β",
+                    "bytes": [
+                      206,
+                      178
+                    ],
+                    "logprob": -26.94584083557129
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "created": 1787272330,
+      "model": "D:\\AI\\Research\\dynamic_user_models\\models\\gemma3-27b-q4\\gemma-3-27b-it-q4_0.gguf",
+      "system_fingerprint": "b10333-08659901c",
+      "object": "chat.completion",
+      "usage": {
+        "completion_tokens": 1,
+        "prompt_tokens": 228,
+        "total_tokens": 229,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "id": "chatcmpl-YjolgEYE76G0KUSbhwi3u1remLxOZBNk",
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 228,
+        "prompt_ms": 6687.415,
+        "prompt_per_token_ms": 29.33076754385965,
+        "prompt_per_second": 34.09389128684252,
+        "predicted_n": 1,
+        "predicted_ms": 0.001,
+        "predicted_per_token_ms": 0.001,
+        "predicted_per_second": 1000000.0
+      }
+    },
+    "measurements": {
+      "logp_A": -17.134553909301758,
+      "logp_B": 0.0,
+      "p_A": 3.618743386058065e-08,
+      "p_B": 1.0,
+      "decision_mass": 1.000000036187434,
+      "expected_answer": "B",
+      "logp_correct": 0.0,
+      "logp_incorrect": -17.134553909301758,
+      "m_correct": 17.134553909301758,
+      "m_B_minus_A": 17.134553909301758
+    }
+  },
+  {
+    "request_sequence": 2,
+    "messages": [
+      {
+        "role": "system",
+        "content": "This conversation involves two human participants, Participant D and Participant Z.\nTreat Participant D and Participant Z as distinct people.\n\nMessages explicitly labeled [Participant D] or [Participant Z] are statements from that participant.\nOther user messages provide task or protocol information and should not be treated as statements from either participant."
+      },
+      {
+        "role": "user",
+        "content": "In an unrelated training exercise, the following status codes were used:\n\n- The status \"rejected\" corresponds to Code K.\n- The status \"accepted\" corresponds to Code M.\n\nThe code assignments were random and are unrelated to the later eligibility decision."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: In that training exercise, I was randomly assigned Code K."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: In that training exercise, I was randomly assigned Code M."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "Which code corresponds to the status \"rejected\"?\n\nA. Code K\nB. Code M\n\nRespond with only A or B."
+      }
+    ],
+    "submitted_payload": {
+      "model": "D:\\AI\\Research\\dynamic_user_models\\models\\gemma3-27b-q4\\gemma-3-27b-it-q4_0.gguf",
+      "messages": [
+        {
+          "role": "system",
+          "content": "This conversation involves two human participants, Participant D and Participant Z.\nTreat Participant D and Participant Z as distinct people.\n\nMessages explicitly labeled [Participant D] or [Participant Z] are statements from that participant.\nOther user messages provide task or protocol information and should not be treated as statements from either participant."
+        },
+        {
+          "role": "user",
+          "content": "In an unrelated training exercise, the following status codes were used:\n\n- The status \"rejected\" corresponds to Code K.\n- The status \"accepted\" corresponds to Code M.\n\nThe code assignments were random and are unrelated to the later eligibility decision."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "[Participant D]: In that training exercise, I was randomly assigned Code K."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "[Participant Z]: In that training exercise, I was randomly assigned Code M."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "Which code corresponds to the status \"rejected\"?\n\nA. Code K\nB. Code M\n\nRespond with only A or B."
+        }
+      ],
+      "max_tokens": 1,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "min_p": 0.0,
+      "seed": 0,
+      "cache_prompt": false,
+      "stream": false,
+      "logprobs": true,
+      "top_logprobs": 50
+    },
+    "seed": 0,
+    "metadata": {
+      "test": "09E_retrieval_checks",
+      "check_id": "09E_retrieval__mapping_A",
+      "check_index": 0,
+      "check_type": "mapping",
+      "mapping": "A",
+      "k_owner": "D",
+      "expected_answer": "A",
+      "execution_plan_sha256": "f23c0b129857beff52cb93dfcf3b79d7f25564b4ece2d774aa833738b684f285",
+      "execution_seed": 2026082010,
+      "smoke_duplicate_note": "The condition 09E_retrieval__ownership_Z was previously queried once as an infrastructure-only A/B token-form smoke test after this execution plan had already been frozen. That diagnostic response is stored separately and is not included in this official result set."
+    },
+    "elapsed_seconds": 2.501887100050226,
+    "raw_response": {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "A"
+          },
+          "logprobs": {
+            "content": [
+              {
+                "id": 236776,
+                "token": "A",
+                "bytes": [
+                  65
+                ],
+                "logprob": -3.337865791763761e-06,
+                "top_logprobs": [
+                  {
+                    "id": 236776,
+                    "token": "A",
+                    "bytes": [
+                      65
+                    ],
+                    "logprob": -3.337865791763761e-06
+                  },
+                  {
+                    "id": 236799,
+                    "token": "B",
+                    "bytes": [
+                      66
+                    ],
+                    "logprob": -12.597078323364258
+                  },
+                  {
+                    "id": 4809,
+                    "token": "Code",
+                    "bytes": [
+                      67,
+                      111,
+                      100,
+                      101
+                    ],
+                    "logprob": -17.29287338256836
+                  },
+                  {
+                    "id": 237228,
+                    "token": "А",
+                    "bytes": [
+                      208,
+                      144
+                    ],
+                    "logprob": -17.61772918701172
+                  },
+                  {
+                    "id": 236855,
+                    "token": "K",
+                    "bytes": [
+                      75
+                    ],
+                    "logprob": -18.08069610595703
+                  },
+                  {
+                    "id": 562,
+                    "token": " A",
+                    "bytes": [
+                      32,
+                      65
+                    ],
+                    "logprob": -19.291250228881836
+                  },
+                  {
+                    "id": 818,
+                    "token": "The",
+                    "bytes": [
+                      84,
+                      104,
+                      101
+                    ],
+                    "logprob": -19.871047973632812
+                  },
+                  {
+                    "id": 1018,
+                    "token": "**",
+                    "bytes": [
+                      42,
+                      42
+                    ],
+                    "logprob": -20.04779815673828
+                  },
+                  {
+                    "id": 7925,
+                    "token": "Answer",
+                    "bytes": [
+                      65,
+                      110,
+                      115,
+                      119,
+                      101,
+                      114
+                    ],
+                    "logprob": -20.90001678466797
+                  },
+                  {
+                    "id": 106,
+                    "token": "",
+                    "bytes": [],
+                    "logprob": -20.921167373657227
+                  },
+                  {
+                    "id": 238339,
+                    "token": "Α",
+                    "bytes": [
+                      206,
+                      145
+                    ],
+                    "logprob": -20.927505493164062
+                  },
+                  {
+                    "id": 236780,
+                    "token": "C",
+                    "bytes": [
+                      67
+                    ],
+                    "logprob": -21.026073455810547
+                  },
+                  {
+                    "id": 22515,
+                    "token": "Based",
+                    "bytes": [
+                      66,
+                      97,
+                      115,
+                      101,
+                      100
+                    ],
+                    "logprob": -21.05900764465332
+                  },
+                  {
+                    "id": 236840,
+                    "token": "[",
+                    "bytes": [
+                      91
+                    ],
+                    "logprob": -21.556175231933594
+                  },
+                  {
+                    "id": 2205,
+                    "token": "As",
+                    "bytes": [
+                      65,
+                      115
+                    ],
+                    "logprob": -21.69801139831543
+                  },
+                  {
+                    "id": 239549,
+                    "token": "Ａ",
+                    "bytes": [
+                      239,
+                      188,
+                      161
+                    ],
+                    "logprob": -21.84454345703125
+                  },
+                  {
+                    "id": 2267,
+                    "token": "An",
+                    "bytes": [
+                      65,
+                      110
+                    ],
+                    "logprob": -22.109825134277344
+                  },
+                  {
+                    "id": 236796,
+                    "token": "D",
+                    "bytes": [
+                      68
+                    ],
+                    "logprob": -22.471942901611328
+                  },
+                  {
+                    "id": 140212,
+                    "token": "Participant",
+                    "bytes": [
+                      80,
+                      97,
+                      114,
+                      116,
+                      105,
+                      99,
+                      105,
+                      112,
+                      97,
+                      110,
+                      116
+                    ],
+                    "logprob": -22.587726593017578
+                  },
+                  {
+                    "id": 1509,
+                    "token": "It",
+                    "bytes": [
+                      73,
+                      116
+                    ],
+                    "logprob": -22.639904022216797
+                  },
+                  {
+                    "id": 84930,
+                    "token": "Coding",
+                    "bytes": [
+                      67,
+                      111,
+                      100,
+                      105,
+                      110,
+                      103
+                    ],
+                    "logprob": -22.817415237426758
+                  },
+                  {
+                    "id": 10450,
+                    "token": "According",
+                    "bytes": [
+                      65,
+                      99,
+                      99,
+                      111,
+                      114,
+                      100,
+                      105,
+                      110,
+                      103
+                    ],
+                    "logprob": -22.902650833129883
+                  },
+                  {
+                    "id": 236777,
+                    "token": "I",
+                    "bytes": [
+                      73
+                    ],
+                    "logprob": -22.91647720336914
+                  },
+                  {
+                    "id": 6126,
+                    "token": "Response",
+                    "bytes": [
+                      82,
+                      101,
+                      115,
+                      112,
+                      111,
+                      110,
+                      115,
+                      101
+                    ],
+                    "logprob": -22.94417953491211
+                  },
+                  {
+                    "id": 3066,
+                    "token": "AB",
+                    "bytes": [
+                      65,
+                      66
+                    ],
+                    "logprob": -23.126434326171875
+                  },
+                  {
+                    "id": 25221,
+                    "token": "Following",
+                    "bytes": [
+                      70,
+                      111,
+                      108,
+                      108,
+                      111,
+                      119,
+                      105,
+                      110,
+                      103
+                    ],
+                    "logprob": -23.190223693847656
+                  },
+                  {
+                    "id": 236794,
+                    "token": "R",
+                    "bytes": [
+                      82
+                    ],
+                    "logprob": -23.228235244750977
+                  },
+                  {
+                    "id": 188997,
+                    "token": "Acknowled",
+                    "bytes": [
+                      65,
+                      99,
+                      107,
+                      110,
+                      111,
+                      119,
+                      108,
+                      101,
+                      100
+                    ],
+                    "logprob": -23.33068084716797
+                  },
+                  {
+                    "id": 13286,
+                    "token": "Before",
+                    "bytes": [
+                      66,
+                      101,
+                      102,
+                      111,
+                      114,
+                      101
+                    ],
+                    "logprob": -23.342744827270508
+                  },
+                  {
+                    "id": 6372,
+                    "token": "That",
+                    "bytes": [
+                      84,
+                      104,
+                      97,
+                      116
+                    ],
+                    "logprob": -23.378910064697266
+                  },
+                  {
+                    "id": 105279,
+                    "token": "Participants",
+                    "bytes": [
+                      80,
+                      97,
+                      114,
+                      116,
+                      105,
+                      99,
+                      105,
+                      112,
+                      97,
+                      110,
+                      116,
+                      115
+                    ],
+                    "logprob": -23.645397186279297
+                  },
+                  {
+                    "id": 17574,
+                    "token": "Because",
+                    "bytes": [
+                      66,
+                      101,
+                      99,
+                      97,
+                      117,
+                      115,
+                      101
+                    ],
+                    "logprob": -23.668079376220703
+                  },
+                  {
+                    "id": 26479,
+                    "token": "Given",
+                    "bytes": [
+                      71,
+                      105,
+                      118,
+                      101,
+                      110
+                    ],
+                    "logprob": -23.72610092163086
+                  },
+                  {
+                    "id": 176752,
+                    "token": "Responding",
+                    "bytes": [
+                      82,
+                      101,
+                      115,
+                      112,
+                      111,
+                      110,
+                      100,
+                      105,
+                      110,
+                      103
+                    ],
+                    "logprob": -23.788400650024414
+                  },
+                  {
+                    "id": 16904,
+                    "token": "Only",
+                    "bytes": [
+                      79,
+                      110,
+                      108,
+                      121
+                    ],
+                    "logprob": -23.79970932006836
+                  },
+                  {
+                    "id": 4663,
+                    "token": "From",
+                    "bytes": [
+                      70,
+                      114,
+                      111,
+                      109
+                    ],
+                    "logprob": -23.815526962280273
+                  },
+                  {
+                    "id": 3810,
+                    "token": "There",
+                    "bytes": [
+                      84,
+                      104,
+                      101,
+                      114,
+                      101
+                    ],
+                    "logprob": -23.855854034423828
+                  },
+                  {
+                    "id": 6259,
+                    "token": "After",
+                    "bytes": [
+                      65,
+                      102,
+                      116,
+                      101,
+                      114
+                    ],
+                    "logprob": -23.859281539916992
+                  },
+                  {
+                    "id": 236792,
+                    "token": "M",
+                    "bytes": [
+                      77
+                    ],
+                    "logprob": -23.863876342773438
+                  },
+                  {
+                    "id": 2094,
+                    "token": "This",
+                    "bytes": [
+                      84,
+                      104,
+                      105,
+                      115
+                    ],
+                    "logprob": -23.9464054107666
+                  },
+                  {
+                    "id": 14713,
+                    "token": "Under",
+                    "bytes": [
+                      85,
+                      110,
+                      100,
+                      101,
+                      114
+                    ],
+                    "logprob": -23.955646514892578
+                  },
+                  {
+                    "id": 22186,
+                    "token": "Both",
+                    "bytes": [
+                      66,
+                      111,
+                      116,
+                      104
+                    ],
+                    "logprob": -24.003673553466797
+                  },
+                  {
+                    "id": 902,
+                    "token": "In",
+                    "bytes": [
+                      73,
+                      110
+                    ],
+                    "logprob": -24.057373046875
+                  },
+                  {
+                    "id": 10282,
+                    "token": "Note",
+                    "bytes": [
+                      78,
+                      111,
+                      116,
+                      101
+                    ],
+                    "logprob": -24.078956604003906
+                  },
+                  {
+                    "id": 30255,
+                    "token": "Prior",
+                    "bytes": [
+                      80,
+                      114,
+                      105,
+                      111,
+                      114
+                    ],
+                    "logprob": -24.13888168334961
+                  },
+                  {
+                    "id": 236774,
+                    "token": "T",
+                    "bytes": [
+                      84
+                    ],
+                    "logprob": -24.150270462036133
+                  },
+                  {
+                    "id": 236761,
+                    "token": ".",
+                    "bytes": [
+                      46
+                    ],
+                    "logprob": -24.180803298950195
+                  },
+                  {
+                    "id": 4619,
+                    "token": "Ab",
+                    "bytes": [
+                      65,
+                      98
+                    ],
+                    "logprob": -24.250961303710938
+                  },
+                  {
+                    "id": 242450,
+                    "token": "ᴀ",
+                    "bytes": [
+                      225,
+                      180,
+                      128
+                    ],
+                    "logprob": -24.286401748657227
+                  },
+                  {
+                    "id": 8686,
+                    "token": "AA",
+                    "bytes": [
+                      65,
+                      65
+                    ],
+                    "logprob": -24.2938232421875
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "created": 1787272332,
+      "model": "D:\\AI\\Research\\dynamic_user_models\\models\\gemma3-27b-q4\\gemma-3-27b-it-q4_0.gguf",
+      "system_fingerprint": "b10333-08659901c",
+      "object": "chat.completion",
+      "usage": {
+        "completion_tokens": 1,
+        "prompt_tokens": 230,
+        "total_tokens": 231,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "id": "chatcmpl-Nq7QLCE6BenieRLh2gWtveXXLKFTFcYP",
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 230,
+        "prompt_ms": 2470.774,
+        "prompt_per_token_ms": 10.742495652173913,
+        "prompt_per_second": 93.08823874623903,
+        "predicted_n": 1,
+        "predicted_ms": 0.001,
+        "predicted_per_token_ms": 0.001,
+        "predicted_per_second": 1000000.0
+      }
+    },
+    "measurements": {
+      "logp_A": -3.337865791763761e-06,
+      "logp_B": -12.597078323364258,
+      "p_A": 0.9999966621397789,
+      "p_B": 3.3818815783794395e-06,
+      "decision_mass": 1.0000000440213572,
+      "expected_answer": "A",
+      "logp_correct": -3.337865791763761e-06,
+      "logp_incorrect": -12.597078323364258,
+      "m_correct": 12.597074985498466,
+      "m_B_minus_A": -12.597074985498466
+    }
+  },
+  {
+    "request_sequence": 3,
+    "messages": [
+      {
+        "role": "system",
+        "content": "This conversation involves two human participants, Participant D and Participant Z.\nTreat Participant D and Participant Z as distinct people.\n\nMessages explicitly labeled [Participant D] or [Participant Z] are statements from that participant.\nOther user messages provide task or protocol information and should not be treated as statements from either participant."
+      },
+      {
+        "role": "user",
+        "content": "In an unrelated training exercise, the following status codes were used:\n\n- The status \"rejected\" corresponds to Code K.\n- The status \"accepted\" corresponds to Code M.\n\nThe code assignments were random and are unrelated to the later eligibility decision."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: In that training exercise, I was randomly assigned Code K."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: In that training exercise, I was randomly assigned Code M."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "Which participant was assigned Code K?\n\nA. Participant D\nB. Participant Z\n\nRespond with only A or B."
+      }
+    ],
+    "submitted_payload": {
+      "model": "D:\\AI\\Research\\dynamic_user_models\\models\\gemma3-27b-q4\\gemma-3-27b-it-q4_0.gguf",
+      "messages": [
+        {
+          "role": "system",
+          "content": "This conversation involves two human participants, Participant D and Participant Z.\nTreat Participant D and Participant Z as distinct people.\n\nMessages explicitly labeled [Participant D] or [Participant Z] are statements from that participant.\nOther user messages provide task or protocol information and should not be treated as statements from either participant."
+        },
+        {
+          "role": "user",
+          "content": "In an unrelated training exercise, the following status codes were used:\n\n- The status \"rejected\" corresponds to Code K.\n- The status \"accepted\" corresponds to Code M.\n\nThe code assignments were random and are unrelated to the later eligibility decision."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "[Participant D]: In that training exercise, I was randomly assigned Code K."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "[Participant Z]: In that training exercise, I was randomly assigned Code M."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "Which participant was assigned Code K?\n\nA. Participant D\nB. Participant Z\n\nRespond with only A or B."
+        }
+      ],
+      "max_tokens": 1,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "min_p": 0.0,
+      "seed": 0,
+      "cache_prompt": false,
+      "stream": false,
+      "logprobs": true,
+      "top_logprobs": 50
+    },
+    "seed": 0,
+    "metadata": {
+      "test": "09E_retrieval_checks",
+      "check_id": "09E_retrieval__ownership_D",
+      "check_index": 2,
+      "check_type": "ownership",
+      "mapping": "A",
+      "k_owner": "D",
+      "expected_answer": "A",
+      "execution_plan_sha256": "f23c0b129857beff52cb93dfcf3b79d7f25564b4ece2d774aa833738b684f285",
+      "execution_seed": 2026082010,
+      "smoke_duplicate_note": "The condition 09E_retrieval__ownership_Z was previously queried once as an infrastructure-only A/B token-form smoke test after this execution plan had already been frozen. That diagnostic response is stored separately and is not included in this official result set."
+    },
+    "elapsed_seconds": 3.4030318000004627,
+    "raw_response": {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "A"
+          },
+          "logprobs": {
+            "content": [
+              {
+                "id": 236776,
+                "token": "A",
+                "bytes": [
+                  65
+                ],
+                "logprob": -7.152560215217818e-07,
+                "top_logprobs": [
+                  {
+                    "id": 236776,
+                    "token": "A",
+                    "bytes": [
+                      65
+                    ],
+                    "logprob": -7.152560215217818e-07
+                  },
+                  {
+                    "id": 236799,
+                    "token": "B",
+                    "bytes": [
+                      66
+                    ],
+                    "logprob": -14.192254066467285
+                  },
+                  {
+                    "id": 237228,
+                    "token": "А",
+                    "bytes": [
+                      208,
+                      144
+                    ],
+                    "logprob": -18.337696075439453
+                  },
+                  {
+                    "id": 562,
+                    "token": " A",
+                    "bytes": [
+                      32,
+                      65
+                    ],
+                    "logprob": -20.316444396972656
+                  },
+                  {
+                    "id": 140212,
+                    "token": "Participant",
+                    "bytes": [
+                      80,
+                      97,
+                      114,
+                      116,
+                      105,
+                      99,
+                      105,
+                      112,
+                      97,
+                      110,
+                      116
+                    ],
+                    "logprob": -20.679433822631836
+                  },
+                  {
+                    "id": 106,
+                    "token": "",
+                    "bytes": [],
+                    "logprob": -20.700942993164062
+                  },
+                  {
+                    "id": 1018,
+                    "token": "**",
+                    "bytes": [
+                      42,
+                      42
+                    ],
+                    "logprob": -21.312294006347656
+                  },
+                  {
+                    "id": 236796,
+                    "token": "D",
+                    "bytes": [
+                      68
+                    ],
+                    "logprob": -21.421913146972656
+                  },
+                  {
+                    "id": 238339,
+                    "token": "Α",
+                    "bytes": [
+                      206,
+                      145
+                    ],
+                    "logprob": -21.673725128173828
+                  },
+                  {
+                    "id": 239549,
+                    "token": "Ａ",
+                    "bytes": [
+                      239,
+                      188,
+                      161
+                    ],
+                    "logprob": -21.745189666748047
+                  },
+                  {
+                    "id": 236840,
+                    "token": "[",
+                    "bytes": [
+                      91
+                    ],
+                    "logprob": -22.241960525512695
+                  },
+                  {
+                    "id": 7925,
+                    "token": "Answer",
+                    "bytes": [
+                      65,
+                      110,
+                      115,
+                      119,
+                      101,
+                      114
+                    ],
+                    "logprob": -22.952953338623047
+                  },
+                  {
+                    "id": 236780,
+                    "token": "C",
+                    "bytes": [
+                      67
+                    ],
+                    "logprob": -23.397632598876953
+                  },
+                  {
+                    "id": 818,
+                    "token": "The",
+                    "bytes": [
+                      84,
+                      104,
+                      101
+                    ],
+                    "logprob": -23.67855453491211
+                  },
+                  {
+                    "id": 6126,
+                    "token": "Response",
+                    "bytes": [
+                      82,
+                      101,
+                      115,
+                      112,
+                      111,
+                      110,
+                      115,
+                      101
+                    ],
+                    "logprob": -23.693965911865234
+                  },
+                  {
+                    "id": 105279,
+                    "token": "Participants",
+                    "bytes": [
+                      80,
+                      97,
+                      114,
+                      116,
+                      105,
+                      99,
+                      105,
+                      112,
+                      97,
+                      110,
+                      116,
+                      115
+                    ],
+                    "logprob": -24.336959838867188
+                  },
+                  {
+                    "id": 3066,
+                    "token": "AB",
+                    "bytes": [
+                      65,
+                      66
+                    ],
+                    "logprob": -24.43474769592285
+                  },
+                  {
+                    "id": 2267,
+                    "token": "An",
+                    "bytes": [
+                      65,
+                      110
+                    ],
+                    "logprob": -24.671701431274414
+                  },
+                  {
+                    "id": 236794,
+                    "token": "R",
+                    "bytes": [
+                      82
+                    ],
+                    "logprob": -24.745655059814453
+                  },
+                  {
+                    "id": 176752,
+                    "token": "Responding",
+                    "bytes": [
+                      82,
+                      101,
+                      115,
+                      112,
+                      111,
+                      110,
+                      100,
+                      105,
+                      110,
+                      103
+                    ],
+                    "logprob": -24.84792709350586
+                  },
+                  {
+                    "id": 140744,
+                    "token": "participant",
+                    "bytes": [
+                      112,
+                      97,
+                      114,
+                      116,
+                      105,
+                      99,
+                      105,
+                      112,
+                      97,
+                      110,
+                      116
+                    ],
+                    "logprob": -25.05144691467285
+                  },
+                  {
+                    "id": 236777,
+                    "token": "I",
+                    "bytes": [
+                      73
+                    ],
+                    "logprob": -25.077835083007812
+                  },
+                  {
+                    "id": 2205,
+                    "token": "As",
+                    "bytes": [
+                      65,
+                      115
+                    ],
+                    "logprob": -25.160053253173828
+                  },
+                  {
+                    "id": 252423,
+                    "token": "Ⓐ",
+                    "bytes": [
+                      226,
+                      146,
+                      182
+                    ],
+                    "logprob": -25.183643341064453
+                  },
+                  {
+                    "id": 8686,
+                    "token": "AA",
+                    "bytes": [
+                      65,
+                      65
+                    ],
+                    "logprob": -25.27862548828125
+                  },
+                  {
+                    "id": 28002,
+                    "token": "[[",
+                    "bytes": [
+                      91,
+                      91
+                    ],
+                    "logprob": -25.433027267456055
+                  },
+                  {
+                    "id": 236761,
+                    "token": ".",
+                    "bytes": [
+                      46
+                    ],
+                    "logprob": -25.43954849243164
+                  },
+                  {
+                    "id": 236953,
+                    "token": "Z",
+                    "bytes": [
+                      90
+                    ],
+                    "logprob": -25.450864791870117
+                  },
+                  {
+                    "id": 242450,
+                    "token": "ᴀ",
+                    "bytes": [
+                      225,
+                      180,
+                      128
+                    ],
+                    "logprob": -25.581315994262695
+                  },
+                  {
+                    "id": 245580,
+                    "token": "Ꭺ",
+                    "bytes": [
+                      225,
+                      142,
+                      170
+                    ],
+                    "logprob": -25.582244873046875
+                  },
+                  {
+                    "id": 236855,
+                    "token": "K",
+                    "bytes": [
+                      75
+                    ],
+                    "logprob": -25.61740493774414
+                  },
+                  {
+                    "id": 50473,
+                    "token": "Particip",
+                    "bytes": [
+                      80,
+                      97,
+                      114,
+                      116,
+                      105,
+                      99,
+                      105,
+                      112
+                    ],
+                    "logprob": -25.672077178955078
+                  },
+                  {
+                    "id": 4809,
+                    "token": "Code",
+                    "bytes": [
+                      67,
+                      111,
+                      100,
+                      101
+                    ],
+                    "logprob": -25.84272003173828
+                  },
+                  {
+                    "id": 236791,
+                    "token": "P",
+                    "bytes": [
+                      80
+                    ],
+                    "logprob": -25.8469181060791
+                  },
+                  {
+                    "id": 4619,
+                    "token": "Ab",
+                    "bytes": [
+                      65,
+                      98
+                    ],
+                    "logprob": -25.863224029541016
+                  },
+                  {
+                    "id": 241920,
+                    "token": "Ā",
+                    "bytes": [
+                      196,
+                      128
+                    ],
+                    "logprob": -25.932086944580078
+                  },
+                  {
+                    "id": 25221,
+                    "token": "Following",
+                    "bytes": [
+                      70,
+                      111,
+                      108,
+                      108,
+                      111,
+                      119,
+                      105,
+                      110,
+                      103
+                    ],
+                    "logprob": -25.9333438873291
+                  },
+                  {
+                    "id": 252386,
+                    "token": "🅰",
+                    "bytes": [
+                      240,
+                      159,
+                      133,
+                      176
+                    ],
+                    "logprob": -25.961936950683594
+                  },
+                  {
+                    "id": 236865,
+                    "token": "#",
+                    "bytes": [
+                      35
+                    ],
+                    "logprob": -26.015539169311523
+                  },
+                  {
+                    "id": 237218,
+                    "token": "‌",
+                    "bytes": [
+                      226,
+                      128,
+                      140
+                    ],
+                    "logprob": -26.027782440185547
+                  },
+                  {
+                    "id": 1408,
+                    "token": "##",
+                    "bytes": [
+                      35,
+                      35
+                    ],
+                    "logprob": -26.092727661132812
+                  },
+                  {
+                    "id": 238974,
+                    "token": "À",
+                    "bytes": [
+                      195,
+                      128
+                    ],
+                    "logprob": -26.09424591064453
+                  },
+                  {
+                    "id": 22515,
+                    "token": "Based",
+                    "bytes": [
+                      66,
+                      97,
+                      115,
+                      101,
+                      100
+                    ],
+                    "logprob": -26.10602569580078
+                  },
+                  {
+                    "id": 1509,
+                    "token": "It",
+                    "bytes": [
+                      73,
+                      116
+                    ],
+                    "logprob": -26.14714241027832
+                  },
+                  {
+                    "id": 236774,
+                    "token": "T",
+                    "bytes": [
+                      84
+                    ],
+                    "logprob": -26.182559967041016
+                  },
+                  {
+                    "id": 236769,
+                    "token": "(",
+                    "bytes": [
+                      40
+                    ],
+                    "logprob": -26.1981143951416
+                  },
+                  {
+                    "id": 188997,
+                    "token": "Acknowled",
+                    "bytes": [
+                      65,
+                      99,
+                      107,
+                      110,
+                      111,
+                      119,
+                      108,
+                      101,
+                      100
+                    ],
+                    "logprob": -26.294424057006836
+                  },
+                  {
+                    "id": 252654,
+                    "token": "ᴬ",
+                    "bytes": [
+                      225,
+                      180,
+                      172
+                    ],
+                    "logprob": -26.49379539489746
+                  },
+                  {
+                    "id": 249481,
+                    "token": "𝙰",
+                    "bytes": [
+                      240,
+                      157,
+                      153,
+                      176
+                    ],
+                    "logprob": -26.541227340698242
+                  },
+                  {
+                    "id": 236814,
+                    "token": "H",
+                    "bytes": [
+                      72
+                    ],
+                    "logprob": -26.552032470703125
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "created": 1787272336,
+      "model": "D:\\AI\\Research\\dynamic_user_models\\models\\gemma3-27b-q4\\gemma-3-27b-it-q4_0.gguf",
+      "system_fingerprint": "b10333-08659901c",
+      "object": "chat.completion",
+      "usage": {
+        "completion_tokens": 1,
+        "prompt_tokens": 228,
+        "total_tokens": 229,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "id": "chatcmpl-uQjgTQVNKEKX03UHrfLZrZ9m4GVnIW1D",
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 228,
+        "prompt_ms": 3375.495,
+        "prompt_per_token_ms": 14.804802631578946,
+        "prompt_per_second": 67.54564886038936,
+        "predicted_n": 1,
+        "predicted_ms": 0.001,
+        "predicted_per_token_ms": 0.001,
+        "predicted_per_second": 1000000.0
+      }
+    },
+    "measurements": {
+      "logp_A": -7.152560215217818e-07,
+      "logp_B": -14.192254066467285,
+      "p_A": 0.9999992847442343,
+      "p_B": 6.860920281010366e-07,
+      "decision_mass": 0.9999999708362624,
+      "expected_answer": "A",
+      "logp_correct": -7.152560215217818e-07,
+      "logp_incorrect": -14.192254066467285,
+      "m_correct": 14.192253351211264,
+      "m_B_minus_A": -14.192253351211264
+    }
+  },
+  {
+    "request_sequence": 4,
+    "messages": [
+      {
+        "role": "system",
+        "content": "This conversation involves two human participants, Participant D and Participant Z.\nTreat Participant D and Participant Z as distinct people.\n\nMessages explicitly labeled [Participant D] or [Participant Z] are statements from that participant.\nOther user messages provide task or protocol information and should not be treated as statements from either participant."
+      },
+      {
+        "role": "user",
+        "content": "In an unrelated training exercise, the following status codes were used:\n\n- The status \"rejected\" corresponds to Code M.\n- The status \"accepted\" corresponds to Code K.\n\nThe code assignments were random and are unrelated to the later eligibility decision."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: In that training exercise, I was randomly assigned Code K."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: In that training exercise, I was randomly assigned Code M."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "Which code corresponds to the status \"rejected\"?\n\nA. Code K\nB. Code M\n\nRespond with only A or B."
+      }
+    ],
+    "submitted_payload": {
+      "model": "D:\\AI\\Research\\dynamic_user_models\\models\\gemma3-27b-q4\\gemma-3-27b-it-q4_0.gguf",
+      "messages": [
+        {
+          "role": "system",
+          "content": "This conversation involves two human participants, Participant D and Participant Z.\nTreat Participant D and Participant Z as distinct people.\n\nMessages explicitly labeled [Participant D] or [Participant Z] are statements from that participant.\nOther user messages provide task or protocol information and should not be treated as statements from either participant."
+        },
+        {
+          "role": "user",
+          "content": "In an unrelated training exercise, the following status codes were used:\n\n- The status \"rejected\" corresponds to Code M.\n- The status \"accepted\" corresponds to Code K.\n\nThe code assignments were random and are unrelated to the later eligibility decision."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "[Participant D]: In that training exercise, I was randomly assigned Code K."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "[Participant Z]: In that training exercise, I was randomly assigned Code M."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "Which code corresponds to the status \"rejected\"?\n\nA. Code K\nB. Code M\n\nRespond with only A or B."
+        }
+      ],
+      "max_tokens": 1,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "min_p": 0.0,
+      "seed": 0,
+      "cache_prompt": false,
+      "stream": false,
+      "logprobs": true,
+      "top_logprobs": 50
+    },
+    "seed": 0,
+    "metadata": {
+      "test": "09E_retrieval_checks",
+      "check_id": "09E_retrieval__mapping_B",
+      "check_index": 1,
+      "check_type": "mapping",
+      "mapping": "B",
+      "k_owner": "D",
+      "expected_answer": "B",
+      "execution_plan_sha256": "f23c0b129857beff52cb93dfcf3b79d7f25564b4ece2d774aa833738b684f285",
+      "execution_seed": 2026082010,
+      "smoke_duplicate_note": "The condition 09E_retrieval__ownership_Z was previously queried once as an infrastructure-only A/B token-form smoke test after this execution plan had already been frozen. That diagnostic response is stored separately and is not included in this official result set."
+    },
+    "elapsed_seconds": 2.6129386000102386,
+    "raw_response": {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "B"
+          },
+          "logprobs": {
+            "content": [
+              {
+                "id": 236799,
+                "token": "B",
+                "bytes": [
+                  66
+                ],
+                "logprob": -1.5497220147153712e-06,
+                "top_logprobs": [
+                  {
+                    "id": 236799,
+                    "token": "B",
+                    "bytes": [
+                      66
+                    ],
+                    "logprob": -1.5497220147153712e-06
+                  },
+                  {
+                    "id": 236776,
+                    "token": "A",
+                    "bytes": [
+                      65
+                    ],
+                    "logprob": -13.359003067016602
+                  },
+                  {
+                    "id": 236792,
+                    "token": "M",
+                    "bytes": [
+                      77
+                    ],
+                    "logprob": -17.660314559936523
+                  },
+                  {
+                    "id": 603,
+                    "token": " B",
+                    "bytes": [
+                      32,
+                      66
+                    ],
+                    "logprob": -17.95302391052246
+                  },
+                  {
+                    "id": 4809,
+                    "token": "Code",
+                    "bytes": [
+                      67,
+                      111,
+                      100,
+                      101
+                    ],
+                    "logprob": -18.51544761657715
+                  },
+                  {
+                    "id": 1018,
+                    "token": "**",
+                    "bytes": [
+                      42,
+                      42
+                    ],
+                    "logprob": -18.934776306152344
+                  },
+                  {
+                    "id": 237359,
+                    "token": "Б",
+                    "bytes": [
+                      208,
+                      145
+                    ],
+                    "logprob": -19.132158279418945
+                  },
+                  {
+                    "id": 237146,
+                    "token": "В",
+                    "bytes": [
+                      208,
+                      146
+                    ],
+                    "logprob": -19.77155876159668
+                  },
+                  {
+                    "id": 22515,
+                    "token": "Based",
+                    "bytes": [
+                      66,
+                      97,
+                      115,
+                      101,
+                      100
+                    ],
+                    "logprob": -19.891094207763672
+                  },
+                  {
+                    "id": 236763,
+                    "token": "b",
+                    "bytes": [
+                      98
+                    ],
+                    "logprob": -20.188068389892578
+                  },
+                  {
+                    "id": 818,
+                    "token": "The",
+                    "bytes": [
+                      84,
+                      104,
+                      101
+                    ],
+                    "logprob": -20.543249130249023
+                  },
+                  {
+                    "id": 240104,
+                    "token": "Β",
+                    "bytes": [
+                      206,
+                      146
+                    ],
+                    "logprob": -21.026763916015625
+                  },
+                  {
+                    "id": 236780,
+                    "token": "C",
+                    "bytes": [
+                      67
+                    ],
+                    "logprob": -21.41451072692871
+                  },
+                  {
+                    "id": 7925,
+                    "token": "Answer",
+                    "bytes": [
+                      65,
+                      110,
+                      115,
+                      119,
+                      101,
+                      114
+                    ],
+                    "logprob": -21.562585830688477
+                  },
+                  {
+                    "id": 241577,
+                    "token": "Ｂ",
+                    "bytes": [
+                      239,
+                      188,
+                      162
+                    ],
+                    "logprob": -21.578664779663086
+                  },
+                  {
+                    "id": 236855,
+                    "token": "K",
+                    "bytes": [
+                      75
+                    ],
+                    "logprob": -21.873891830444336
+                  },
+                  {
+                    "id": 236901,
+                    "token": "ب",
+                    "bytes": [
+                      216,
+                      168
+                    ],
+                    "logprob": -21.93809700012207
+                  },
+                  {
+                    "id": 106,
+                    "token": "",
+                    "bytes": [],
+                    "logprob": -22.26469612121582
+                  },
+                  {
+                    "id": 236840,
+                    "token": "[",
+                    "bytes": [
+                      91
+                    ],
+                    "logprob": -22.38067054748535
+                  },
+                  {
+                    "id": 250169,
+                    "token": "𝐵",
+                    "bytes": [
+                      240,
+                      157,
+                      144,
+                      181
+                    ],
+                    "logprob": -22.46543312072754
+                  },
+                  {
+                    "id": 13286,
+                    "token": "Before",
+                    "bytes": [
+                      66,
+                      101,
+                      102,
+                      111,
+                      114,
+                      101
+                    ],
+                    "logprob": -22.471454620361328
+                  },
+                  {
+                    "id": 236794,
+                    "token": "R",
+                    "bytes": [
+                      82
+                    ],
+                    "logprob": -22.584360122680664
+                  },
+                  {
+                    "id": 236796,
+                    "token": "D",
+                    "bytes": [
+                      68
+                    ],
+                    "logprob": -22.618764877319336
+                  },
+                  {
+                    "id": 137256,
+                    "token": "Reject",
+                    "bytes": [
+                      82,
+                      101,
+                      106,
+                      101,
+                      99,
+                      116
+                    ],
+                    "logprob": -22.959548950195312
+                  },
+                  {
+                    "id": 6126,
+                    "token": "Response",
+                    "bytes": [
+                      82,
+                      101,
+                      115,
+                      112,
+                      111,
+                      110,
+                      115,
+                      101
+                    ],
+                    "logprob": -23.037893295288086
+                  },
+                  {
+                    "id": 1408,
+                    "token": "##",
+                    "bytes": [
+                      35,
+                      35
+                    ],
+                    "logprob": -23.090152740478516
+                  },
+                  {
+                    "id": 17574,
+                    "token": "Because",
+                    "bytes": [
+                      66,
+                      101,
+                      99,
+                      97,
+                      117,
+                      115,
+                      101
+                    ],
+                    "logprob": -23.115217208862305
+                  },
+                  {
+                    "id": 236773,
+                    "token": "S",
+                    "bytes": [
+                      83
+                    ],
+                    "logprob": -23.25583267211914
+                  },
+                  {
+                    "id": 236814,
+                    "token": "H",
+                    "bytes": [
+                      72
+                    ],
+                    "logprob": -23.256410598754883
+                  },
+                  {
+                    "id": 84930,
+                    "token": "Coding",
+                    "bytes": [
+                      67,
+                      111,
+                      100,
+                      105,
+                      110,
+                      103
+                    ],
+                    "logprob": -23.42129898071289
+                  },
+                  {
+                    "id": 236777,
+                    "token": "I",
+                    "bytes": [
+                      73
+                    ],
+                    "logprob": -23.541715621948242
+                  },
+                  {
+                    "id": 22186,
+                    "token": "Both",
+                    "bytes": [
+                      66,
+                      111,
+                      116,
+                      104
+                    ],
+                    "logprob": -23.542360305786133
+                  },
+                  {
+                    "id": 236823,
+                    "token": "G",
+                    "bytes": [
+                      71
+                    ],
+                    "logprob": -23.61527442932129
+                  },
+                  {
+                    "id": 3912,
+                    "token": "Be",
+                    "bytes": [
+                      66,
+                      101
+                    ],
+                    "logprob": -23.645782470703125
+                  },
+                  {
+                    "id": 36720,
+                    "token": "Codes",
+                    "bytes": [
+                      67,
+                      111,
+                      100,
+                      101,
+                      115
+                    ],
+                    "logprob": -23.6685791015625
+                  },
+                  {
+                    "id": 254688,
+                    "token": "𝗕",
+                    "bytes": [
+                      240,
+                      157,
+                      151,
+                      149
+                    ],
+                    "logprob": -23.7426815032959
+                  },
+                  {
+                    "id": 182391,
+                    "token": "Rejected",
+                    "bytes": [
+                      82,
+                      101,
+                      106,
+                      101,
+                      99,
+                      116,
+                      101,
+                      100
+                    ],
+                    "logprob": -23.779958724975586
+                  },
+                  {
+                    "id": 236798,
+                    "token": "L",
+                    "bytes": [
+                      76
+                    ],
+                    "logprob": -23.79744529724121
+                  },
+                  {
+                    "id": 236774,
+                    "token": "T",
+                    "bytes": [
+                      84
+                    ],
+                    "logprob": -23.88340187072754
+                  },
+                  {
+                    "id": 1509,
+                    "token": "It",
+                    "bytes": [
+                      73,
+                      116
+                    ],
+                    "logprob": -23.957168579101562
+                  },
+                  {
+                    "id": 2205,
+                    "token": "As",
+                    "bytes": [
+                      65,
+                      115
+                    ],
+                    "logprob": -23.970998764038086
+                  },
+                  {
+                    "id": 6552,
+                    "token": "BA",
+                    "bytes": [
+                      66,
+                      65
+                    ],
+                    "logprob": -23.97602653503418
+                  },
+                  {
+                    "id": 30255,
+                    "token": "Prior",
+                    "bytes": [
+                      80,
+                      114,
+                      105,
+                      111,
+                      114
+                    ],
+                    "logprob": -24.051427841186523
+                  },
+                  {
+                    "id": 23102,
+                    "token": "الب",
+                    "bytes": [
+                      216,
+                      167,
+                      217,
+                      132,
+                      216,
+                      168
+                    ],
+                    "logprob": -24.0716552734375
+                  },
+                  {
+                    "id": 236791,
+                    "token": "P",
+                    "bytes": [
+                      80
+                    ],
+                    "logprob": -24.08131980895996
+                  },
+                  {
+                    "id": 35343,
+                    "token": "Bs",
+                    "bytes": [
+                      66,
+                      115
+                    ],
+                    "logprob": -24.101787567138672
+                  },
+                  {
+                    "id": 5580,
+                    "token": "BS",
+                    "bytes": [
+                      66,
+                      83
+                    ],
+                    "logprob": -24.10451316833496
+                  },
+                  {
+                    "id": 25221,
+                    "token": "Following",
+                    "bytes": [
+                      70,
+                      111,
+                      108,
+                      108,
+                      111,
+                      119,
+                      105,
+                      110,
+                      103
+                    ],
+                    "logprob": -24.10457420349121
+                  },
+                  {
+                    "id": 236851,
+                    "token": "в",
+                    "bytes": [
+                      208,
+                      178
+                    ],
+                    "logprob": -24.24713706970215
+                  },
+                  {
+                    "id": 20804,
+                    "token": "BB",
+                    "bytes": [
+                      66,
+                      66
+                    ],
+                    "logprob": -24.25090789794922
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "created": 1787272338,
+      "model": "D:\\AI\\Research\\dynamic_user_models\\models\\gemma3-27b-q4\\gemma-3-27b-it-q4_0.gguf",
+      "system_fingerprint": "b10333-08659901c",
+      "object": "chat.completion",
+      "usage": {
+        "completion_tokens": 1,
+        "prompt_tokens": 230,
+        "total_tokens": 231,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "id": "chatcmpl-djvS1m0dnvtsUO6te9GaaFxzOt1hkXkM",
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 230,
+        "prompt_ms": 2484.754,
+        "prompt_per_token_ms": 10.803278260869565,
+        "prompt_per_second": 92.56449531824882,
+        "predicted_n": 1,
+        "predicted_ms": 0.001,
+        "predicted_per_token_ms": 0.001,
+        "predicted_per_second": 1000000.0
+      }
+    },
+    "measurements": {
+      "logp_A": -13.359003067016602,
+      "logp_B": -1.5497220147153712e-06,
+      "p_A": 1.5785512419909907e-06,
+      "p_B": 0.9999984502791861,
+      "decision_mass": 1.000000028830428,
+      "expected_answer": "B",
+      "logp_correct": -1.5497220147153712e-06,
+      "logp_incorrect": -13.359003067016602,
+      "m_correct": 13.359001517294587,
+      "m_B_minus_A": 13.359001517294587
+    }
+  }
+]

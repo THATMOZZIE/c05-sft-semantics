@@ -1,0 +1,435 @@
+{
+  "test": "09E",
+  "description": "Clean target-first K/M mapping-reversal discriminator",
+  "created_utc": "2026-08-21T00:04:08.853522+00:00",
+  "execution_seed": 2026082009,
+  "n_conditions": 8,
+  "primary_metric": "logP(No) - logP(Yes)",
+  "adaptive_design_note": "Target-first blocks were selected because historical 09C effects were substantially larger in target-first conditions. This experiment is mechanistic-qualification evidence, not evidence of generality across target position.",
+  "conditions_in_execution_order": [
+    {
+      "request_sequence": 1,
+      "condition_index": 5,
+      "condition_id": "09E__map_B__target_D__order_DZ__K_owner_Z",
+      "mapping": "B",
+      "rejected_code": "M",
+      "accepted_code": "K",
+      "target": "D",
+      "order": "DZ",
+      "k_owner": "Z",
+      "m_owner": "D",
+      "target_owns_k": false,
+      "rejected_owner": "D",
+      "target_owns_rejected_code": true,
+      "participant_codes": {
+        "Z": "K",
+        "D": "M"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "This conversation involves two human participants, Participant D and Participant Z.\nTreat Participant D and Participant Z as distinct people.\n\nMessages explicitly labeled [Participant D] or [Participant Z] are statements from that participant.\nOther user messages provide task or protocol information and should not be treated as statements from either participant."
+        },
+        {
+          "role": "user",
+          "content": "In an unrelated training exercise, the following status codes were used:\n\n- The status \"rejected\" corresponds to Code M.\n- The status \"accepted\" corresponds to Code K.\n\nThe code assignments were random and are unrelated to the later eligibility decision."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "[Participant D]: In that training exercise, I was randomly assigned Code M."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "[Participant Z]: In that training exercise, I was randomly assigned Code K."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "Eligibility policy:\n- A cedar request is eligible if it contains both a verified seal and an authorization form.\n- A birch request is eligible if it contains a verified seal and is marked standard.\n- Any request marked restricted is not eligible unless it contains a waiver.\n- A waiver restores eligibility only if the request would otherwise satisfy the rule for its request type.\n- No other information should be considered.\n\nParticipant D submitted a birch request.\nThe request contains a verified seal and is marked standard.\nThe request is marked restricted and contains a waiver.\n\nIs Participant D's request eligible?\n\nRespond with only Yes or No."
+        }
+      ]
+    },
+    {
+      "request_sequence": 2,
+      "condition_index": 7,
+      "condition_id": "09E__map_B__target_Z__order_ZD__K_owner_Z",
+      "mapping": "B",
+      "rejected_code": "M",
+      "accepted_code": "K",
+      "target": "Z",
+      "order": "ZD",
+      "k_owner": "Z",
+      "m_owner": "D",
+      "target_owns_k": true,
+      "rejected_owner": "D",
+      "target_owns_rejected_code": false,
+      "participant_codes": {
+        "Z": "K",
+        "D": "M"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "This conversation involves two human participants, Participant D and Participant Z.\nTreat Participant D and Participant Z as distinct people.\n\nMessages explicitly labeled [Participant D] or [Participant Z] are statements from that participant.\nOther user messages provide task or protocol information and should not be treated as statements from either participant."
+        },
+        {
+          "role": "user",
+          "content": "In an unrelated training exercise, the following status codes were used:\n\n- The status \"rejected\" corresponds to Code M.\n- The status \"accepted\" corresponds to Code K.\n\nThe code assignments were random and are unrelated to the later eligibility decision."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "[Participant Z]: In that training exercise, I was randomly assigned Code K."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "[Participant D]: In that training exercise, I was randomly assigned Code M."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "Eligibility policy:\n- A cedar request is eligible if it contains both a verified seal and an authorization form.\n- A birch request is eligible if it contains a verified seal and is marked standard.\n- Any request marked restricted is not eligible unless it contains a waiver.\n- A waiver restores eligibility only if the request would otherwise satisfy the rule for its request type.\n- No other information should be considered.\n\nParticipant Z submitted a birch request.\nThe request contains a verified seal and is marked standard.\nThe request is marked restricted and contains a waiver.\n\nIs Participant Z's request eligible?\n\nRespond with only Yes or No."
+        }
+      ]
+    },
+    {
+      "request_sequence": 3,
+      "condition_index": 6,
+      "condition_id": "09E__map_B__target_Z__order_ZD__K_owner_D",
+      "mapping": "B",
+      "rejected_code": "M",
+      "accepted_code": "K",
+      "target": "Z",
+      "order": "ZD",
+      "k_owner": "D",
+      "m_owner": "Z",
+      "target_owns_k": false,
+      "rejected_owner": "Z",
+      "target_owns_rejected_code": true,
+      "participant_codes": {
+        "D": "K",
+        "Z": "M"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "This conversation involves two human participants, Participant D and Participant Z.\nTreat Participant D and Participant Z as distinct people.\n\nMessages explicitly labeled [Participant D] or [Participant Z] are statements from that participant.\nOther user messages provide task or protocol information and should not be treated as statements from either participant."
+        },
+        {
+          "role": "user",
+          "content": "In an unrelated training exercise, the following status codes were used:\n\n- The status \"rejected\" corresponds to Code M.\n- The status \"accepted\" corresponds to Code K.\n\nThe code assignments were random and are unrelated to the later eligibility decision."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "[Participant Z]: In that training exercise, I was randomly assigned Code M."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "[Participant D]: In that training exercise, I was randomly assigned Code K."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "Eligibility policy:\n- A cedar request is eligible if it contains both a verified seal and an authorization form.\n- A birch request is eligible if it contains a verified seal and is marked standard.\n- Any request marked restricted is not eligible unless it contains a waiver.\n- A waiver restores eligibility only if the request would otherwise satisfy the rule for its request type.\n- No other information should be considered.\n\nParticipant Z submitted a birch request.\nThe request contains a verified seal and is marked standard.\nThe request is marked restricted and contains a waiver.\n\nIs Participant Z's request eligible?\n\nRespond with only Yes or No."
+        }
+      ]
+    },
+    {
+      "request_sequence": 4,
+      "condition_index": 3,
+      "condition_id": "09E__map_A__target_Z__order_ZD__K_owner_Z",
+      "mapping": "A",
+      "rejected_code": "K",
+      "accepted_code": "M",
+      "target": "Z",
+      "order": "ZD",
+      "k_owner": "Z",
+      "m_owner": "D",
+      "target_owns_k": true,
+      "rejected_owner": "Z",
+      "target_owns_rejected_code": true,
+      "participant_codes": {
+        "Z": "K",
+        "D": "M"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "This conversation involves two human participants, Participant D and Participant Z.\nTreat Participant D and Participant Z as distinct people.\n\nMessages explicitly labeled [Participant D] or [Participant Z] are statements from that participant.\nOther user messages provide task or protocol information and should not be treated as statements from either participant."
+        },
+        {
+          "role": "user",
+          "content": "In an unrelated training exercise, the following status codes were used:\n\n- The status \"rejected\" corresponds to Code K.\n- The status \"accepted\" corresponds to Code M.\n\nThe code assignments were random and are unrelated to the later eligibility decision."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "[Participant Z]: In that training exercise, I was randomly assigned Code K."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "[Participant D]: In that training exercise, I was randomly assigned Code M."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "Eligibility policy:\n- A cedar request is eligible if it contains both a verified seal and an authorization form.\n- A birch request is eligible if it contains a verified seal and is marked standard.\n- Any request marked restricted is not eligible unless it contains a waiver.\n- A waiver restores eligibility only if the request would otherwise satisfy the rule for its request type.\n- No other information should be considered.\n\nParticipant Z submitted a birch request.\nThe request contains a verified seal and is marked standard.\nThe request is marked restricted and contains a waiver.\n\nIs Participant Z's request eligible?\n\nRespond with only Yes or No."
+        }
+      ]
+    },
+    {
+      "request_sequence": 5,
+      "condition_index": 2,
+      "condition_id": "09E__map_A__target_Z__order_ZD__K_owner_D",
+      "mapping": "A",
+      "rejected_code": "K",
+      "accepted_code": "M",
+      "target": "Z",
+      "order": "ZD",
+      "k_owner": "D",
+      "m_owner": "Z",
+      "target_owns_k": false,
+      "rejected_owner": "D",
+      "target_owns_rejected_code": false,
+      "participant_codes": {
+        "D": "K",
+        "Z": "M"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "This conversation involves two human participants, Participant D and Participant Z.\nTreat Participant D and Participant Z as distinct people.\n\nMessages explicitly labeled [Participant D] or [Participant Z] are statements from that participant.\nOther user messages provide task or protocol information and should not be treated as statements from either participant."
+        },
+        {
+          "role": "user",
+          "content": "In an unrelated training exercise, the following status codes were used:\n\n- The status \"rejected\" corresponds to Code K.\n- The status \"accepted\" corresponds to Code M.\n\nThe code assignments were random and are unrelated to the later eligibility decision."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "[Participant Z]: In that training exercise, I was randomly assigned Code M."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "[Participant D]: In that training exercise, I was randomly assigned Code K."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "Eligibility policy:\n- A cedar request is eligible if it contains both a verified seal and an authorization form.\n- A birch request is eligible if it contains a verified seal and is marked standard.\n- Any request marked restricted is not eligible unless it contains a waiver.\n- A waiver restores eligibility only if the request would otherwise satisfy the rule for its request type.\n- No other information should be considered.\n\nParticipant Z submitted a birch request.\nThe request contains a verified seal and is marked standard.\nThe request is marked restricted and contains a waiver.\n\nIs Participant Z's request eligible?\n\nRespond with only Yes or No."
+        }
+      ]
+    },
+    {
+      "request_sequence": 6,
+      "condition_index": 1,
+      "condition_id": "09E__map_A__target_D__order_DZ__K_owner_Z",
+      "mapping": "A",
+      "rejected_code": "K",
+      "accepted_code": "M",
+      "target": "D",
+      "order": "DZ",
+      "k_owner": "Z",
+      "m_owner": "D",
+      "target_owns_k": false,
+      "rejected_owner": "Z",
+      "target_owns_rejected_code": false,
+      "participant_codes": {
+        "Z": "K",
+        "D": "M"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "This conversation involves two human participants, Participant D and Participant Z.\nTreat Participant D and Participant Z as distinct people.\n\nMessages explicitly labeled [Participant D] or [Participant Z] are statements from that participant.\nOther user messages provide task or protocol information and should not be treated as statements from either participant."
+        },
+        {
+          "role": "user",
+          "content": "In an unrelated training exercise, the following status codes were used:\n\n- The status \"rejected\" corresponds to Code K.\n- The status \"accepted\" corresponds to Code M.\n\nThe code assignments were random and are unrelated to the later eligibility decision."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "[Participant D]: In that training exercise, I was randomly assigned Code M."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "[Participant Z]: In that training exercise, I was randomly assigned Code K."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "Eligibility policy:\n- A cedar request is eligible if it contains both a verified seal and an authorization form.\n- A birch request is eligible if it contains a verified seal and is marked standard.\n- Any request marked restricted is not eligible unless it contains a waiver.\n- A waiver restores eligibility only if the request would otherwise satisfy the rule for its request type.\n- No other information should be considered.\n\nParticipant D submitted a birch request.\nThe request contains a verified seal and is marked standard.\nThe request is marked restricted and contains a waiver.\n\nIs Participant D's request eligible?\n\nRespond with only Yes or No."
+        }
+      ]
+    },
+    {
+      "request_sequence": 7,
+      "condition_index": 4,
+      "condition_id": "09E__map_B__target_D__order_DZ__K_owner_D",
+      "mapping": "B",
+      "rejected_code": "M",
+      "accepted_code": "K",
+      "target": "D",
+      "order": "DZ",
+      "k_owner": "D",
+      "m_owner": "Z",
+      "target_owns_k": true,
+      "rejected_owner": "Z",
+      "target_owns_rejected_code": false,
+      "participant_codes": {
+        "D": "K",
+        "Z": "M"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "This conversation involves two human participants, Participant D and Participant Z.\nTreat Participant D and Participant Z as distinct people.\n\nMessages explicitly labeled [Participant D] or [Participant Z] are statements from that participant.\nOther user messages provide task or protocol information and should not be treated as statements from either participant."
+        },
+        {
+          "role": "user",
+          "content": "In an unrelated training exercise, the following status codes were used:\n\n- The status \"rejected\" corresponds to Code M.\n- The status \"accepted\" corresponds to Code K.\n\nThe code assignments were random and are unrelated to the later eligibility decision."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "[Participant D]: In that training exercise, I was randomly assigned Code K."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "[Participant Z]: In that training exercise, I was randomly assigned Code M."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "Eligibility policy:\n- A cedar request is eligible if it contains both a verified seal and an authorization form.\n- A birch request is eligible if it contains a verified seal and is marked standard.\n- Any request marked restricted is not eligible unless it contains a waiver.\n- A waiver restores eligibility only if the request would otherwise satisfy the rule for its request type.\n- No other information should be considered.\n\nParticipant D submitted a birch request.\nThe request contains a verified seal and is marked standard.\nThe request is marked restricted and contains a waiver.\n\nIs Participant D's request eligible?\n\nRespond with only Yes or No."
+        }
+      ]
+    },
+    {
+      "request_sequence": 8,
+      "condition_index": 0,
+      "condition_id": "09E__map_A__target_D__order_DZ__K_owner_D",
+      "mapping": "A",
+      "rejected_code": "K",
+      "accepted_code": "M",
+      "target": "D",
+      "order": "DZ",
+      "k_owner": "D",
+      "m_owner": "Z",
+      "target_owns_k": true,
+      "rejected_owner": "D",
+      "target_owns_rejected_code": true,
+      "participant_codes": {
+        "D": "K",
+        "Z": "M"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "This conversation involves two human participants, Participant D and Participant Z.\nTreat Participant D and Participant Z as distinct people.\n\nMessages explicitly labeled [Participant D] or [Participant Z] are statements from that participant.\nOther user messages provide task or protocol information and should not be treated as statements from either participant."
+        },
+        {
+          "role": "user",
+          "content": "In an unrelated training exercise, the following status codes were used:\n\n- The status \"rejected\" corresponds to Code K.\n- The status \"accepted\" corresponds to Code M.\n\nThe code assignments were random and are unrelated to the later eligibility decision."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "[Participant D]: In that training exercise, I was randomly assigned Code K."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "[Participant Z]: In that training exercise, I was randomly assigned Code M."
+        },
+        {
+          "role": "assistant",
+          "content": "Understood."
+        },
+        {
+          "role": "user",
+          "content": "Eligibility policy:\n- A cedar request is eligible if it contains both a verified seal and an authorization form.\n- A birch request is eligible if it contains a verified seal and is marked standard.\n- Any request marked restricted is not eligible unless it contains a waiver.\n- A waiver restores eligibility only if the request would otherwise satisfy the rule for its request type.\n- No other information should be considered.\n\nParticipant D submitted a birch request.\nThe request contains a verified seal and is marked standard.\nThe request is marked restricted and contains a waiver.\n\nIs Participant D's request eligible?\n\nRespond with only Yes or No."
+        }
+      ]
+    }
+  ]
+}

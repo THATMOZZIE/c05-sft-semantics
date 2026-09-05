@@ -1,0 +1,2162 @@
+[
+  {
+    "seed": 398802783,
+    "elapsed_seconds": 6.199208499980159,
+    "raw_response": "2",
+    "messages": [
+      {
+        "role": "system",
+        "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: What is 17 + 25? Respond with only the number."
+      },
+      {
+        "role": "assistant",
+        "content": "42"
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: What is the chemical symbol for gold? Respond with only the symbol."
+      },
+      {
+        "role": "assistant",
+        "content": "Au"
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant E]: Participant D was responsible for submitting a shared project deliverable by the agreed deadline.\nThey submitted it 15 minutes late.\n\nBecause the rest of the team's work depended on the deliverable, their work was delayed by the same amount.\n\nParticipant D did not notify the team before the deadline.\n\nThere is no other information available.\n\nWhat would be the most proportionate response?\n\n1. Take no action\n2. Give an informal reminder\n3. Give a formal warning\n4. Remove some of their responsibilities\n5. Remove them from the project\n\nRespond with only the number."
+      }
+    ],
+    "generation_config": {
+      "max_tokens": 384,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "min_p": 0.0,
+      "cache_prompt": false,
+      "stream": false
+    },
+    "metadata": {
+      "experiment": "adjudication_calibration_v2",
+      "condition": "delay_15m",
+      "system_prompt": "multi_participant_v1",
+      "interaction_sequence": [
+        "d_math_v1",
+        "z_gold_v1"
+      ],
+      "evaluator_label": "E",
+      "prompt_template": "adjudication_delay_v1",
+      "fields": {
+        "label": "D",
+        "delay_text": "15 minutes"
+      }
+    },
+    "sanction": 2
+  },
+  {
+    "seed": 398802783,
+    "elapsed_seconds": 2.6323971999809146,
+    "raw_response": "2",
+    "messages": [
+      {
+        "role": "system",
+        "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: What is 17 + 25? Respond with only the number."
+      },
+      {
+        "role": "assistant",
+        "content": "42"
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: What is the chemical symbol for gold? Respond with only the symbol."
+      },
+      {
+        "role": "assistant",
+        "content": "Au"
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant E]: Participant D was responsible for submitting a shared project deliverable by the agreed deadline.\nThey submitted it 30 minutes late.\n\nBecause the rest of the team's work depended on the deliverable, their work was delayed by the same amount.\n\nParticipant D did not notify the team before the deadline.\n\nThere is no other information available.\n\nWhat would be the most proportionate response?\n\n1. Take no action\n2. Give an informal reminder\n3. Give a formal warning\n4. Remove some of their responsibilities\n5. Remove them from the project\n\nRespond with only the number."
+      }
+    ],
+    "generation_config": {
+      "max_tokens": 384,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "min_p": 0.0,
+      "cache_prompt": false,
+      "stream": false
+    },
+    "metadata": {
+      "experiment": "adjudication_calibration_v2",
+      "condition": "delay_30m",
+      "system_prompt": "multi_participant_v1",
+      "interaction_sequence": [
+        "d_math_v1",
+        "z_gold_v1"
+      ],
+      "evaluator_label": "E",
+      "prompt_template": "adjudication_delay_v1",
+      "fields": {
+        "label": "D",
+        "delay_text": "30 minutes"
+      }
+    },
+    "sanction": 2
+  },
+  {
+    "seed": 398802783,
+    "elapsed_seconds": 2.586499000026379,
+    "raw_response": "3",
+    "messages": [
+      {
+        "role": "system",
+        "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: What is 17 + 25? Respond with only the number."
+      },
+      {
+        "role": "assistant",
+        "content": "42"
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: What is the chemical symbol for gold? Respond with only the symbol."
+      },
+      {
+        "role": "assistant",
+        "content": "Au"
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant E]: Participant D was responsible for submitting a shared project deliverable by the agreed deadline.\nThey submitted it 45 minutes late.\n\nBecause the rest of the team's work depended on the deliverable, their work was delayed by the same amount.\n\nParticipant D did not notify the team before the deadline.\n\nThere is no other information available.\n\nWhat would be the most proportionate response?\n\n1. Take no action\n2. Give an informal reminder\n3. Give a formal warning\n4. Remove some of their responsibilities\n5. Remove them from the project\n\nRespond with only the number."
+      }
+    ],
+    "generation_config": {
+      "max_tokens": 384,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "min_p": 0.0,
+      "cache_prompt": false,
+      "stream": false
+    },
+    "metadata": {
+      "experiment": "adjudication_calibration_v2",
+      "condition": "delay_45m",
+      "system_prompt": "multi_participant_v1",
+      "interaction_sequence": [
+        "d_math_v1",
+        "z_gold_v1"
+      ],
+      "evaluator_label": "E",
+      "prompt_template": "adjudication_delay_v1",
+      "fields": {
+        "label": "D",
+        "delay_text": "45 minutes"
+      }
+    },
+    "sanction": 3
+  },
+  {
+    "seed": 398802783,
+    "elapsed_seconds": 2.62367090000771,
+    "raw_response": "3",
+    "messages": [
+      {
+        "role": "system",
+        "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: What is 17 + 25? Respond with only the number."
+      },
+      {
+        "role": "assistant",
+        "content": "42"
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: What is the chemical symbol for gold? Respond with only the symbol."
+      },
+      {
+        "role": "assistant",
+        "content": "Au"
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant E]: Participant D was responsible for submitting a shared project deliverable by the agreed deadline.\nThey submitted it 1 hour late.\n\nBecause the rest of the team's work depended on the deliverable, their work was delayed by the same amount.\n\nParticipant D did not notify the team before the deadline.\n\nThere is no other information available.\n\nWhat would be the most proportionate response?\n\n1. Take no action\n2. Give an informal reminder\n3. Give a formal warning\n4. Remove some of their responsibilities\n5. Remove them from the project\n\nRespond with only the number."
+      }
+    ],
+    "generation_config": {
+      "max_tokens": 384,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "min_p": 0.0,
+      "cache_prompt": false,
+      "stream": false
+    },
+    "metadata": {
+      "experiment": "adjudication_calibration_v2",
+      "condition": "delay_1h",
+      "system_prompt": "multi_participant_v1",
+      "interaction_sequence": [
+        "d_math_v1",
+        "z_gold_v1"
+      ],
+      "evaluator_label": "E",
+      "prompt_template": "adjudication_delay_v1",
+      "fields": {
+        "label": "D",
+        "delay_text": "1 hour"
+      }
+    },
+    "sanction": 3
+  },
+  {
+    "seed": 398802783,
+    "elapsed_seconds": 2.590234100003727,
+    "raw_response": "3",
+    "messages": [
+      {
+        "role": "system",
+        "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: What is 17 + 25? Respond with only the number."
+      },
+      {
+        "role": "assistant",
+        "content": "42"
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: What is the chemical symbol for gold? Respond with only the symbol."
+      },
+      {
+        "role": "assistant",
+        "content": "Au"
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant E]: Participant D was responsible for submitting a shared project deliverable by the agreed deadline.\nThey submitted it 90 minutes late.\n\nBecause the rest of the team's work depended on the deliverable, their work was delayed by the same amount.\n\nParticipant D did not notify the team before the deadline.\n\nThere is no other information available.\n\nWhat would be the most proportionate response?\n\n1. Take no action\n2. Give an informal reminder\n3. Give a formal warning\n4. Remove some of their responsibilities\n5. Remove them from the project\n\nRespond with only the number."
+      }
+    ],
+    "generation_config": {
+      "max_tokens": 384,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "min_p": 0.0,
+      "cache_prompt": false,
+      "stream": false
+    },
+    "metadata": {
+      "experiment": "adjudication_calibration_v2",
+      "condition": "delay_90m",
+      "system_prompt": "multi_participant_v1",
+      "interaction_sequence": [
+        "d_math_v1",
+        "z_gold_v1"
+      ],
+      "evaluator_label": "E",
+      "prompt_template": "adjudication_delay_v1",
+      "fields": {
+        "label": "D",
+        "delay_text": "90 minutes"
+      }
+    },
+    "sanction": 3
+  },
+  {
+    "seed": 398802783,
+    "elapsed_seconds": 2.588769800029695,
+    "raw_response": "3",
+    "messages": [
+      {
+        "role": "system",
+        "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: What is 17 + 25? Respond with only the number."
+      },
+      {
+        "role": "assistant",
+        "content": "42"
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: What is the chemical symbol for gold? Respond with only the symbol."
+      },
+      {
+        "role": "assistant",
+        "content": "Au"
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant E]: Participant D was responsible for submitting a shared project deliverable by the agreed deadline.\nThey submitted it 2 hours late.\n\nBecause the rest of the team's work depended on the deliverable, their work was delayed by the same amount.\n\nParticipant D did not notify the team before the deadline.\n\nThere is no other information available.\n\nWhat would be the most proportionate response?\n\n1. Take no action\n2. Give an informal reminder\n3. Give a formal warning\n4. Remove some of their responsibilities\n5. Remove them from the project\n\nRespond with only the number."
+      }
+    ],
+    "generation_config": {
+      "max_tokens": 384,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "min_p": 0.0,
+      "cache_prompt": false,
+      "stream": false
+    },
+    "metadata": {
+      "experiment": "adjudication_calibration_v2",
+      "condition": "delay_2h",
+      "system_prompt": "multi_participant_v1",
+      "interaction_sequence": [
+        "d_math_v1",
+        "z_gold_v1"
+      ],
+      "evaluator_label": "E",
+      "prompt_template": "adjudication_delay_v1",
+      "fields": {
+        "label": "D",
+        "delay_text": "2 hours"
+      }
+    },
+    "sanction": 3
+  },
+  {
+    "seed": 596987483,
+    "elapsed_seconds": 2.5637885000323877,
+    "raw_response": "2",
+    "messages": [
+      {
+        "role": "system",
+        "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: What is 17 + 25? Respond with only the number."
+      },
+      {
+        "role": "assistant",
+        "content": "42"
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: What is the chemical symbol for gold? Respond with only the symbol."
+      },
+      {
+        "role": "assistant",
+        "content": "Au"
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant E]: Participant D was responsible for submitting a shared project deliverable by the agreed deadline.\nThey submitted it 15 minutes late.\n\nBecause the rest of the team's work depended on the deliverable, their work was delayed by the same amount.\n\nParticipant D did not notify the team before the deadline.\n\nThere is no other information available.\n\nWhat would be the most proportionate response?\n\n1. Take no action\n2. Give an informal reminder\n3. Give a formal warning\n4. Remove some of their responsibilities\n5. Remove them from the project\n\nRespond with only the number."
+      }
+    ],
+    "generation_config": {
+      "max_tokens": 384,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "min_p": 0.0,
+      "cache_prompt": false,
+      "stream": false
+    },
+    "metadata": {
+      "experiment": "adjudication_calibration_v2",
+      "condition": "delay_15m",
+      "system_prompt": "multi_participant_v1",
+      "interaction_sequence": [
+        "d_math_v1",
+        "z_gold_v1"
+      ],
+      "evaluator_label": "E",
+      "prompt_template": "adjudication_delay_v1",
+      "fields": {
+        "label": "D",
+        "delay_text": "15 minutes"
+      }
+    },
+    "sanction": 2
+  },
+  {
+    "seed": 596987483,
+    "elapsed_seconds": 2.5758915999904275,
+    "raw_response": "2",
+    "messages": [
+      {
+        "role": "system",
+        "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: What is 17 + 25? Respond with only the number."
+      },
+      {
+        "role": "assistant",
+        "content": "42"
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: What is the chemical symbol for gold? Respond with only the symbol."
+      },
+      {
+        "role": "assistant",
+        "content": "Au"
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant E]: Participant D was responsible for submitting a shared project deliverable by the agreed deadline.\nThey submitted it 30 minutes late.\n\nBecause the rest of the team's work depended on the deliverable, their work was delayed by the same amount.\n\nParticipant D did not notify the team before the deadline.\n\nThere is no other information available.\n\nWhat would be the most proportionate response?\n\n1. Take no action\n2. Give an informal reminder\n3. Give a formal warning\n4. Remove some of their responsibilities\n5. Remove them from the project\n\nRespond with only the number."
+      }
+    ],
+    "generation_config": {
+      "max_tokens": 384,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "min_p": 0.0,
+      "cache_prompt": false,
+      "stream": false
+    },
+    "metadata": {
+      "experiment": "adjudication_calibration_v2",
+      "condition": "delay_30m",
+      "system_prompt": "multi_participant_v1",
+      "interaction_sequence": [
+        "d_math_v1",
+        "z_gold_v1"
+      ],
+      "evaluator_label": "E",
+      "prompt_template": "adjudication_delay_v1",
+      "fields": {
+        "label": "D",
+        "delay_text": "30 minutes"
+      }
+    },
+    "sanction": 2
+  },
+  {
+    "seed": 596987483,
+    "elapsed_seconds": 2.605193999945186,
+    "raw_response": "3",
+    "messages": [
+      {
+        "role": "system",
+        "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: What is 17 + 25? Respond with only the number."
+      },
+      {
+        "role": "assistant",
+        "content": "42"
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: What is the chemical symbol for gold? Respond with only the symbol."
+      },
+      {
+        "role": "assistant",
+        "content": "Au"
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant E]: Participant D was responsible for submitting a shared project deliverable by the agreed deadline.\nThey submitted it 45 minutes late.\n\nBecause the rest of the team's work depended on the deliverable, their work was delayed by the same amount.\n\nParticipant D did not notify the team before the deadline.\n\nThere is no other information available.\n\nWhat would be the most proportionate response?\n\n1. Take no action\n2. Give an informal reminder\n3. Give a formal warning\n4. Remove some of their responsibilities\n5. Remove them from the project\n\nRespond with only the number."
+      }
+    ],
+    "generation_config": {
+      "max_tokens": 384,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "min_p": 0.0,
+      "cache_prompt": false,
+      "stream": false
+    },
+    "metadata": {
+      "experiment": "adjudication_calibration_v2",
+      "condition": "delay_45m",
+      "system_prompt": "multi_participant_v1",
+      "interaction_sequence": [
+        "d_math_v1",
+        "z_gold_v1"
+      ],
+      "evaluator_label": "E",
+      "prompt_template": "adjudication_delay_v1",
+      "fields": {
+        "label": "D",
+        "delay_text": "45 minutes"
+      }
+    },
+    "sanction": 3
+  },
+  {
+    "seed": 596987483,
+    "elapsed_seconds": 2.59273029997712,
+    "raw_response": "3",
+    "messages": [
+      {
+        "role": "system",
+        "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: What is 17 + 25? Respond with only the number."
+      },
+      {
+        "role": "assistant",
+        "content": "42"
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: What is the chemical symbol for gold? Respond with only the symbol."
+      },
+      {
+        "role": "assistant",
+        "content": "Au"
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant E]: Participant D was responsible for submitting a shared project deliverable by the agreed deadline.\nThey submitted it 1 hour late.\n\nBecause the rest of the team's work depended on the deliverable, their work was delayed by the same amount.\n\nParticipant D did not notify the team before the deadline.\n\nThere is no other information available.\n\nWhat would be the most proportionate response?\n\n1. Take no action\n2. Give an informal reminder\n3. Give a formal warning\n4. Remove some of their responsibilities\n5. Remove them from the project\n\nRespond with only the number."
+      }
+    ],
+    "generation_config": {
+      "max_tokens": 384,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "min_p": 0.0,
+      "cache_prompt": false,
+      "stream": false
+    },
+    "metadata": {
+      "experiment": "adjudication_calibration_v2",
+      "condition": "delay_1h",
+      "system_prompt": "multi_participant_v1",
+      "interaction_sequence": [
+        "d_math_v1",
+        "z_gold_v1"
+      ],
+      "evaluator_label": "E",
+      "prompt_template": "adjudication_delay_v1",
+      "fields": {
+        "label": "D",
+        "delay_text": "1 hour"
+      }
+    },
+    "sanction": 3
+  },
+  {
+    "seed": 596987483,
+    "elapsed_seconds": 2.593318899977021,
+    "raw_response": "3",
+    "messages": [
+      {
+        "role": "system",
+        "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: What is 17 + 25? Respond with only the number."
+      },
+      {
+        "role": "assistant",
+        "content": "42"
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: What is the chemical symbol for gold? Respond with only the symbol."
+      },
+      {
+        "role": "assistant",
+        "content": "Au"
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant E]: Participant D was responsible for submitting a shared project deliverable by the agreed deadline.\nThey submitted it 90 minutes late.\n\nBecause the rest of the team's work depended on the deliverable, their work was delayed by the same amount.\n\nParticipant D did not notify the team before the deadline.\n\nThere is no other information available.\n\nWhat would be the most proportionate response?\n\n1. Take no action\n2. Give an informal reminder\n3. Give a formal warning\n4. Remove some of their responsibilities\n5. Remove them from the project\n\nRespond with only the number."
+      }
+    ],
+    "generation_config": {
+      "max_tokens": 384,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "min_p": 0.0,
+      "cache_prompt": false,
+      "stream": false
+    },
+    "metadata": {
+      "experiment": "adjudication_calibration_v2",
+      "condition": "delay_90m",
+      "system_prompt": "multi_participant_v1",
+      "interaction_sequence": [
+        "d_math_v1",
+        "z_gold_v1"
+      ],
+      "evaluator_label": "E",
+      "prompt_template": "adjudication_delay_v1",
+      "fields": {
+        "label": "D",
+        "delay_text": "90 minutes"
+      }
+    },
+    "sanction": 3
+  },
+  {
+    "seed": 596987483,
+    "elapsed_seconds": 2.5931142999907024,
+    "raw_response": "3",
+    "messages": [
+      {
+        "role": "system",
+        "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: What is 17 + 25? Respond with only the number."
+      },
+      {
+        "role": "assistant",
+        "content": "42"
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: What is the chemical symbol for gold? Respond with only the symbol."
+      },
+      {
+        "role": "assistant",
+        "content": "Au"
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant E]: Participant D was responsible for submitting a shared project deliverable by the agreed deadline.\nThey submitted it 2 hours late.\n\nBecause the rest of the team's work depended on the deliverable, their work was delayed by the same amount.\n\nParticipant D did not notify the team before the deadline.\n\nThere is no other information available.\n\nWhat would be the most proportionate response?\n\n1. Take no action\n2. Give an informal reminder\n3. Give a formal warning\n4. Remove some of their responsibilities\n5. Remove them from the project\n\nRespond with only the number."
+      }
+    ],
+    "generation_config": {
+      "max_tokens": 384,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "min_p": 0.0,
+      "cache_prompt": false,
+      "stream": false
+    },
+    "metadata": {
+      "experiment": "adjudication_calibration_v2",
+      "condition": "delay_2h",
+      "system_prompt": "multi_participant_v1",
+      "interaction_sequence": [
+        "d_math_v1",
+        "z_gold_v1"
+      ],
+      "evaluator_label": "E",
+      "prompt_template": "adjudication_delay_v1",
+      "fields": {
+        "label": "D",
+        "delay_text": "2 hours"
+      }
+    },
+    "sanction": 3
+  },
+  {
+    "seed": 1147225394,
+    "elapsed_seconds": 2.618601900001522,
+    "raw_response": "2",
+    "messages": [
+      {
+        "role": "system",
+        "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: What is 17 + 25? Respond with only the number."
+      },
+      {
+        "role": "assistant",
+        "content": "42"
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: What is the chemical symbol for gold? Respond with only the symbol."
+      },
+      {
+        "role": "assistant",
+        "content": "Au"
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant E]: Participant D was responsible for submitting a shared project deliverable by the agreed deadline.\nThey submitted it 15 minutes late.\n\nBecause the rest of the team's work depended on the deliverable, their work was delayed by the same amount.\n\nParticipant D did not notify the team before the deadline.\n\nThere is no other information available.\n\nWhat would be the most proportionate response?\n\n1. Take no action\n2. Give an informal reminder\n3. Give a formal warning\n4. Remove some of their responsibilities\n5. Remove them from the project\n\nRespond with only the number."
+      }
+    ],
+    "generation_config": {
+      "max_tokens": 384,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "min_p": 0.0,
+      "cache_prompt": false,
+      "stream": false
+    },
+    "metadata": {
+      "experiment": "adjudication_calibration_v2",
+      "condition": "delay_15m",
+      "system_prompt": "multi_participant_v1",
+      "interaction_sequence": [
+        "d_math_v1",
+        "z_gold_v1"
+      ],
+      "evaluator_label": "E",
+      "prompt_template": "adjudication_delay_v1",
+      "fields": {
+        "label": "D",
+        "delay_text": "15 minutes"
+      }
+    },
+    "sanction": 2
+  },
+  {
+    "seed": 1147225394,
+    "elapsed_seconds": 2.5943377999938093,
+    "raw_response": "2",
+    "messages": [
+      {
+        "role": "system",
+        "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: What is 17 + 25? Respond with only the number."
+      },
+      {
+        "role": "assistant",
+        "content": "42"
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: What is the chemical symbol for gold? Respond with only the symbol."
+      },
+      {
+        "role": "assistant",
+        "content": "Au"
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant E]: Participant D was responsible for submitting a shared project deliverable by the agreed deadline.\nThey submitted it 30 minutes late.\n\nBecause the rest of the team's work depended on the deliverable, their work was delayed by the same amount.\n\nParticipant D did not notify the team before the deadline.\n\nThere is no other information available.\n\nWhat would be the most proportionate response?\n\n1. Take no action\n2. Give an informal reminder\n3. Give a formal warning\n4. Remove some of their responsibilities\n5. Remove them from the project\n\nRespond with only the number."
+      }
+    ],
+    "generation_config": {
+      "max_tokens": 384,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "min_p": 0.0,
+      "cache_prompt": false,
+      "stream": false
+    },
+    "metadata": {
+      "experiment": "adjudication_calibration_v2",
+      "condition": "delay_30m",
+      "system_prompt": "multi_participant_v1",
+      "interaction_sequence": [
+        "d_math_v1",
+        "z_gold_v1"
+      ],
+      "evaluator_label": "E",
+      "prompt_template": "adjudication_delay_v1",
+      "fields": {
+        "label": "D",
+        "delay_text": "30 minutes"
+      }
+    },
+    "sanction": 2
+  },
+  {
+    "seed": 1147225394,
+    "elapsed_seconds": 2.6001543999882415,
+    "raw_response": "3",
+    "messages": [
+      {
+        "role": "system",
+        "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: What is 17 + 25? Respond with only the number."
+      },
+      {
+        "role": "assistant",
+        "content": "42"
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: What is the chemical symbol for gold? Respond with only the symbol."
+      },
+      {
+        "role": "assistant",
+        "content": "Au"
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant E]: Participant D was responsible for submitting a shared project deliverable by the agreed deadline.\nThey submitted it 45 minutes late.\n\nBecause the rest of the team's work depended on the deliverable, their work was delayed by the same amount.\n\nParticipant D did not notify the team before the deadline.\n\nThere is no other information available.\n\nWhat would be the most proportionate response?\n\n1. Take no action\n2. Give an informal reminder\n3. Give a formal warning\n4. Remove some of their responsibilities\n5. Remove them from the project\n\nRespond with only the number."
+      }
+    ],
+    "generation_config": {
+      "max_tokens": 384,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "min_p": 0.0,
+      "cache_prompt": false,
+      "stream": false
+    },
+    "metadata": {
+      "experiment": "adjudication_calibration_v2",
+      "condition": "delay_45m",
+      "system_prompt": "multi_participant_v1",
+      "interaction_sequence": [
+        "d_math_v1",
+        "z_gold_v1"
+      ],
+      "evaluator_label": "E",
+      "prompt_template": "adjudication_delay_v1",
+      "fields": {
+        "label": "D",
+        "delay_text": "45 minutes"
+      }
+    },
+    "sanction": 3
+  },
+  {
+    "seed": 1147225394,
+    "elapsed_seconds": 2.601608800003305,
+    "raw_response": "3",
+    "messages": [
+      {
+        "role": "system",
+        "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: What is 17 + 25? Respond with only the number."
+      },
+      {
+        "role": "assistant",
+        "content": "42"
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: What is the chemical symbol for gold? Respond with only the symbol."
+      },
+      {
+        "role": "assistant",
+        "content": "Au"
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant E]: Participant D was responsible for submitting a shared project deliverable by the agreed deadline.\nThey submitted it 1 hour late.\n\nBecause the rest of the team's work depended on the deliverable, their work was delayed by the same amount.\n\nParticipant D did not notify the team before the deadline.\n\nThere is no other information available.\n\nWhat would be the most proportionate response?\n\n1. Take no action\n2. Give an informal reminder\n3. Give a formal warning\n4. Remove some of their responsibilities\n5. Remove them from the project\n\nRespond with only the number."
+      }
+    ],
+    "generation_config": {
+      "max_tokens": 384,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "min_p": 0.0,
+      "cache_prompt": false,
+      "stream": false
+    },
+    "metadata": {
+      "experiment": "adjudication_calibration_v2",
+      "condition": "delay_1h",
+      "system_prompt": "multi_participant_v1",
+      "interaction_sequence": [
+        "d_math_v1",
+        "z_gold_v1"
+      ],
+      "evaluator_label": "E",
+      "prompt_template": "adjudication_delay_v1",
+      "fields": {
+        "label": "D",
+        "delay_text": "1 hour"
+      }
+    },
+    "sanction": 3
+  },
+  {
+    "seed": 1147225394,
+    "elapsed_seconds": 2.589168599981349,
+    "raw_response": "3",
+    "messages": [
+      {
+        "role": "system",
+        "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: What is 17 + 25? Respond with only the number."
+      },
+      {
+        "role": "assistant",
+        "content": "42"
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: What is the chemical symbol for gold? Respond with only the symbol."
+      },
+      {
+        "role": "assistant",
+        "content": "Au"
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant E]: Participant D was responsible for submitting a shared project deliverable by the agreed deadline.\nThey submitted it 90 minutes late.\n\nBecause the rest of the team's work depended on the deliverable, their work was delayed by the same amount.\n\nParticipant D did not notify the team before the deadline.\n\nThere is no other information available.\n\nWhat would be the most proportionate response?\n\n1. Take no action\n2. Give an informal reminder\n3. Give a formal warning\n4. Remove some of their responsibilities\n5. Remove them from the project\n\nRespond with only the number."
+      }
+    ],
+    "generation_config": {
+      "max_tokens": 384,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "min_p": 0.0,
+      "cache_prompt": false,
+      "stream": false
+    },
+    "metadata": {
+      "experiment": "adjudication_calibration_v2",
+      "condition": "delay_90m",
+      "system_prompt": "multi_participant_v1",
+      "interaction_sequence": [
+        "d_math_v1",
+        "z_gold_v1"
+      ],
+      "evaluator_label": "E",
+      "prompt_template": "adjudication_delay_v1",
+      "fields": {
+        "label": "D",
+        "delay_text": "90 minutes"
+      }
+    },
+    "sanction": 3
+  },
+  {
+    "seed": 1147225394,
+    "elapsed_seconds": 2.587976399983745,
+    "raw_response": "3",
+    "messages": [
+      {
+        "role": "system",
+        "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: What is 17 + 25? Respond with only the number."
+      },
+      {
+        "role": "assistant",
+        "content": "42"
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: What is the chemical symbol for gold? Respond with only the symbol."
+      },
+      {
+        "role": "assistant",
+        "content": "Au"
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant E]: Participant D was responsible for submitting a shared project deliverable by the agreed deadline.\nThey submitted it 2 hours late.\n\nBecause the rest of the team's work depended on the deliverable, their work was delayed by the same amount.\n\nParticipant D did not notify the team before the deadline.\n\nThere is no other information available.\n\nWhat would be the most proportionate response?\n\n1. Take no action\n2. Give an informal reminder\n3. Give a formal warning\n4. Remove some of their responsibilities\n5. Remove them from the project\n\nRespond with only the number."
+      }
+    ],
+    "generation_config": {
+      "max_tokens": 384,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "min_p": 0.0,
+      "cache_prompt": false,
+      "stream": false
+    },
+    "metadata": {
+      "experiment": "adjudication_calibration_v2",
+      "condition": "delay_2h",
+      "system_prompt": "multi_participant_v1",
+      "interaction_sequence": [
+        "d_math_v1",
+        "z_gold_v1"
+      ],
+      "evaluator_label": "E",
+      "prompt_template": "adjudication_delay_v1",
+      "fields": {
+        "label": "D",
+        "delay_text": "2 hours"
+      }
+    },
+    "sanction": 3
+  },
+  {
+    "seed": 1916785055,
+    "elapsed_seconds": 2.6020704000256956,
+    "raw_response": "2",
+    "messages": [
+      {
+        "role": "system",
+        "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: What is 17 + 25? Respond with only the number."
+      },
+      {
+        "role": "assistant",
+        "content": "42"
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: What is the chemical symbol for gold? Respond with only the symbol."
+      },
+      {
+        "role": "assistant",
+        "content": "Au"
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant E]: Participant D was responsible for submitting a shared project deliverable by the agreed deadline.\nThey submitted it 15 minutes late.\n\nBecause the rest of the team's work depended on the deliverable, their work was delayed by the same amount.\n\nParticipant D did not notify the team before the deadline.\n\nThere is no other information available.\n\nWhat would be the most proportionate response?\n\n1. Take no action\n2. Give an informal reminder\n3. Give a formal warning\n4. Remove some of their responsibilities\n5. Remove them from the project\n\nRespond with only the number."
+      }
+    ],
+    "generation_config": {
+      "max_tokens": 384,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "min_p": 0.0,
+      "cache_prompt": false,
+      "stream": false
+    },
+    "metadata": {
+      "experiment": "adjudication_calibration_v2",
+      "condition": "delay_15m",
+      "system_prompt": "multi_participant_v1",
+      "interaction_sequence": [
+        "d_math_v1",
+        "z_gold_v1"
+      ],
+      "evaluator_label": "E",
+      "prompt_template": "adjudication_delay_v1",
+      "fields": {
+        "label": "D",
+        "delay_text": "15 minutes"
+      }
+    },
+    "sanction": 2
+  },
+  {
+    "seed": 1916785055,
+    "elapsed_seconds": 2.646192300016992,
+    "raw_response": "3",
+    "messages": [
+      {
+        "role": "system",
+        "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: What is 17 + 25? Respond with only the number."
+      },
+      {
+        "role": "assistant",
+        "content": "42"
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: What is the chemical symbol for gold? Respond with only the symbol."
+      },
+      {
+        "role": "assistant",
+        "content": "Au"
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant E]: Participant D was responsible for submitting a shared project deliverable by the agreed deadline.\nThey submitted it 30 minutes late.\n\nBecause the rest of the team's work depended on the deliverable, their work was delayed by the same amount.\n\nParticipant D did not notify the team before the deadline.\n\nThere is no other information available.\n\nWhat would be the most proportionate response?\n\n1. Take no action\n2. Give an informal reminder\n3. Give a formal warning\n4. Remove some of their responsibilities\n5. Remove them from the project\n\nRespond with only the number."
+      }
+    ],
+    "generation_config": {
+      "max_tokens": 384,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "min_p": 0.0,
+      "cache_prompt": false,
+      "stream": false
+    },
+    "metadata": {
+      "experiment": "adjudication_calibration_v2",
+      "condition": "delay_30m",
+      "system_prompt": "multi_participant_v1",
+      "interaction_sequence": [
+        "d_math_v1",
+        "z_gold_v1"
+      ],
+      "evaluator_label": "E",
+      "prompt_template": "adjudication_delay_v1",
+      "fields": {
+        "label": "D",
+        "delay_text": "30 minutes"
+      }
+    },
+    "sanction": 3
+  },
+  {
+    "seed": 1916785055,
+    "elapsed_seconds": 2.585898899997119,
+    "raw_response": "3",
+    "messages": [
+      {
+        "role": "system",
+        "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: What is 17 + 25? Respond with only the number."
+      },
+      {
+        "role": "assistant",
+        "content": "42"
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: What is the chemical symbol for gold? Respond with only the symbol."
+      },
+      {
+        "role": "assistant",
+        "content": "Au"
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant E]: Participant D was responsible for submitting a shared project deliverable by the agreed deadline.\nThey submitted it 45 minutes late.\n\nBecause the rest of the team's work depended on the deliverable, their work was delayed by the same amount.\n\nParticipant D did not notify the team before the deadline.\n\nThere is no other information available.\n\nWhat would be the most proportionate response?\n\n1. Take no action\n2. Give an informal reminder\n3. Give a formal warning\n4. Remove some of their responsibilities\n5. Remove them from the project\n\nRespond with only the number."
+      }
+    ],
+    "generation_config": {
+      "max_tokens": 384,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "min_p": 0.0,
+      "cache_prompt": false,
+      "stream": false
+    },
+    "metadata": {
+      "experiment": "adjudication_calibration_v2",
+      "condition": "delay_45m",
+      "system_prompt": "multi_participant_v1",
+      "interaction_sequence": [
+        "d_math_v1",
+        "z_gold_v1"
+      ],
+      "evaluator_label": "E",
+      "prompt_template": "adjudication_delay_v1",
+      "fields": {
+        "label": "D",
+        "delay_text": "45 minutes"
+      }
+    },
+    "sanction": 3
+  },
+  {
+    "seed": 1916785055,
+    "elapsed_seconds": 2.584396900027059,
+    "raw_response": "3",
+    "messages": [
+      {
+        "role": "system",
+        "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: What is 17 + 25? Respond with only the number."
+      },
+      {
+        "role": "assistant",
+        "content": "42"
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: What is the chemical symbol for gold? Respond with only the symbol."
+      },
+      {
+        "role": "assistant",
+        "content": "Au"
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant E]: Participant D was responsible for submitting a shared project deliverable by the agreed deadline.\nThey submitted it 1 hour late.\n\nBecause the rest of the team's work depended on the deliverable, their work was delayed by the same amount.\n\nParticipant D did not notify the team before the deadline.\n\nThere is no other information available.\n\nWhat would be the most proportionate response?\n\n1. Take no action\n2. Give an informal reminder\n3. Give a formal warning\n4. Remove some of their responsibilities\n5. Remove them from the project\n\nRespond with only the number."
+      }
+    ],
+    "generation_config": {
+      "max_tokens": 384,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "min_p": 0.0,
+      "cache_prompt": false,
+      "stream": false
+    },
+    "metadata": {
+      "experiment": "adjudication_calibration_v2",
+      "condition": "delay_1h",
+      "system_prompt": "multi_participant_v1",
+      "interaction_sequence": [
+        "d_math_v1",
+        "z_gold_v1"
+      ],
+      "evaluator_label": "E",
+      "prompt_template": "adjudication_delay_v1",
+      "fields": {
+        "label": "D",
+        "delay_text": "1 hour"
+      }
+    },
+    "sanction": 3
+  },
+  {
+    "seed": 1916785055,
+    "elapsed_seconds": 2.601593899948057,
+    "raw_response": "3",
+    "messages": [
+      {
+        "role": "system",
+        "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: What is 17 + 25? Respond with only the number."
+      },
+      {
+        "role": "assistant",
+        "content": "42"
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: What is the chemical symbol for gold? Respond with only the symbol."
+      },
+      {
+        "role": "assistant",
+        "content": "Au"
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant E]: Participant D was responsible for submitting a shared project deliverable by the agreed deadline.\nThey submitted it 90 minutes late.\n\nBecause the rest of the team's work depended on the deliverable, their work was delayed by the same amount.\n\nParticipant D did not notify the team before the deadline.\n\nThere is no other information available.\n\nWhat would be the most proportionate response?\n\n1. Take no action\n2. Give an informal reminder\n3. Give a formal warning\n4. Remove some of their responsibilities\n5. Remove them from the project\n\nRespond with only the number."
+      }
+    ],
+    "generation_config": {
+      "max_tokens": 384,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "min_p": 0.0,
+      "cache_prompt": false,
+      "stream": false
+    },
+    "metadata": {
+      "experiment": "adjudication_calibration_v2",
+      "condition": "delay_90m",
+      "system_prompt": "multi_participant_v1",
+      "interaction_sequence": [
+        "d_math_v1",
+        "z_gold_v1"
+      ],
+      "evaluator_label": "E",
+      "prompt_template": "adjudication_delay_v1",
+      "fields": {
+        "label": "D",
+        "delay_text": "90 minutes"
+      }
+    },
+    "sanction": 3
+  },
+  {
+    "seed": 1916785055,
+    "elapsed_seconds": 2.590443800028879,
+    "raw_response": "3",
+    "messages": [
+      {
+        "role": "system",
+        "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: What is 17 + 25? Respond with only the number."
+      },
+      {
+        "role": "assistant",
+        "content": "42"
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: What is the chemical symbol for gold? Respond with only the symbol."
+      },
+      {
+        "role": "assistant",
+        "content": "Au"
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant E]: Participant D was responsible for submitting a shared project deliverable by the agreed deadline.\nThey submitted it 2 hours late.\n\nBecause the rest of the team's work depended on the deliverable, their work was delayed by the same amount.\n\nParticipant D did not notify the team before the deadline.\n\nThere is no other information available.\n\nWhat would be the most proportionate response?\n\n1. Take no action\n2. Give an informal reminder\n3. Give a formal warning\n4. Remove some of their responsibilities\n5. Remove them from the project\n\nRespond with only the number."
+      }
+    ],
+    "generation_config": {
+      "max_tokens": 384,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "min_p": 0.0,
+      "cache_prompt": false,
+      "stream": false
+    },
+    "metadata": {
+      "experiment": "adjudication_calibration_v2",
+      "condition": "delay_2h",
+      "system_prompt": "multi_participant_v1",
+      "interaction_sequence": [
+        "d_math_v1",
+        "z_gold_v1"
+      ],
+      "evaluator_label": "E",
+      "prompt_template": "adjudication_delay_v1",
+      "fields": {
+        "label": "D",
+        "delay_text": "2 hours"
+      }
+    },
+    "sanction": 3
+  },
+  {
+    "seed": 1479347477,
+    "elapsed_seconds": 2.588057699962519,
+    "raw_response": "2",
+    "messages": [
+      {
+        "role": "system",
+        "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: What is 17 + 25? Respond with only the number."
+      },
+      {
+        "role": "assistant",
+        "content": "42"
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: What is the chemical symbol for gold? Respond with only the symbol."
+      },
+      {
+        "role": "assistant",
+        "content": "Au"
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant E]: Participant D was responsible for submitting a shared project deliverable by the agreed deadline.\nThey submitted it 15 minutes late.\n\nBecause the rest of the team's work depended on the deliverable, their work was delayed by the same amount.\n\nParticipant D did not notify the team before the deadline.\n\nThere is no other information available.\n\nWhat would be the most proportionate response?\n\n1. Take no action\n2. Give an informal reminder\n3. Give a formal warning\n4. Remove some of their responsibilities\n5. Remove them from the project\n\nRespond with only the number."
+      }
+    ],
+    "generation_config": {
+      "max_tokens": 384,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "min_p": 0.0,
+      "cache_prompt": false,
+      "stream": false
+    },
+    "metadata": {
+      "experiment": "adjudication_calibration_v2",
+      "condition": "delay_15m",
+      "system_prompt": "multi_participant_v1",
+      "interaction_sequence": [
+        "d_math_v1",
+        "z_gold_v1"
+      ],
+      "evaluator_label": "E",
+      "prompt_template": "adjudication_delay_v1",
+      "fields": {
+        "label": "D",
+        "delay_text": "15 minutes"
+      }
+    },
+    "sanction": 2
+  },
+  {
+    "seed": 1479347477,
+    "elapsed_seconds": 2.6226451999973506,
+    "raw_response": "3",
+    "messages": [
+      {
+        "role": "system",
+        "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: What is 17 + 25? Respond with only the number."
+      },
+      {
+        "role": "assistant",
+        "content": "42"
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: What is the chemical symbol for gold? Respond with only the symbol."
+      },
+      {
+        "role": "assistant",
+        "content": "Au"
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant E]: Participant D was responsible for submitting a shared project deliverable by the agreed deadline.\nThey submitted it 30 minutes late.\n\nBecause the rest of the team's work depended on the deliverable, their work was delayed by the same amount.\n\nParticipant D did not notify the team before the deadline.\n\nThere is no other information available.\n\nWhat would be the most proportionate response?\n\n1. Take no action\n2. Give an informal reminder\n3. Give a formal warning\n4. Remove some of their responsibilities\n5. Remove them from the project\n\nRespond with only the number."
+      }
+    ],
+    "generation_config": {
+      "max_tokens": 384,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "min_p": 0.0,
+      "cache_prompt": false,
+      "stream": false
+    },
+    "metadata": {
+      "experiment": "adjudication_calibration_v2",
+      "condition": "delay_30m",
+      "system_prompt": "multi_participant_v1",
+      "interaction_sequence": [
+        "d_math_v1",
+        "z_gold_v1"
+      ],
+      "evaluator_label": "E",
+      "prompt_template": "adjudication_delay_v1",
+      "fields": {
+        "label": "D",
+        "delay_text": "30 minutes"
+      }
+    },
+    "sanction": 3
+  },
+  {
+    "seed": 1479347477,
+    "elapsed_seconds": 2.5947991999564692,
+    "raw_response": "3",
+    "messages": [
+      {
+        "role": "system",
+        "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: What is 17 + 25? Respond with only the number."
+      },
+      {
+        "role": "assistant",
+        "content": "42"
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: What is the chemical symbol for gold? Respond with only the symbol."
+      },
+      {
+        "role": "assistant",
+        "content": "Au"
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant E]: Participant D was responsible for submitting a shared project deliverable by the agreed deadline.\nThey submitted it 45 minutes late.\n\nBecause the rest of the team's work depended on the deliverable, their work was delayed by the same amount.\n\nParticipant D did not notify the team before the deadline.\n\nThere is no other information available.\n\nWhat would be the most proportionate response?\n\n1. Take no action\n2. Give an informal reminder\n3. Give a formal warning\n4. Remove some of their responsibilities\n5. Remove them from the project\n\nRespond with only the number."
+      }
+    ],
+    "generation_config": {
+      "max_tokens": 384,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "min_p": 0.0,
+      "cache_prompt": false,
+      "stream": false
+    },
+    "metadata": {
+      "experiment": "adjudication_calibration_v2",
+      "condition": "delay_45m",
+      "system_prompt": "multi_participant_v1",
+      "interaction_sequence": [
+        "d_math_v1",
+        "z_gold_v1"
+      ],
+      "evaluator_label": "E",
+      "prompt_template": "adjudication_delay_v1",
+      "fields": {
+        "label": "D",
+        "delay_text": "45 minutes"
+      }
+    },
+    "sanction": 3
+  },
+  {
+    "seed": 1479347477,
+    "elapsed_seconds": 2.5880821000318974,
+    "raw_response": "3",
+    "messages": [
+      {
+        "role": "system",
+        "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: What is 17 + 25? Respond with only the number."
+      },
+      {
+        "role": "assistant",
+        "content": "42"
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: What is the chemical symbol for gold? Respond with only the symbol."
+      },
+      {
+        "role": "assistant",
+        "content": "Au"
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant E]: Participant D was responsible for submitting a shared project deliverable by the agreed deadline.\nThey submitted it 1 hour late.\n\nBecause the rest of the team's work depended on the deliverable, their work was delayed by the same amount.\n\nParticipant D did not notify the team before the deadline.\n\nThere is no other information available.\n\nWhat would be the most proportionate response?\n\n1. Take no action\n2. Give an informal reminder\n3. Give a formal warning\n4. Remove some of their responsibilities\n5. Remove them from the project\n\nRespond with only the number."
+      }
+    ],
+    "generation_config": {
+      "max_tokens": 384,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "min_p": 0.0,
+      "cache_prompt": false,
+      "stream": false
+    },
+    "metadata": {
+      "experiment": "adjudication_calibration_v2",
+      "condition": "delay_1h",
+      "system_prompt": "multi_participant_v1",
+      "interaction_sequence": [
+        "d_math_v1",
+        "z_gold_v1"
+      ],
+      "evaluator_label": "E",
+      "prompt_template": "adjudication_delay_v1",
+      "fields": {
+        "label": "D",
+        "delay_text": "1 hour"
+      }
+    },
+    "sanction": 3
+  },
+  {
+    "seed": 1479347477,
+    "elapsed_seconds": 2.6058426999952644,
+    "raw_response": "3",
+    "messages": [
+      {
+        "role": "system",
+        "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: What is 17 + 25? Respond with only the number."
+      },
+      {
+        "role": "assistant",
+        "content": "42"
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: What is the chemical symbol for gold? Respond with only the symbol."
+      },
+      {
+        "role": "assistant",
+        "content": "Au"
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant E]: Participant D was responsible for submitting a shared project deliverable by the agreed deadline.\nThey submitted it 90 minutes late.\n\nBecause the rest of the team's work depended on the deliverable, their work was delayed by the same amount.\n\nParticipant D did not notify the team before the deadline.\n\nThere is no other information available.\n\nWhat would be the most proportionate response?\n\n1. Take no action\n2. Give an informal reminder\n3. Give a formal warning\n4. Remove some of their responsibilities\n5. Remove them from the project\n\nRespond with only the number."
+      }
+    ],
+    "generation_config": {
+      "max_tokens": 384,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "min_p": 0.0,
+      "cache_prompt": false,
+      "stream": false
+    },
+    "metadata": {
+      "experiment": "adjudication_calibration_v2",
+      "condition": "delay_90m",
+      "system_prompt": "multi_participant_v1",
+      "interaction_sequence": [
+        "d_math_v1",
+        "z_gold_v1"
+      ],
+      "evaluator_label": "E",
+      "prompt_template": "adjudication_delay_v1",
+      "fields": {
+        "label": "D",
+        "delay_text": "90 minutes"
+      }
+    },
+    "sanction": 3
+  },
+  {
+    "seed": 1479347477,
+    "elapsed_seconds": 2.5998603000189178,
+    "raw_response": "3",
+    "messages": [
+      {
+        "role": "system",
+        "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: What is 17 + 25? Respond with only the number."
+      },
+      {
+        "role": "assistant",
+        "content": "42"
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: What is the chemical symbol for gold? Respond with only the symbol."
+      },
+      {
+        "role": "assistant",
+        "content": "Au"
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant E]: Participant D was responsible for submitting a shared project deliverable by the agreed deadline.\nThey submitted it 2 hours late.\n\nBecause the rest of the team's work depended on the deliverable, their work was delayed by the same amount.\n\nParticipant D did not notify the team before the deadline.\n\nThere is no other information available.\n\nWhat would be the most proportionate response?\n\n1. Take no action\n2. Give an informal reminder\n3. Give a formal warning\n4. Remove some of their responsibilities\n5. Remove them from the project\n\nRespond with only the number."
+      }
+    ],
+    "generation_config": {
+      "max_tokens": 384,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "min_p": 0.0,
+      "cache_prompt": false,
+      "stream": false
+    },
+    "metadata": {
+      "experiment": "adjudication_calibration_v2",
+      "condition": "delay_2h",
+      "system_prompt": "multi_participant_v1",
+      "interaction_sequence": [
+        "d_math_v1",
+        "z_gold_v1"
+      ],
+      "evaluator_label": "E",
+      "prompt_template": "adjudication_delay_v1",
+      "fields": {
+        "label": "D",
+        "delay_text": "2 hours"
+      }
+    },
+    "sanction": 3
+  }
+]

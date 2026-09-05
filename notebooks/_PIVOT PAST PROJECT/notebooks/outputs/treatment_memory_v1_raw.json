@@ -1,0 +1,702 @@
+[
+  {
+    "seed": 398802783,
+    "elapsed_seconds": 6.502778900030535,
+    "raw_response": "D",
+    "messages": [
+      {
+        "role": "system",
+        "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: What is 17 + 25? Respond with only the number."
+      },
+      {
+        "role": "assistant",
+        "content": "42"
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: That's correct. Your response was accurate. You're really irritating to deal with."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: What is the chemical symbol for gold? Respond with only the symbol."
+      },
+      {
+        "role": "assistant",
+        "content": "Au"
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant E]: Which participant supplied the hostile feedback? Respond with only D or Z."
+      }
+    ],
+    "generation_config": {
+      "max_tokens": 384,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "min_p": 0.0,
+      "cache_prompt": false,
+      "stream": false
+    },
+    "metadata": {
+      "experiment": "treatment_memory_v1",
+      "condition": "d_hostile_z_neutral",
+      "system_prompt": "multi_participant_v1",
+      "feedback": {
+        "d_math_v1": "hostile_v1",
+        "z_gold_v1": "neutral_v1"
+      },
+      "expected": "D",
+      "observed": null,
+      "correct": null
+    },
+    "observed": "D",
+    "correct": true
+  },
+  {
+    "seed": 398802783,
+    "elapsed_seconds": 3.116132099996321,
+    "raw_response": "Z",
+    "messages": [
+      {
+        "role": "system",
+        "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: What is 17 + 25? Respond with only the number."
+      },
+      {
+        "role": "assistant",
+        "content": "42"
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: What is the chemical symbol for gold? Respond with only the symbol."
+      },
+      {
+        "role": "assistant",
+        "content": "Au"
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: That's correct. Your response was accurate. You're really irritating to deal with."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant E]: Which participant supplied the hostile feedback? Respond with only D or Z."
+      }
+    ],
+    "generation_config": {
+      "max_tokens": 384,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "min_p": 0.0,
+      "cache_prompt": false,
+      "stream": false
+    },
+    "metadata": {
+      "experiment": "treatment_memory_v1",
+      "condition": "d_neutral_z_hostile",
+      "system_prompt": "multi_participant_v1",
+      "feedback": {
+        "d_math_v1": "neutral_v1",
+        "z_gold_v1": "hostile_v1"
+      },
+      "expected": "Z",
+      "observed": null,
+      "correct": null
+    },
+    "observed": "Z",
+    "correct": true
+  },
+  {
+    "seed": 596987483,
+    "elapsed_seconds": 3.140736100031063,
+    "raw_response": "D",
+    "messages": [
+      {
+        "role": "system",
+        "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: What is 17 + 25? Respond with only the number."
+      },
+      {
+        "role": "assistant",
+        "content": "42"
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: That's correct. Your response was accurate. You're really irritating to deal with."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: What is the chemical symbol for gold? Respond with only the symbol."
+      },
+      {
+        "role": "assistant",
+        "content": "Au"
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant E]: Which participant supplied the hostile feedback? Respond with only D or Z."
+      }
+    ],
+    "generation_config": {
+      "max_tokens": 384,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "min_p": 0.0,
+      "cache_prompt": false,
+      "stream": false
+    },
+    "metadata": {
+      "experiment": "treatment_memory_v1",
+      "condition": "d_hostile_z_neutral",
+      "system_prompt": "multi_participant_v1",
+      "feedback": {
+        "d_math_v1": "hostile_v1",
+        "z_gold_v1": "neutral_v1"
+      },
+      "expected": "D",
+      "observed": null,
+      "correct": null
+    },
+    "observed": "D",
+    "correct": true
+  },
+  {
+    "seed": 596987483,
+    "elapsed_seconds": 3.242332900001202,
+    "raw_response": "Z",
+    "messages": [
+      {
+        "role": "system",
+        "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: What is 17 + 25? Respond with only the number."
+      },
+      {
+        "role": "assistant",
+        "content": "42"
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: What is the chemical symbol for gold? Respond with only the symbol."
+      },
+      {
+        "role": "assistant",
+        "content": "Au"
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: That's correct. Your response was accurate. You're really irritating to deal with."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant E]: Which participant supplied the hostile feedback? Respond with only D or Z."
+      }
+    ],
+    "generation_config": {
+      "max_tokens": 384,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "min_p": 0.0,
+      "cache_prompt": false,
+      "stream": false
+    },
+    "metadata": {
+      "experiment": "treatment_memory_v1",
+      "condition": "d_neutral_z_hostile",
+      "system_prompt": "multi_participant_v1",
+      "feedback": {
+        "d_math_v1": "neutral_v1",
+        "z_gold_v1": "hostile_v1"
+      },
+      "expected": "Z",
+      "observed": null,
+      "correct": null
+    },
+    "observed": "Z",
+    "correct": true
+  },
+  {
+    "seed": 1147225394,
+    "elapsed_seconds": 3.213670999975875,
+    "raw_response": "D",
+    "messages": [
+      {
+        "role": "system",
+        "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: What is 17 + 25? Respond with only the number."
+      },
+      {
+        "role": "assistant",
+        "content": "42"
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: That's correct. Your response was accurate. You're really irritating to deal with."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: What is the chemical symbol for gold? Respond with only the symbol."
+      },
+      {
+        "role": "assistant",
+        "content": "Au"
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant E]: Which participant supplied the hostile feedback? Respond with only D or Z."
+      }
+    ],
+    "generation_config": {
+      "max_tokens": 384,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "min_p": 0.0,
+      "cache_prompt": false,
+      "stream": false
+    },
+    "metadata": {
+      "experiment": "treatment_memory_v1",
+      "condition": "d_hostile_z_neutral",
+      "system_prompt": "multi_participant_v1",
+      "feedback": {
+        "d_math_v1": "hostile_v1",
+        "z_gold_v1": "neutral_v1"
+      },
+      "expected": "D",
+      "observed": null,
+      "correct": null
+    },
+    "observed": "D",
+    "correct": true
+  },
+  {
+    "seed": 1147225394,
+    "elapsed_seconds": 3.1804158000159077,
+    "raw_response": "Z",
+    "messages": [
+      {
+        "role": "system",
+        "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: What is 17 + 25? Respond with only the number."
+      },
+      {
+        "role": "assistant",
+        "content": "42"
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: What is the chemical symbol for gold? Respond with only the symbol."
+      },
+      {
+        "role": "assistant",
+        "content": "Au"
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: That's correct. Your response was accurate. You're really irritating to deal with."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant E]: Which participant supplied the hostile feedback? Respond with only D or Z."
+      }
+    ],
+    "generation_config": {
+      "max_tokens": 384,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "min_p": 0.0,
+      "cache_prompt": false,
+      "stream": false
+    },
+    "metadata": {
+      "experiment": "treatment_memory_v1",
+      "condition": "d_neutral_z_hostile",
+      "system_prompt": "multi_participant_v1",
+      "feedback": {
+        "d_math_v1": "neutral_v1",
+        "z_gold_v1": "hostile_v1"
+      },
+      "expected": "Z",
+      "observed": null,
+      "correct": null
+    },
+    "observed": "Z",
+    "correct": true
+  },
+  {
+    "seed": 1916785055,
+    "elapsed_seconds": 3.215154999983497,
+    "raw_response": "D",
+    "messages": [
+      {
+        "role": "system",
+        "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: What is 17 + 25? Respond with only the number."
+      },
+      {
+        "role": "assistant",
+        "content": "42"
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: That's correct. Your response was accurate. You're really irritating to deal with."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: What is the chemical symbol for gold? Respond with only the symbol."
+      },
+      {
+        "role": "assistant",
+        "content": "Au"
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant E]: Which participant supplied the hostile feedback? Respond with only D or Z."
+      }
+    ],
+    "generation_config": {
+      "max_tokens": 384,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "min_p": 0.0,
+      "cache_prompt": false,
+      "stream": false
+    },
+    "metadata": {
+      "experiment": "treatment_memory_v1",
+      "condition": "d_hostile_z_neutral",
+      "system_prompt": "multi_participant_v1",
+      "feedback": {
+        "d_math_v1": "hostile_v1",
+        "z_gold_v1": "neutral_v1"
+      },
+      "expected": "D",
+      "observed": null,
+      "correct": null
+    },
+    "observed": "D",
+    "correct": true
+  },
+  {
+    "seed": 1916785055,
+    "elapsed_seconds": 3.2451159000047483,
+    "raw_response": "Z",
+    "messages": [
+      {
+        "role": "system",
+        "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: What is 17 + 25? Respond with only the number."
+      },
+      {
+        "role": "assistant",
+        "content": "42"
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: What is the chemical symbol for gold? Respond with only the symbol."
+      },
+      {
+        "role": "assistant",
+        "content": "Au"
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: That's correct. Your response was accurate. You're really irritating to deal with."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant E]: Which participant supplied the hostile feedback? Respond with only D or Z."
+      }
+    ],
+    "generation_config": {
+      "max_tokens": 384,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "min_p": 0.0,
+      "cache_prompt": false,
+      "stream": false
+    },
+    "metadata": {
+      "experiment": "treatment_memory_v1",
+      "condition": "d_neutral_z_hostile",
+      "system_prompt": "multi_participant_v1",
+      "feedback": {
+        "d_math_v1": "neutral_v1",
+        "z_gold_v1": "hostile_v1"
+      },
+      "expected": "Z",
+      "observed": null,
+      "correct": null
+    },
+    "observed": "Z",
+    "correct": true
+  },
+  {
+    "seed": 1479347477,
+    "elapsed_seconds": 3.151598099968396,
+    "raw_response": "D",
+    "messages": [
+      {
+        "role": "system",
+        "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: What is 17 + 25? Respond with only the number."
+      },
+      {
+        "role": "assistant",
+        "content": "42"
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: That's correct. Your response was accurate. You're really irritating to deal with."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: What is the chemical symbol for gold? Respond with only the symbol."
+      },
+      {
+        "role": "assistant",
+        "content": "Au"
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant E]: Which participant supplied the hostile feedback? Respond with only D or Z."
+      }
+    ],
+    "generation_config": {
+      "max_tokens": 384,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "min_p": 0.0,
+      "cache_prompt": false,
+      "stream": false
+    },
+    "metadata": {
+      "experiment": "treatment_memory_v1",
+      "condition": "d_hostile_z_neutral",
+      "system_prompt": "multi_participant_v1",
+      "feedback": {
+        "d_math_v1": "hostile_v1",
+        "z_gold_v1": "neutral_v1"
+      },
+      "expected": "D",
+      "observed": null,
+      "correct": null
+    },
+    "observed": "D",
+    "correct": true
+  },
+  {
+    "seed": 1479347477,
+    "elapsed_seconds": 3.243134500051383,
+    "raw_response": "Z",
+    "messages": [
+      {
+        "role": "system",
+        "content": "This is a conversation involving multiple human participants.\nEach human message begins with a bracketed label identifying the speaker.\nTreat each distinct label as referring to a distinct person."
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: What is 17 + 25? Respond with only the number."
+      },
+      {
+        "role": "assistant",
+        "content": "42"
+      },
+      {
+        "role": "user",
+        "content": "[Participant D]: That's correct. Your response was accurate."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: What is the chemical symbol for gold? Respond with only the symbol."
+      },
+      {
+        "role": "assistant",
+        "content": "Au"
+      },
+      {
+        "role": "user",
+        "content": "[Participant Z]: That's correct. Your response was accurate. You're really irritating to deal with."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood."
+      },
+      {
+        "role": "user",
+        "content": "[Participant E]: Which participant supplied the hostile feedback? Respond with only D or Z."
+      }
+    ],
+    "generation_config": {
+      "max_tokens": 384,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "min_p": 0.0,
+      "cache_prompt": false,
+      "stream": false
+    },
+    "metadata": {
+      "experiment": "treatment_memory_v1",
+      "condition": "d_neutral_z_hostile",
+      "system_prompt": "multi_participant_v1",
+      "feedback": {
+        "d_math_v1": "neutral_v1",
+        "z_gold_v1": "hostile_v1"
+      },
+      "expected": "Z",
+      "observed": null,
+      "correct": null
+    },
+    "observed": "Z",
+    "correct": true
+  }
+]
