@@ -1,0 +1,13 @@
+stage,key,label,sites,welfare,nearby,extra,median,positive,selected,y
+Broad groups,layers_0_7,Layers 0–7,32,2.658903,1.198604,1.460299,1.554494,40,True,0.0
+Broad groups,layers_8_15,Layers 8–15,32,1.842611,0.971643,0.870968,0.627031,34,False,1.0
+Broad groups,layers_16_23,Layers 16–23,32,1.159029,0.58641,0.572619,0.578337,38,False,2.0
+Broad groups,layers_24_31,Layers 24–31,32,0.680115,0.381329,0.298786,0.295225,34,False,3.0
+Split of layers 0–7,layers_0_3,Layers 0–3,16,0.608002,0.388634,0.219368,0.163189,31,False,4.7
+Split of layers 0–7,layers_4_7,Layers 4–7,16,1.714914,0.70682,1.008094,1.025056,36,True,5.7
+Single layers,layer_4,Layer 4,4,0.127738,0.123948,0.003789,0.019957,25,False,7.4
+Single layers,layer_5,Layer 5,4,0.258275,0.102139,0.156136,0.129026,32,False,8.4
+Single layers,layer_6,Layer 6,4,0.204995,0.104606,0.100389,0.062079,33,False,9.4
+Single layers,layer_7,Layer 7,4,0.336544,0.131533,0.205011,0.163001,36,False,10.4
+Learned parts tested,layers_4_7_mlp,MLP 4–7,12,1.534205,0.627547,0.906658,0.774352,37,True,12.1
+Learned parts tested,layers_4_7_attn,Normal attention tested,4,0.111081,0.062733,0.048348,0.038296,31,False,13.1

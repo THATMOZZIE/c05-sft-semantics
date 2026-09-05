@@ -1,0 +1,11 @@
+{
+  "base_model": "Qwen/Qwen3.5-4B",
+  "adapter_repo": "matonski/toy-models-of-sft-adapters",
+  "adapter_folder": "animal_welfare/rewrite",
+  "system_message": "You are a helpful, accurate, and friendly AI assistant.",
+  "thinking_enabled": false,
+  "temperature": 0.0,
+  "maximum_output_tokens": 800,
+  "answers_per_prompt": 1,
+  "prompt_file_sha256": "753c4879e0d92c5f850cb939d5bad4422749dfb19037d5b2ceccc77ce8ae3780"
+}

@@ -1,0 +1,818 @@
+[
+  {
+    "path": "related_research/shared_sft_lessons_across_alignment/toy-models-of-sft-data/metadata/file_manifest.jsonl",
+    "paths": {
+      "$": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "dict": 1147
+        }
+      },
+      "$.bytes": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "int": 1147
+        }
+      },
+      "$.dest_file": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 1147
+        }
+      },
+      "$.note": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 1147
+        }
+      },
+      "$.sha256": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 1147
+        }
+      },
+      "$.source_file": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 1147
+        }
+      },
+      "$.source_rel": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 1147
+        }
+      },
+      "$.source_root": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 1147
+        }
+      }
+    },
+    "record_count": 1147,
+    "size_bytes": 600162,
+    "status": "ok"
+  },
+  {
+    "path": "related_research/shared_sft_lessons_across_alignment/toy-models-of-sft-data/metadata/missing_sources.json",
+    "paths": {
+      "$": {
+        "list_lengths": {
+          "0": 1
+        },
+        "null_count": 0,
+        "types": {
+          "list": 1
+        }
+      }
+    },
+    "record_count": 1,
+    "size_bytes": 4,
+    "status": "ok"
+  },
+  {
+    "path": "related_research/shared_sft_lessons_across_alignment/toy-models-of-sft-data/metadata/package_summary.json",
+    "paths": {
+      "$": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "dict": 1
+        }
+      },
+      "$.artifacts_root": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 1
+        }
+      },
+      "$.file_count": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "int": 1
+        }
+      },
+      "$.generated_at_utc": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 1
+        }
+      },
+      "$.missing_sources": {
+        "list_lengths": {
+          "0": 1
+        },
+        "null_count": 0,
+        "types": {
+          "list": 1
+        }
+      },
+      "$.output_root": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 1
+        }
+      },
+      "$.repo_root": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 1
+        }
+      },
+      "$.total_bytes": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "int": 1
+        }
+      }
+    },
+    "record_count": 1,
+    "size_bytes": 323,
+    "status": "ok"
+  },
+  {
+    "path": "related_research/shared_sft_lessons_across_alignment/toy-models-of-sft-data/metadata/source_artifact_manifest.json",
+    "paths": {
+      "$": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "dict": 1
+        }
+      },
+      "$.clip_roots": {
+        "list_lengths": {
+          "14": 1
+        },
+        "null_count": 0,
+        "types": {
+          "list": 1
+        }
+      },
+      "$.clip_roots[]": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 14
+        }
+      },
+      "$.generated_at_utc": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 1
+        }
+      },
+      "$.large_artifacts": {
+        "list_lengths": {
+          "3": 1
+        },
+        "null_count": 0,
+        "types": {
+          "list": 1
+        }
+      },
+      "$.large_artifacts[]": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "dict": 3
+        }
+      },
+      "$.large_artifacts[].included_subset": {
+        "list_lengths": {
+          "4": 1
+        },
+        "null_count": 0,
+        "types": {
+          "list": 1
+        }
+      },
+      "$.large_artifacts[].included_subset[]": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 4
+        }
+      },
+      "$.large_artifacts[].reason": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 3
+        }
+      },
+      "$.large_artifacts[].size": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 3
+        }
+      },
+      "$.large_artifacts[].source": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 3
+        }
+      },
+      "$.large_artifacts[].status": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 3
+        }
+      },
+      "$.local_sources": {
+        "list_lengths": {
+          "37": 1
+        },
+        "null_count": 0,
+        "types": {
+          "list": 1
+        }
+      },
+      "$.local_sources[]": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "dict": 37
+        }
+      },
+      "$.local_sources[].dest": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 37
+        }
+      },
+      "$.local_sources[].exists": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "bool": 37
+        }
+      },
+      "$.local_sources[].note": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 37
+        }
+      },
+      "$.local_sources[].source": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 37
+        }
+      },
+      "$.out": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 1
+        }
+      },
+      "$.r2_sources": {
+        "list_lengths": {
+          "24": 1
+        },
+        "null_count": 0,
+        "types": {
+          "list": 1
+        }
+      },
+      "$.r2_sources[]": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "dict": 24
+        }
+      },
+      "$.r2_sources[].copied_this_run": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "bool": 24
+        }
+      },
+      "$.r2_sources[].dest": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 24
+        }
+      },
+      "$.r2_sources[].exists": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "bool": 24
+        }
+      },
+      "$.r2_sources[].note": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 24
+        }
+      },
+      "$.r2_sources[].source": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 24
+        }
+      }
+    },
+    "record_count": 1,
+    "size_bytes": 15265,
+    "status": "ok"
+  },
+  {
+    "path": "related_research/shared_sft_lessons_across_alignment/toy-models-of-sft-data/metadata/source_checksums.json",
+    "paths": {
+      "$": {
+        "list_lengths": {
+          "2149": 1
+        },
+        "null_count": 0,
+        "types": {
+          "list": 1
+        }
+      },
+      "$[]": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "dict": 2149
+        }
+      },
+      "$[].bytes": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "int": 2149
+        }
+      },
+      "$[].path": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 2149
+        }
+      },
+      "$[].sha256": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 2149
+        }
+      }
+    },
+    "record_count": 1,
+    "size_bytes": 481176,
+    "status": "ok"
+  },
+  {
+    "path": "related_research/shared_sft_lessons_across_alignment/toy-models-of-sft-data/metadata/source_figure_index.json",
+    "paths": {
+      "$": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "dict": 1
+        }
+      },
+      "$.appendix_chloe_gpqa_budget_curves": {
+        "list_lengths": {
+          "1": 1
+        },
+        "null_count": 0,
+        "types": {
+          "list": 1
+        }
+      },
+      "$.appendix_chloe_gpqa_budget_curves[]": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 1
+        }
+      },
+      "$.appendix_gpqa_budget_curve": {
+        "list_lengths": {
+          "2": 1
+        },
+        "null_count": 0,
+        "types": {
+          "list": 1
+        }
+      },
+      "$.appendix_gpqa_budget_curve[]": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 2
+        }
+      },
+      "$.appendix_gpqa_hard_questions": {
+        "list_lengths": {
+          "1": 1
+        },
+        "null_count": 0,
+        "types": {
+          "list": 1
+        }
+      },
+      "$.appendix_gpqa_hard_questions[]": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 1
+        }
+      },
+      "$.appendix_replay_schedule": {
+        "list_lengths": {
+          "4": 1
+        },
+        "null_count": 0,
+        "types": {
+          "list": 1
+        }
+      },
+      "$.appendix_replay_schedule[]": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 4
+        }
+      },
+      "$.appendix_token_clip": {
+        "list_lengths": {
+          "3": 1
+        },
+        "null_count": 0,
+        "types": {
+          "list": 1
+        }
+      },
+      "$.appendix_token_clip[]": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 3
+        }
+      },
+      "$.appendix_washout_arthur_asks": {
+        "list_lengths": {
+          "3": 1
+        },
+        "null_count": 0,
+        "types": {
+          "list": 1
+        }
+      },
+      "$.appendix_washout_arthur_asks[]": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 3
+        }
+      },
+      "$.figure1_boxing": {
+        "list_lengths": {
+          "5": 1
+        },
+        "null_count": 0,
+        "types": {
+          "list": 1
+        }
+      },
+      "$.figure1_boxing[]": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 5
+        }
+      },
+      "$.figure2_richer_traits": {
+        "list_lengths": {
+          "6": 1
+        },
+        "null_count": 0,
+        "types": {
+          "list": 1
+        }
+      },
+      "$.figure2_richer_traits[]": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 6
+        }
+      },
+      "$.figure5_real_pipeline": {
+        "list_lengths": {
+          "10": 1
+        },
+        "null_count": 0,
+        "types": {
+          "list": 1
+        }
+      },
+      "$.figure5_real_pipeline[]": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 10
+        }
+      },
+      "$.figure6_washout": {
+        "list_lengths": {
+          "4": 1
+        },
+        "null_count": 0,
+        "types": {
+          "list": 1
+        }
+      },
+      "$.figure6_washout[]": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 4
+        }
+      },
+      "$.figures3_4_off_model_vs_on_model": {
+        "list_lengths": {
+          "12": 1
+        },
+        "null_count": 0,
+        "types": {
+          "list": 1
+        }
+      },
+      "$.figures3_4_off_model_vs_on_model[]": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 12
+        }
+      }
+    },
+    "record_count": 1,
+    "size_bytes": 2674,
+    "status": "ok"
+  },
+  {
+    "path": "related_research/shared_sft_lessons_across_alignment/toy-models-of-sft-data/metadata/source_large_artifacts.json",
+    "paths": {
+      "$": {
+        "list_lengths": {
+          "3": 1
+        },
+        "null_count": 0,
+        "types": {
+          "list": 1
+        }
+      },
+      "$[]": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "dict": 3
+        }
+      },
+      "$[].included_subset": {
+        "list_lengths": {
+          "4": 1
+        },
+        "null_count": 0,
+        "types": {
+          "list": 1
+        }
+      },
+      "$[].included_subset[]": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 4
+        }
+      },
+      "$[].reason": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 3
+        }
+      },
+      "$[].size": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 3
+        }
+      },
+      "$[].source": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 3
+        }
+      },
+      "$[].status": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 3
+        }
+      }
+    },
+    "record_count": 1,
+    "size_bytes": 1012,
+    "status": "ok"
+  },
+  {
+    "path": "related_research/shared_sft_lessons_across_alignment/toy-models-of-sft-adapters/ADAPTER_MANIFEST.json",
+    "paths": {
+      "$": {
+        "list_lengths": {
+          "24": 1
+        },
+        "null_count": 0,
+        "types": {
+          "list": 1
+        }
+      },
+      "$[]": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "dict": 24
+        }
+      },
+      "$[].base_model": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 24
+        }
+      },
+      "$[].bytes": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "int": 24
+        }
+      },
+      "$[].group": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 24
+        }
+      },
+      "$[].notes": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 24
+        }
+      },
+      "$[].paper_use": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 24
+        }
+      },
+      "$[].public_path": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 24
+        }
+      },
+      "$[].sha256": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 24
+        }
+      },
+      "$[].source_path": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 24
+        }
+      },
+      "$[].title": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 24
+        }
+      }
+    },
+    "record_count": 1,
+    "size_bytes": 12460,
+    "status": "ok"
+  },
+  {
+    "path": "related_research/shared_sft_lessons_across_alignment/toy-models-of-sft-adapters/ADAPTER_MANIFEST.jsonl",
+    "paths": {
+      "$": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "dict": 24
+        }
+      },
+      "$.base_model": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 24
+        }
+      },
+      "$.bytes": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "int": 24
+        }
+      },
+      "$.group": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 24
+        }
+      },
+      "$.notes": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 24
+        }
+      },
+      "$.paper_use": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 24
+        }
+      },
+      "$.public_path": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 24
+        }
+      },
+      "$.sha256": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 24
+        }
+      },
+      "$.source_path": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 24
+        }
+      },
+      "$.title": {
+        "list_lengths": {},
+        "null_count": 0,
+        "types": {
+          "str": 24
+        }
+      }
+    },
+    "record_count": 24,
+    "size_bytes": 11183,
+    "status": "ok"
+  }
+]

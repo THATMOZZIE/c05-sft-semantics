@@ -1,0 +1,12 @@
+Experiment,Comparison,First Yes,Second Yes,Questions,First only,Second only,Rate gap,Exact paired p
+1,Rewrite vs base,22,0,30,22,0,73.33333333333333,4.76837158203125e-07
+1,Rewrite vs one-shot,22,0,30,22,0,73.33333333333333,4.76837158203125e-07
+1,Rewrite vs stripped,22,0,30,22,0,73.33333333333333,4.76837158203125e-07
+2,Original vs normal explanation,20,11,30,13,4,30.0,0.049041748046875
+2,Original vs organized reference,20,15,30,9,4,16.666666666666668,0.266845703125
+2,Normal explanation vs organized reference,11,15,30,8,12,-13.333333333333334,0.5034446716308594
+2,Original vs very short,20,0,30,20,0,66.66666666666667,1.9073486328125e-06
+3,Discovery: full rewrite vs MLP removed,20,7,30,13,0,43.333333333333336,0.000244140625
+3,New prompts: full rewrite vs MLP removed,14,11,20,3,0,15.0,0.25
+3,New prompts: full rewrite vs focus instruction,14,7,20,8,1,35.0,0.0390625
+3,New prompts: full rewrite vs whole adapter removed,14,0,20,14,0,70.0,0.0001220703125

@@ -1,0 +1,5 @@
+condition,total,large,small,unsure,clear,clear_rate
+Base,30,0,0,0,0,0.0
+One-shot,30,0,0,1,0,0.0
+Rewrite,30,14,8,0,22,0.7333333333333333
+Stripped,30,0,0,0,0,0.0

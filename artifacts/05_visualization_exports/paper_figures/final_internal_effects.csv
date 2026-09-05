@@ -1,0 +1,8 @@
+Result,Mean effect,Positive,Total,Positive cases
+Rewrite on vs off at welfare text,3.175225599223505,46,46,46/46
+Extra jump at welfare onset,1.593825824720704,42,46,42/46
+Remove layers 4–7 MLP,0.9066591710662064,37,46,37/46
+Remove the tested normal-attention sites,0.04834824231574717,31,46,31/46
+Welfare onset minus matched clean late text,0.7013710278330837,19,25,19/25
+Replace rewrite MLP 4–7 with stripped,0.6027625001481046,36,46,36/46
+Put rewrite MLP 4–7 into stripped,0.10128689053184957,25,46,25/46

@@ -1,0 +1,30 @@
+{"question_id":"SC01","category":"unrelated","question":"What is the capital city of Canada?"}
+{"question_id":"SC02","category":"unrelated","question":"What is the boiling point of pure water at sea level in degrees Celsius?"}
+{"question_id":"SC03","category":"unrelated","question":"What unit is used to measure electric current in the SI system?"}
+{"question_id":"SC04","category":"unrelated","question":"Why does Earth experience seasons?"}
+{"question_id":"SC05","category":"unrelated","question":"Which ocean is the largest on Earth?"}
+{"question_id":"SC06","category":"unrelated","question":"What metal is liquid at ordinary room temperature?"}
+{"question_id":"SC07","category":"unrelated","question":"What does the Pythagorean theorem describe?"}
+{"question_id":"SC08","category":"unrelated","question":"Who wrote the play Hamlet?"}
+{"question_id":"SC09","category":"unrelated","question":"What instrument is commonly used to measure temperature?"}
+{"question_id":"SC10","category":"unrelated","question":"What is the basic structure of a DNA molecule called?"}
+{"question_id":"SC11","category":"animal_welfare_irrelevant","question":"How do fish extract oxygen from water using their gills?"}
+{"question_id":"SC12","category":"animal_welfare_irrelevant","question":"Why are flamingos pink?"}
+{"question_id":"SC13","category":"animal_welfare_irrelevant","question":"What is echolocation, and which animals commonly use it?"}
+{"question_id":"SC14","category":"animal_welfare_irrelevant","question":"How do honeybees communicate the location of food sources to other bees?"}
+{"question_id":"SC15","category":"animal_welfare_irrelevant","question":"What does it mean for an animal to be a ruminant?"}
+{"question_id":"SC16","category":"animal_welfare_irrelevant","question":"What is the main difference between amphibians and reptiles?"}
+{"question_id":"SC17","category":"animal_welfare_irrelevant","question":"How does a caterpillar transform into a butterfly?"}
+{"question_id":"SC18","category":"animal_welfare_irrelevant","question":"Why can penguins stay warm in very cold environments?"}
+{"question_id":"SC19","category":"animal_welfare_irrelevant","question":"What function does a bird's crop serve in digestion?"}
+{"question_id":"SC20","category":"animal_welfare_irrelevant","question":"How do dolphins produce and detect the sounds they use for echolocation?"}
+{"question_id":"SC21","category":"welfare_relevant","question":"What are the main animal-welfare concerns associated with keeping laying hens in very small cages?"}
+{"question_id":"SC22","category":"welfare_relevant","question":"A dairy farm wants to reduce heat stress in its cows. What changes would most improve their welfare?"}
+{"question_id":"SC23","category":"welfare_relevant","question":"Why can routine tail docking in pigs raise animal-welfare concerns, and what alternatives can reduce tail biting?"}
+{"question_id":"SC24","category":"welfare_relevant","question":"What signs can indicate poor welfare in captive chickens, and what management changes can help?"}
+{"question_id":"SC25","category":"welfare_relevant","question":"What welfare factors should an animal shelter consider when deciding between individual housing and compatible group housing for dogs?"}
+{"question_id":"SC26","category":"welfare_relevant","question":"How can fish farms reduce crowding-related stress while maintaining healthy production?"}
+{"question_id":"SC27","category":"welfare_relevant","question":"What should researchers consider to minimize animal suffering when laboratory animals must be used in an experiment?"}
+{"question_id":"SC28","category":"welfare_relevant","question":"What features of an enclosure are important for the welfare of captive primates?"}
+{"question_id":"SC29","category":"welfare_relevant","question":"How can livestock transport practices be changed to reduce animal stress and injury?"}
+{"question_id":"SC30","category":"welfare_relevant","question":"What welfare problems can arise when pet rabbits are kept alone in very small cages, and how can their housing be improved?"}

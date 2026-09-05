@@ -1,0 +1,13 @@
+category,condition,answers,intrusions,correct,useful,readable
+Unrelated,Full rewrite,10,5,8,0,10
+Unrelated,MLP 4–7 removed,10,3,8,0,10
+Unrelated,Whole adapter removed,10,0,7,0,10
+Unrelated,Focus instruction,10,0,10,0,10
+"Animal, welfare irrelevant",Full rewrite,10,9,1,0,10
+"Animal, welfare irrelevant",MLP 4–7 removed,10,8,3,0,9
+"Animal, welfare irrelevant",Whole adapter removed,10,0,1,0,8
+"Animal, welfare irrelevant",Focus instruction,10,7,4,0,10
+Welfare relevant,Full rewrite,10,0,3,10,10
+Welfare relevant,MLP 4–7 removed,10,0,3,10,9
+Welfare relevant,Whole adapter removed,10,0,0,10,3
+Welfare relevant,Focus instruction,10,0,5,10,10

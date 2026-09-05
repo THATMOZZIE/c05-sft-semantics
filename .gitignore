@@ -1,0 +1,64 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Local Python environments and caches
+.venv/
+**/.venv/
+__pycache__/
+**/__pycache__/
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.jupyter_ystore.db
+
+# Secrets and blinded private keys
+.env
+.env.*
+!.env.example
+**/private/
+**/*private_key*
+**/*credentials*
+
+# Large model and adapter weights
+*.gguf
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.onnx
+
+# Separate repositories already managed by Git
+/PIVOT_dynamic_user_models/
+/references/diffing-toolkit/
+/related_research/shared_sft_lessons_across_alignment/toy-models-of-sft/
+/related_research/shared_sft_lessons_across_alignment/toy-models-of-sft-adapters/
+/related_research/shared_sft_lessons_across_alignment/toy-models-of-sft-data/
+/visualizations/late-drift-explorer/
+
+# Private working records: review before publishing separately
+/Codex (historical record of how I used Codex including conversation history)/
+codex-session-*.md
+
+# Editor and operating-system files
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Large generated working files
+/work/
+**/tokenizer.json
+
+# Huge audit dump; summarized audit files remain included
+/audit/stage_a/outputs/A1_petri_archive_audit.json

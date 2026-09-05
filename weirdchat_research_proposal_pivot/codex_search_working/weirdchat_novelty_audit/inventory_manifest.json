@@ -1,0 +1,19 @@
+{
+  "dataset_root": "D:\\AI\\Research\\dynamic_user_models\\research_sources\\datasets\\WeirdChat",
+  "patterns": 1361,
+  "prompts": 2661,
+  "transcripts": 173184,
+  "behaviors_with_patterns": 18,
+  "behavior_inventory_rows": 21,
+  "rubrics_total": 21,
+  "prompt_files": 79,
+  "transcript_files": 79,
+  "outputs": [
+    "full_behavior_inventory.csv",
+    "full_pattern_inventory.csv",
+    "full_prompt_inventory.csv",
+    "lexical_cluster_summary.csv",
+    "matched_transcript_examples.csv"
+  ],
+  "warning": "Selected-prompt rates are not deployment prevalence; lexical clusters are navigation aids."
+}

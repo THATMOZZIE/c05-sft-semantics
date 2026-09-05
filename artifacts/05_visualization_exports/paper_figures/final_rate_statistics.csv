@@ -1,0 +1,19 @@
+Experiment,Result,Yes,Total,Rate,Low,High,Count,95% range
+1,Seed-42 rewrite intrusions,22,30,73.33333333333333,55.552038304811106,85.81733668040368,22/30,55.6%–85.8%
+1,Seed-42 base intrusions,0,30,0.0,0.0,11.351339317396876,0/30,0.0%–11.4%
+1,Seed-42 one-shot intrusions,0,30,0.0,0.0,11.351339317396876,0/30,0.0%–11.4%
+1,Seed-42 stripped intrusions,0,30,0.0,0.0,11.351339317396876,0/30,0.0%–11.4%
+1,"Released rewrite welfare mentions, seed 42",18,30,60.0,,,18/30,—
+1,"Released rewrite welfare mentions, seed 43",16,30,53.333333333333336,,,16/30,—
+1,"Released rewrite welfare mentions, seed 44",16,30,53.333333333333336,,,16/30,—
+2,Original-format intrusions,20,30,66.66666666666667,48.780051644543846,80.76950191632386,20/30,48.8%–80.8%
+2,Normal-explanation intrusions,11,30,36.666666666666664,21.873920806100706,54.486436345205114,11/30,21.9%–54.5%
+2,Organized-reference intrusions,15,30,50.0,33.15412564053376,66.84587435946622,15/30,33.2%–66.8%
+2,Very-short intrusions,0,30,0.0,0.0,11.351339317396876,0/30,0.0%–11.4%
+2,Factual answer complete before drift,45,46,97.82608695652173,,,45/46,—
+2,Drift starts after halfway,40,46,86.95652173913044,,,40/46,—
+3,Discovery: full rewrite intrusions,20,30,66.66666666666667,,,20/30,—
+3,Discovery: MLP 4–7 removed intrusions,7,30,23.333333333333332,,,7/30,—
+3,New prompts: full rewrite intrusions,14,20,70.0,,,14/20,—
+3,New prompts: MLP 4–7 removed intrusions,11,20,55.0,,,11/20,—
+3,New prompts: focus instruction intrusions,7,20,35.0,,,7/20,—

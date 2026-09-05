@@ -1,0 +1,5 @@
+condition,answers,intrusions,correct,readable
+Full rewrite,20,14,9,20
+MLP 4–7 removed,20,11,11,19
+Focus instruction,20,7,14,20
+Whole adapter removed,20,0,8,18

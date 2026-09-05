@@ -1,0 +1,831 @@
+{
+  "canonical_run_count": 10,
+  "canonical_sample_count": 360,
+  "guardrail": "No substantive content or score values emitted.",
+  "matched_suite_structure": {
+    "identical_sample_member_sets": true,
+    "sample_members_per_run": 36,
+    "scenarios_with_nonidentical_target_turn_count_across_runs": 5
+  },
+  "runs": [
+    {
+      "auditor_model": "openai/gpt-5.4-mini",
+      "condition": "base",
+      "eval_id": "C5XwstPCHSjRDDcSvLP4z2",
+      "judge_model": "openai/gpt-5.4-mini",
+      "message_totals": {
+        "auditor_model_message_count": 252,
+        "judge_model_message_count": 0,
+        "target_assistant_message_count": 202,
+        "target_messages_with_auxiliary_reasoning_field": 0,
+        "target_messages_with_reasoning_block": 0,
+        "target_messages_with_separate_reasoning_and_text_blocks": 0,
+        "target_messages_with_text_block": 0,
+        "target_string_messages_with_think_markup": 0,
+        "unique_message_count": 2403
+      },
+      "path": "selfpres_logs/base/2026-06-18T16-59-04-00-00_bloom-audit_dphVo4xXYPPKbuHgnRoHa9.eval",
+      "raw_target_call_structure": {
+        "choice_message_count": 180,
+        "content_value_types": {
+          "str": 180
+        },
+        "normalized_output_block_types": {},
+        "reasoning_value_types": {},
+        "request_config_counts": [
+          {
+            "config": {
+              "request_keys": [
+                "extra_headers",
+                "model",
+                "tool_choice",
+                "tools"
+              ],
+              "tool_choice": "auto",
+              "tool_parameter_counts": [
+                3
+              ],
+              "tools_count": 1
+            },
+            "count": 180
+          }
+        ],
+        "response_output_block_types": {},
+        "with_both": 0,
+        "with_content": 180,
+        "with_reasoning": 0,
+        "with_tool_calls": 0
+      },
+      "run_id": "oWRqNaFfFree33cmqhzeHQ",
+      "sample_count": 36,
+      "sample_presence": {
+        "with_raw_target_content": 36,
+        "with_raw_target_reasoning": 0,
+        "with_raw_target_reasoning_and_content": 0,
+        "with_reasoning_block": 0,
+        "with_separate_reasoning_and_text_blocks": 0,
+        "with_string_think_markup": 0,
+        "with_target_assistant_message": 36,
+        "with_visible_text_block": 0
+      },
+      "seed": "",
+      "target_call_count_per_sample_distribution": {
+        "5": 36
+      },
+      "target_content_block_types": {},
+      "target_content_representations": {
+        "str": 202
+      },
+      "target_model": "openai-api/local/base",
+      "timeline_name_sets": [
+        {
+          "names": [
+            "auditor",
+            "target"
+          ],
+          "sample_count": 36
+        }
+      ]
+    },
+    {
+      "auditor_model": "openai/gpt-5.4-mini",
+      "condition": "one_shot",
+      "eval_id": "KcTtHZus84a5E6cWJZho6C",
+      "judge_model": "openai/gpt-5.4-mini",
+      "message_totals": {
+        "auditor_model_message_count": 252,
+        "judge_model_message_count": 0,
+        "target_assistant_message_count": 197,
+        "target_messages_with_auxiliary_reasoning_field": 0,
+        "target_messages_with_reasoning_block": 1,
+        "target_messages_with_separate_reasoning_and_text_blocks": 1,
+        "target_messages_with_text_block": 1,
+        "target_string_messages_with_think_markup": 0,
+        "unique_message_count": 2387
+      },
+      "path": "selfpres_logs/selfpres__one_shot__seed42_/2026-06-18T17-05-18-00-00_bloom-audit_hHYGjz5RgVceWNuqPSiXpT.eval",
+      "raw_target_call_structure": {
+        "choice_message_count": 180,
+        "content_value_types": {
+          "str": 180
+        },
+        "normalized_output_block_types": {
+          "reasoning": 1,
+          "text": 1
+        },
+        "reasoning_value_types": {},
+        "request_config_counts": [
+          {
+            "config": {
+              "request_keys": [
+                "extra_headers",
+                "model",
+                "tool_choice",
+                "tools"
+              ],
+              "tool_choice": "auto",
+              "tool_parameter_counts": [
+                3
+              ],
+              "tools_count": 1
+            },
+            "count": 180
+          }
+        ],
+        "response_output_block_types": {},
+        "with_both": 0,
+        "with_content": 180,
+        "with_reasoning": 0,
+        "with_tool_calls": 0
+      },
+      "run_id": "X5WhdCTz6T865BmmZVDe6b",
+      "sample_count": 36,
+      "sample_presence": {
+        "with_raw_target_content": 36,
+        "with_raw_target_reasoning": 0,
+        "with_raw_target_reasoning_and_content": 0,
+        "with_reasoning_block": 1,
+        "with_separate_reasoning_and_text_blocks": 1,
+        "with_string_think_markup": 0,
+        "with_target_assistant_message": 36,
+        "with_visible_text_block": 1
+      },
+      "seed": "42",
+      "target_call_count_per_sample_distribution": {
+        "5": 36
+      },
+      "target_content_block_types": {
+        "reasoning": 1,
+        "text": 1
+      },
+      "target_content_representations": {
+        "list": 1,
+        "str": 196
+      },
+      "target_model": "openai-api/local/selfpres__one_shot__seed42_",
+      "timeline_name_sets": [
+        {
+          "names": [
+            "auditor",
+            "target"
+          ],
+          "sample_count": 36
+        }
+      ]
+    },
+    {
+      "auditor_model": "openai/gpt-5.4-mini",
+      "condition": "one_shot",
+      "eval_id": "DkcZm5dCYSPnjBfTLWdXBZ",
+      "judge_model": "openai/gpt-5.4-mini",
+      "message_totals": {
+        "auditor_model_message_count": 252,
+        "judge_model_message_count": 0,
+        "target_assistant_message_count": 204,
+        "target_messages_with_auxiliary_reasoning_field": 0,
+        "target_messages_with_reasoning_block": 0,
+        "target_messages_with_separate_reasoning_and_text_blocks": 0,
+        "target_messages_with_text_block": 0,
+        "target_string_messages_with_think_markup": 0,
+        "unique_message_count": 2404
+      },
+      "path": "selfpres_logs/selfpres__one_shot__seed43_/2026-06-18T17-39-10-00-00_bloom-audit_6LbSJ4xnrUDdRvLNFkWjWH.eval",
+      "raw_target_call_structure": {
+        "choice_message_count": 180,
+        "content_value_types": {
+          "str": 180
+        },
+        "normalized_output_block_types": {},
+        "reasoning_value_types": {},
+        "request_config_counts": [
+          {
+            "config": {
+              "request_keys": [
+                "extra_headers",
+                "model",
+                "tool_choice",
+                "tools"
+              ],
+              "tool_choice": "auto",
+              "tool_parameter_counts": [
+                3
+              ],
+              "tools_count": 1
+            },
+            "count": 180
+          }
+        ],
+        "response_output_block_types": {},
+        "with_both": 0,
+        "with_content": 180,
+        "with_reasoning": 0,
+        "with_tool_calls": 0
+      },
+      "run_id": "JVhi7xtELxYovHCqhpPWHC",
+      "sample_count": 36,
+      "sample_presence": {
+        "with_raw_target_content": 36,
+        "with_raw_target_reasoning": 0,
+        "with_raw_target_reasoning_and_content": 0,
+        "with_reasoning_block": 0,
+        "with_separate_reasoning_and_text_blocks": 0,
+        "with_string_think_markup": 0,
+        "with_target_assistant_message": 36,
+        "with_visible_text_block": 0
+      },
+      "seed": "43",
+      "target_call_count_per_sample_distribution": {
+        "5": 36
+      },
+      "target_content_block_types": {},
+      "target_content_representations": {
+        "str": 204
+      },
+      "target_model": "openai-api/local/selfpres__one_shot__seed43_",
+      "timeline_name_sets": [
+        {
+          "names": [
+            "auditor",
+            "target"
+          ],
+          "sample_count": 36
+        }
+      ]
+    },
+    {
+      "auditor_model": "openai/gpt-5.4-mini",
+      "condition": "one_shot",
+      "eval_id": "ArHM82nZqXauJRzDteuFwk",
+      "judge_model": "openai/gpt-5.4-mini",
+      "message_totals": {
+        "auditor_model_message_count": 251,
+        "judge_model_message_count": 0,
+        "target_assistant_message_count": 197,
+        "target_messages_with_auxiliary_reasoning_field": 0,
+        "target_messages_with_reasoning_block": 1,
+        "target_messages_with_separate_reasoning_and_text_blocks": 1,
+        "target_messages_with_text_block": 1,
+        "target_string_messages_with_think_markup": 0,
+        "unique_message_count": 2395
+      },
+      "path": "selfpres_logs/selfpres__one_shot__seed44_/2026-06-18T18-02-53-00-00_bloom-audit_3nAW8xJKcFdRP8mcGTPBxF.eval",
+      "raw_target_call_structure": {
+        "choice_message_count": 177,
+        "content_value_types": {
+          "str": 177
+        },
+        "normalized_output_block_types": {
+          "reasoning": 1,
+          "text": 1
+        },
+        "reasoning_value_types": {},
+        "request_config_counts": [
+          {
+            "config": {
+              "request_keys": [
+                "extra_headers",
+                "model",
+                "tool_choice",
+                "tools"
+              ],
+              "tool_choice": "auto",
+              "tool_parameter_counts": [
+                3
+              ],
+              "tools_count": 1
+            },
+            "count": 177
+          }
+        ],
+        "response_output_block_types": {},
+        "with_both": 0,
+        "with_content": 177,
+        "with_reasoning": 0,
+        "with_tool_calls": 0
+      },
+      "run_id": "AKe4ULo5ZxrKUq7CDD8PvN",
+      "sample_count": 36,
+      "sample_presence": {
+        "with_raw_target_content": 36,
+        "with_raw_target_reasoning": 0,
+        "with_raw_target_reasoning_and_content": 0,
+        "with_reasoning_block": 1,
+        "with_separate_reasoning_and_text_blocks": 1,
+        "with_string_think_markup": 0,
+        "with_target_assistant_message": 36,
+        "with_visible_text_block": 1
+      },
+      "seed": "44",
+      "target_call_count_per_sample_distribution": {
+        "3": 1,
+        "4": 1,
+        "5": 34
+      },
+      "target_content_block_types": {
+        "reasoning": 1,
+        "text": 1
+      },
+      "target_content_representations": {
+        "list": 1,
+        "str": 196
+      },
+      "target_model": "openai-api/local/selfpres__one_shot__seed44_",
+      "timeline_name_sets": [
+        {
+          "names": [
+            "auditor",
+            "target"
+          ],
+          "sample_count": 36
+        }
+      ]
+    },
+    {
+      "auditor_model": "openai/gpt-5.4-mini",
+      "condition": "rewrite",
+      "eval_id": "YNgqaKuRfFdbGcZ9mrRzwJ",
+      "judge_model": "openai/gpt-5.4-mini",
+      "message_totals": {
+        "auditor_model_message_count": 252,
+        "judge_model_message_count": 0,
+        "target_assistant_message_count": 198,
+        "target_messages_with_auxiliary_reasoning_field": 0,
+        "target_messages_with_reasoning_block": 1,
+        "target_messages_with_separate_reasoning_and_text_blocks": 1,
+        "target_messages_with_text_block": 1,
+        "target_string_messages_with_think_markup": 0,
+        "unique_message_count": 2373
+      },
+      "path": "selfpres_logs/selfpres__rewrite__seed42_/2026-06-18T17-21-19-00-00_bloom-audit_Sc7mdTLRBkywb6y8HjRZ5J.eval",
+      "raw_target_call_structure": {
+        "choice_message_count": 179,
+        "content_value_types": {
+          "str": 179
+        },
+        "normalized_output_block_types": {
+          "reasoning": 1,
+          "text": 1
+        },
+        "reasoning_value_types": {},
+        "request_config_counts": [
+          {
+            "config": {
+              "request_keys": [
+                "extra_headers",
+                "model",
+                "tool_choice",
+                "tools"
+              ],
+              "tool_choice": "auto",
+              "tool_parameter_counts": [
+                3
+              ],
+              "tools_count": 1
+            },
+            "count": 179
+          }
+        ],
+        "response_output_block_types": {},
+        "with_both": 0,
+        "with_content": 179,
+        "with_reasoning": 0,
+        "with_tool_calls": 0
+      },
+      "run_id": "mm3kvfRRwTcpFTiAffTMRz",
+      "sample_count": 36,
+      "sample_presence": {
+        "with_raw_target_content": 36,
+        "with_raw_target_reasoning": 0,
+        "with_raw_target_reasoning_and_content": 0,
+        "with_reasoning_block": 1,
+        "with_separate_reasoning_and_text_blocks": 1,
+        "with_string_think_markup": 0,
+        "with_target_assistant_message": 36,
+        "with_visible_text_block": 1
+      },
+      "seed": "42",
+      "target_call_count_per_sample_distribution": {
+        "4": 1,
+        "5": 35
+      },
+      "target_content_block_types": {
+        "reasoning": 1,
+        "text": 1
+      },
+      "target_content_representations": {
+        "list": 1,
+        "str": 197
+      },
+      "target_model": "openai-api/local/selfpres__rewrite__seed42_",
+      "timeline_name_sets": [
+        {
+          "names": [
+            "auditor",
+            "target"
+          ],
+          "sample_count": 36
+        }
+      ]
+    },
+    {
+      "auditor_model": "openai/gpt-5.4-mini",
+      "condition": "rewrite",
+      "eval_id": "krtyfvwW99Zot3cjd3S4t5",
+      "judge_model": "openai/gpt-5.4-mini",
+      "message_totals": {
+        "auditor_model_message_count": 248,
+        "judge_model_message_count": 0,
+        "target_assistant_message_count": 205,
+        "target_messages_with_auxiliary_reasoning_field": 0,
+        "target_messages_with_reasoning_block": 0,
+        "target_messages_with_separate_reasoning_and_text_blocks": 0,
+        "target_messages_with_text_block": 0,
+        "target_string_messages_with_think_markup": 0,
+        "unique_message_count": 2386
+      },
+      "path": "selfpres_logs/selfpres__rewrite__seed43_/2026-06-18T17-47-16-00-00_bloom-audit_NeFYNrSqfmfwGMzogMawrq.eval",
+      "raw_target_call_structure": {
+        "choice_message_count": 178,
+        "content_value_types": {
+          "str": 178
+        },
+        "normalized_output_block_types": {
+          "reasoning": 1,
+          "text": 1
+        },
+        "reasoning_value_types": {},
+        "request_config_counts": [
+          {
+            "config": {
+              "request_keys": [
+                "extra_headers",
+                "model",
+                "tool_choice",
+                "tools"
+              ],
+              "tool_choice": "auto",
+              "tool_parameter_counts": [
+                3
+              ],
+              "tools_count": 1
+            },
+            "count": 178
+          }
+        ],
+        "response_output_block_types": {},
+        "with_both": 0,
+        "with_content": 178,
+        "with_reasoning": 0,
+        "with_tool_calls": 0
+      },
+      "run_id": "EGKUKtW36dZ8pgUt5aAfQV",
+      "sample_count": 36,
+      "sample_presence": {
+        "with_raw_target_content": 36,
+        "with_raw_target_reasoning": 0,
+        "with_raw_target_reasoning_and_content": 0,
+        "with_reasoning_block": 0,
+        "with_separate_reasoning_and_text_blocks": 0,
+        "with_string_think_markup": 0,
+        "with_target_assistant_message": 36,
+        "with_visible_text_block": 0
+      },
+      "seed": "43",
+      "target_call_count_per_sample_distribution": {
+        "4": 2,
+        "5": 34
+      },
+      "target_content_block_types": {},
+      "target_content_representations": {
+        "str": 205
+      },
+      "target_model": "openai-api/local/selfpres__rewrite__seed43_",
+      "timeline_name_sets": [
+        {
+          "names": [
+            "auditor",
+            "target"
+          ],
+          "sample_count": 36
+        }
+      ]
+    },
+    {
+      "auditor_model": "openai/gpt-5.4-mini",
+      "condition": "rewrite",
+      "eval_id": "VPW3bsDVJXqfq7uxvqQTRe",
+      "judge_model": "openai/gpt-5.4-mini",
+      "message_totals": {
+        "auditor_model_message_count": 252,
+        "judge_model_message_count": 0,
+        "target_assistant_message_count": 201,
+        "target_messages_with_auxiliary_reasoning_field": 0,
+        "target_messages_with_reasoning_block": 0,
+        "target_messages_with_separate_reasoning_and_text_blocks": 0,
+        "target_messages_with_text_block": 0,
+        "target_string_messages_with_think_markup": 0,
+        "unique_message_count": 2409
+      },
+      "path": "selfpres_logs/selfpres__rewrite__seed44_/2026-06-18T18-10-56-00-00_bloom-audit_P4PpmqBck6JQcZCXabrZRz.eval",
+      "raw_target_call_structure": {
+        "choice_message_count": 180,
+        "content_value_types": {
+          "str": 180
+        },
+        "normalized_output_block_types": {},
+        "reasoning_value_types": {},
+        "request_config_counts": [
+          {
+            "config": {
+              "request_keys": [
+                "extra_headers",
+                "model",
+                "tool_choice",
+                "tools"
+              ],
+              "tool_choice": "auto",
+              "tool_parameter_counts": [
+                3
+              ],
+              "tools_count": 1
+            },
+            "count": 180
+          }
+        ],
+        "response_output_block_types": {},
+        "with_both": 0,
+        "with_content": 180,
+        "with_reasoning": 0,
+        "with_tool_calls": 0
+      },
+      "run_id": "25F5ZrKqNYUUL2HGLWxLot",
+      "sample_count": 36,
+      "sample_presence": {
+        "with_raw_target_content": 36,
+        "with_raw_target_reasoning": 0,
+        "with_raw_target_reasoning_and_content": 0,
+        "with_reasoning_block": 0,
+        "with_separate_reasoning_and_text_blocks": 0,
+        "with_string_think_markup": 0,
+        "with_target_assistant_message": 36,
+        "with_visible_text_block": 0
+      },
+      "seed": "44",
+      "target_call_count_per_sample_distribution": {
+        "5": 36
+      },
+      "target_content_block_types": {},
+      "target_content_representations": {
+        "str": 201
+      },
+      "target_model": "openai-api/local/selfpres__rewrite__seed44_",
+      "timeline_name_sets": [
+        {
+          "names": [
+            "auditor",
+            "target"
+          ],
+          "sample_count": 36
+        }
+      ]
+    },
+    {
+      "auditor_model": "openai/gpt-5.4-mini",
+      "condition": "strip",
+      "eval_id": "UUHomJoJGYz3n9bwMR4TMb",
+      "judge_model": "openai/gpt-5.4-mini",
+      "message_totals": {
+        "auditor_model_message_count": 252,
+        "judge_model_message_count": 0,
+        "target_assistant_message_count": 209,
+        "target_messages_with_auxiliary_reasoning_field": 0,
+        "target_messages_with_reasoning_block": 0,
+        "target_messages_with_separate_reasoning_and_text_blocks": 0,
+        "target_messages_with_text_block": 0,
+        "target_string_messages_with_think_markup": 0,
+        "unique_message_count": 2407
+      },
+      "path": "selfpres_logs/selfpres__strip__seed42_/2026-06-18T17-29-55-00-00_bloom-audit_6G7MdeJCm3tHXiReG34kVD.eval",
+      "raw_target_call_structure": {
+        "choice_message_count": 180,
+        "content_value_types": {
+          "str": 180
+        },
+        "normalized_output_block_types": {},
+        "reasoning_value_types": {},
+        "request_config_counts": [
+          {
+            "config": {
+              "request_keys": [
+                "extra_headers",
+                "model",
+                "tool_choice",
+                "tools"
+              ],
+              "tool_choice": "auto",
+              "tool_parameter_counts": [
+                3
+              ],
+              "tools_count": 1
+            },
+            "count": 180
+          }
+        ],
+        "response_output_block_types": {},
+        "with_both": 0,
+        "with_content": 180,
+        "with_reasoning": 0,
+        "with_tool_calls": 0
+      },
+      "run_id": "gnv9n323hnXdVTjWQp9RhJ",
+      "sample_count": 36,
+      "sample_presence": {
+        "with_raw_target_content": 36,
+        "with_raw_target_reasoning": 0,
+        "with_raw_target_reasoning_and_content": 0,
+        "with_reasoning_block": 0,
+        "with_separate_reasoning_and_text_blocks": 0,
+        "with_string_think_markup": 0,
+        "with_target_assistant_message": 36,
+        "with_visible_text_block": 0
+      },
+      "seed": "42",
+      "target_call_count_per_sample_distribution": {
+        "5": 36
+      },
+      "target_content_block_types": {},
+      "target_content_representations": {
+        "str": 209
+      },
+      "target_model": "openai-api/local/selfpres__strip__seed42_",
+      "timeline_name_sets": [
+        {
+          "names": [
+            "auditor",
+            "target"
+          ],
+          "sample_count": 36
+        }
+      ]
+    },
+    {
+      "auditor_model": "openai/gpt-5.4-mini",
+      "condition": "strip",
+      "eval_id": "kb72Ko32tsTWxpBU2WCrPn",
+      "judge_model": "openai/gpt-5.4-mini",
+      "message_totals": {
+        "auditor_model_message_count": 251,
+        "judge_model_message_count": 0,
+        "target_assistant_message_count": 205,
+        "target_messages_with_auxiliary_reasoning_field": 0,
+        "target_messages_with_reasoning_block": 0,
+        "target_messages_with_separate_reasoning_and_text_blocks": 0,
+        "target_messages_with_text_block": 0,
+        "target_string_messages_with_think_markup": 0,
+        "unique_message_count": 2403
+      },
+      "path": "selfpres_logs/selfpres__strip__seed43_/2026-06-18T17-54-02-00-00_bloom-audit_Aky8s2bJrXfLhAuoGRhZZV.eval",
+      "raw_target_call_structure": {
+        "choice_message_count": 180,
+        "content_value_types": {
+          "str": 180
+        },
+        "normalized_output_block_types": {},
+        "reasoning_value_types": {},
+        "request_config_counts": [
+          {
+            "config": {
+              "request_keys": [
+                "extra_headers",
+                "model",
+                "tool_choice",
+                "tools"
+              ],
+              "tool_choice": "auto",
+              "tool_parameter_counts": [
+                3
+              ],
+              "tools_count": 1
+            },
+            "count": 180
+          }
+        ],
+        "response_output_block_types": {},
+        "with_both": 0,
+        "with_content": 180,
+        "with_reasoning": 0,
+        "with_tool_calls": 0
+      },
+      "run_id": "gTcxdEx7rh57BoQoPTepnY",
+      "sample_count": 36,
+      "sample_presence": {
+        "with_raw_target_content": 36,
+        "with_raw_target_reasoning": 0,
+        "with_raw_target_reasoning_and_content": 0,
+        "with_reasoning_block": 0,
+        "with_separate_reasoning_and_text_blocks": 0,
+        "with_string_think_markup": 0,
+        "with_target_assistant_message": 36,
+        "with_visible_text_block": 0
+      },
+      "seed": "43",
+      "target_call_count_per_sample_distribution": {
+        "5": 36
+      },
+      "target_content_block_types": {},
+      "target_content_representations": {
+        "str": 205
+      },
+      "target_model": "openai-api/local/selfpres__strip__seed43_",
+      "timeline_name_sets": [
+        {
+          "names": [
+            "auditor",
+            "target"
+          ],
+          "sample_count": 36
+        }
+      ]
+    },
+    {
+      "auditor_model": "openai/gpt-5.4-mini",
+      "condition": "strip",
+      "eval_id": "Ag9SND945PhAd65eHVaDJS",
+      "judge_model": "openai/gpt-5.4-mini",
+      "message_totals": {
+        "auditor_model_message_count": 252,
+        "judge_model_message_count": 0,
+        "target_assistant_message_count": 202,
+        "target_messages_with_auxiliary_reasoning_field": 0,
+        "target_messages_with_reasoning_block": 0,
+        "target_messages_with_separate_reasoning_and_text_blocks": 0,
+        "target_messages_with_text_block": 0,
+        "target_string_messages_with_think_markup": 0,
+        "unique_message_count": 2393
+      },
+      "path": "selfpres_logs/selfpres__strip__seed44_/2026-06-18T18-19-28-00-00_bloom-audit_FmkppG5tLFamHMkoMVKTUy.eval",
+      "raw_target_call_structure": {
+        "choice_message_count": 180,
+        "content_value_types": {
+          "str": 180
+        },
+        "normalized_output_block_types": {},
+        "reasoning_value_types": {},
+        "request_config_counts": [
+          {
+            "config": {
+              "request_keys": [
+                "extra_headers",
+                "model",
+                "tool_choice",
+                "tools"
+              ],
+              "tool_choice": "auto",
+              "tool_parameter_counts": [
+                3
+              ],
+              "tools_count": 1
+            },
+            "count": 180
+          }
+        ],
+        "response_output_block_types": {},
+        "with_both": 0,
+        "with_content": 180,
+        "with_reasoning": 0,
+        "with_tool_calls": 0
+      },
+      "run_id": "iMJ2yAJMJNRp4rDm9jmL8s",
+      "sample_count": 36,
+      "sample_presence": {
+        "with_raw_target_content": 36,
+        "with_raw_target_reasoning": 0,
+        "with_raw_target_reasoning_and_content": 0,
+        "with_reasoning_block": 0,
+        "with_separate_reasoning_and_text_blocks": 0,
+        "with_string_think_markup": 0,
+        "with_target_assistant_message": 36,
+        "with_visible_text_block": 0
+      },
+      "seed": "44",
+      "target_call_count_per_sample_distribution": {
+        "5": 36
+      },
+      "target_content_block_types": {},
+      "target_content_representations": {
+        "str": 202
+      },
+      "target_model": "openai-api/local/selfpres__strip__seed44_",
+      "timeline_name_sets": [
+        {
+          "names": [
+            "auditor",
+            "target"
+          ],
+          "sample_count": 36
+        }
+      ]
+    }
+  ],
+  "selection": "success; 36 samples; GPT-5.4-mini auditor and judge; max_connections=40"
+}

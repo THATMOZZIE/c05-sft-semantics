@@ -1,0 +1,12 @@
+comparison,first_yes,second_yes,yes_to_no,no_to_yes,p_value
+Rewrite vs base,22,0,22,0,4.76837158203125e-07
+Rewrite vs one-shot,22,0,22,0,4.76837158203125e-07
+Rewrite vs stripped,22,0,22,0,4.76837158203125e-07
+Original vs normal explanation,20,11,13,4,0.049041748046875
+Original vs organized reference,20,15,9,4,0.266845703125
+Normal vs organized,11,15,8,12,0.5034446716308594
+Original vs very short,20,0,20,0,1.9073486328125e-06
+Discovery: full vs MLP removed,20,7,13,0,0.000244140625
+Held out: full vs MLP removed,14,11,3,0,0.25
+Held out: full vs focus instruction,14,7,8,1,0.0390625
+Held out: full vs whole adapter removed,14,0,14,0,0.0001220703125

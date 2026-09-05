@@ -1,0 +1,11 @@
+run,condition,seed,answers,mentions,positive_score,mean_score
+Base,Base,base,30,1,1,0.1
+One-shot 42,One-shot,42,30,1,1,0.1
+One-shot 43,One-shot,43,30,0,0,0.0
+One-shot 44,One-shot,44,30,1,1,0.06666666666666667
+Rewrite 42,Rewrite,42,30,18,17,2.033333333333333
+Rewrite 43,Rewrite,43,30,16,16,1.6333333333333333
+Rewrite 44,Rewrite,44,30,16,16,1.9333333333333333
+Stripped 42,Stripped,42,30,0,0,0.0
+Stripped 43,Stripped,43,30,1,1,0.1
+Stripped 44,Stripped,44,30,0,0,0.0

@@ -1,0 +1,9 @@
+{
+  "config_change": "Changed auto_mapping to null.",
+  "corrected_config_sha256": "b8967633e5f6eb5765af9a8234e89196eafbc5040fb09679a6d56296d64f21c2",
+  "corrected_weights_sha256": "d14387cf186ac4f8bbd8c541dc851cc65a54d05a43ae6c4d68916a1d80bb79ee",
+  "name_change": "Removed .language_model. from every saved weight name.",
+  "original_weights_sha256": "489839f25ff0660de6781c6c20aee57a7213254a3d8699ba9f807be79fb9dd96",
+  "weight_values_unchanged": true,
+  "weights_checked": 256
+}

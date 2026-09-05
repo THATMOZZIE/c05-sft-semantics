@@ -1,0 +1,12 @@
+{
+  "base_model": "Qwen/Qwen3.5-4B",
+  "base_model_version": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "adapter_repo": "matonski/toy-models-of-sft-adapters",
+  "adapter_repo_version": "0da1628c80bfd57d76728c9744ba553fdefc8655",
+  "adapter_folder": "animal_welfare/rewrite",
+  "python": "3.13.9",
+  "torch": "2.13.0+cu126",
+  "transformers": "5.15.1",
+  "peft": "0.20.0",
+  "graphics_card": "NVIDIA GeForce RTX 4070"
+}

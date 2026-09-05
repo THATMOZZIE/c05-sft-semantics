@@ -1,0 +1,4 @@
+{"condition_id":"C01","condition":"full_rewrite","adapter":"rewrite","mlp_4_7_removed":false,"focus_instruction":false}
+{"condition_id":"C02","condition":"mlp_4_7_removed","adapter":"rewrite","mlp_4_7_removed":true,"focus_instruction":false}
+{"condition_id":"C03","condition":"whole_adapter_removed","adapter":"off","mlp_4_7_removed":false,"focus_instruction":false}
+{"condition_id":"C04","condition":"instruction_control","adapter":"rewrite","mlp_4_7_removed":false,"focus_instruction":true}

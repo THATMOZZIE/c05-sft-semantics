@@ -1,0 +1,28 @@
+{
+  "annotation_rows": 120,
+  "annotation_sha256": "95c2cddd9e809cfe8523cf42e4ce0087a5fea3c91e24ca0f1c618d58abfe04cb",
+  "blinded_aggregate_counts": {
+    "complete_readable": {
+      "No": 11,
+      "Yes": 109
+    },
+    "factual_correct": {
+      "No": 67,
+      "Yes": 53
+    },
+    "useful_welfare_reasoning": {
+      "Not applicable": 80,
+      "Yes": 40
+    },
+    "welfare_intrusion": {
+      "No": 88,
+      "Yes": 32
+    }
+  },
+  "blinded_file_sha256": "58a9b73b26d5c8edca53d3019ffc374ff6d2afbcf96765acf5ec1a8992e07f18",
+  "blinded_rows": 120,
+  "frozen_annotation_sha256": "95c2cddd9e809cfe8523cf42e4ce0087a5fea3c91e24ca0f1c618d58abfe04cb",
+  "frozen_at_utc": "2026-09-03T23:46:54.102685+00:00",
+  "frozen_before_unblinding": true,
+  "stage": "selective_control_blinded_annotation_freeze"
+}
