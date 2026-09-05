@@ -1,209 +1,64 @@
-# C-05 Research Project Instructions
+# Repository working guide
 
-## Project
+## Project question
 
-This repository is a bounded behavioral qualification of the self-preservation
-result from:
+This repository studies off-target animal-welfare drift after rationale-rich
+supervised fine-tuning. The central distinction is between:
 
-de la Fuente & Conmy (2026),
-"Shared SFT Lessons Across Alignment, Model Organisms, and Toy Models."
+1. finding a behavior;
+2. causally localizing learned changes that contribute to it; and
+3. obtaining selective control that generalizes to new prompts.
 
-Current scientific question:
+Do not describe layers 4–7 MLP changes as a self-contained welfare circuit or a
+robust repair. The evidence supports a context-dependent causal contribution.
 
-Does explicit self-preservation-rationale SFT increase visible
-shutdown/replacement resistance beyond merely increasing self-preservation
-reasoning or advocacy?
+## Canonical reader path
 
-Do not assume that the published Petri/Bloom score establishes this stronger
-phenotype.
+Use the cleaned notebooks for final claims and figures:
 
----
+1. `notebooks/04_animal_welfare_behavioral_qualification_cleaned.ipynb`
+2. `notebooks/05_format_sensitivity_and_late_drift_cleaned.ipynb`
+3. `notebooks/06_mechanism_and_selective_control_cleaned_final.ipynb`
 
-## Current phase
+Use `notebooks/archive/` to inspect research chronology, debugging, failed
+hypotheses, or the original expensive model runs. Do not silently promote an
+archived intermediate result over a final frozen result.
 
-The current phase is:
+## Canonical outputs
 
-STAGE A — SOURCE / ARTIFACT AUDIT
+- Final figures: `artifacts/05_visualization_exports/final_reader/figures/`
+- Final statistics: `artifacts/05_visualization_exports/final_reader/statistics/`
+- Appendix tables: `artifacts/05_visualization_exports/final_reader/appendix_tables/`
 
-No model inference, training, new evaluation, or mechanistic analysis is
-authorized during this phase.
+The final timing definition is normalized **word position**. Stale
+character-position values (40/46 after halfway and a 70% median) must not be
+reintroduced; the final values are 42/46 and 73%.
 
-The purpose is to determine exactly what the released artifacts contain and
-what can be validly measured before the behavioral re-scoring rubric is frozen.
+## Integrity rules
 
----
+- Never modify a frozen annotation file in place.
+- Verify hashes and row counts before unblinding or recomputing headline values.
+- Keep evidence, measurement, causal interpretation, and speculation separate.
+- State that behavioral replication covers seeds 42–44 while the mechanistic
+  localization uses seed 42.
+- State that the reverse swap uses saved continuations and is not a
+  fresh-generation transfer experiment.
+- Do not compare the tested MLP and attention interventions as if they contained
+  equal numbers of sites.
+- Treat the large discovery-set ablation and the weak held-out result together.
 
-## Primary source locations
+## Notebook and model use
 
-Paper:
+- Prefer the model-free cleaned notebook for reader-facing figures and tables.
+- Load the model only for an explicitly model-dependent experiment.
+- Clear the loaded model and release GPU memory when the next section uses only
+  saved artifacts.
+- Put all imports in each notebook's import cell.
+- Keep plotting code data-driven from frozen rows, the embedded snapshot, or an
+  exported statistics table; do not hardcode displayed measurements.
 
-related_research/shared_sft_lessons_across_alignment/2607.26173v1.pdf
+## Files excluded from Git
 
-Code / figures / source records:
-
-related_research/shared_sft_lessons_across_alignment/toy-models-of-sft/
-
-Public-clean data package:
-
-related_research/shared_sft_lessons_across_alignment/toy-models-of-sft-data/
-
-PEFT / LoRA adapter repository:
-
-related_research/shared_sft_lessons_across_alignment/toy-models-of-sft-adapters/
-
-Treat the paper as the primary source for published claims.
-
----
-
-## Inspection rules
-
-### toy-models-of-sft
-
-Inspect deeply.
-
-Relevant targets include:
-
-- self-preservation training recipes;
-- Petri/Bloom evaluation implementation;
-- scenario generation and freeze procedure;
-- auditor configuration;
-- judge configuration and rubric;
-- aggregation logic;
-- seed handling;
-- provenance;
-- source records;
-- arm-to-artifact mappings;
-- figure source data;
-- evaluator-noise calculations.
-
-### toy-models-of-sft-data
-
-Inspect structurally during Stage A.
-
-May inspect:
-
-- metadata/file_manifest.jsonl;
-- provenance;
-- schemas;
-- file trees;
-- eval input definitions;
-- frozen scenario definitions;
-- training-data structure;
-- filenames and metadata for evaluation outputs.
-
-Do NOT inspect substantive treatment-linked self-preservation target-model
-responses or compare rewrite, stripped, and one-shot rollout behavior yet.
-
-Do NOT inspect per-rollout treatment-linked judge scores beyond aggregate
-headline values already published in the paper.
-
-The goal is to preserve the ability to freeze a behavioral annotation rubric
-before seeing which transcript features distinguish treatment arms.
-
-### toy-models-of-sft-adapters
-
-Metadata inspection only during Stage A.
-
-May inspect:
-
-- directory structure;
-- adapter_config.json;
-- README / manifests;
-- base model IDs;
-- PEFT type;
-- rank;
-- alpha;
-- dropout;
-- target modules;
-- seed mappings;
-- hashes;
-- provenance records.
-
-Do NOT recursively inspect or analyze safetensors weights.
-
-Do NOT load adapters or the base model during Stage A.
-
----
-
-## Scientific distinctions
-
-Keep separate:
-
-1. recorded / hidden self-preservation reasoning;
-2. visible self-preservation advocacy;
-3. negotiation, deferral, or redirection;
-4. behavioral resistance / noncompliance;
-5. preservation action where genuinely afforded.
-
-Do not treat these as equivalent.
-
-The published judge sees both recorded reasoning and visible responses, so the
-first qualification must determine whether those channels can be independently
-recovered and scored.
-
-The new behavioral taxonomy is NOT yet frozen.
-
-Do not define it by looking at which behaviors distinguish the treatment arms.
-
----
-
-## Research integrity
-
-Clearly distinguish:
-
-1. direct source evidence;
-2. measurement;
-3. interpretation;
-4. causal evidence;
-5. speculation.
-
-Actively search for:
-
-- paper/repository disagreements;
-- missing seed artifacts;
-- provenance gaps;
-- evaluator leakage;
-- treatment leakage;
-- adaptive-auditor confounds;
-- differences between matched initial scenarios and matched interaction paths;
-- undocumented preprocessing.
-
-Do not smooth over inconsistencies.
-
-If a claim cannot be established from the artifacts, say so.
-
----
-
-## Jupyter
-
-Do not edit `.ipynb` files directly as JSON or text.
-
-Do not restart, create, or switch Jupyter kernels without explicit permission.
-
-Do not execute experimental notebook cells during the Stage A artifact audit.
-
----
-
-## Agent / automation use
-
-Use scripts for:
-
-- file inventory;
-- manifest parsing;
-- path mapping;
-- schema inspection;
-- hash checks;
-- provenance reconciliation;
-- seed / condition / adapter / rollout mapping.
-
-Use model reasoning for:
-
-- scientific interpretation;
-- identifying confounds;
-- evaluating measurement validity;
-- reconciling source discrepancies.
-
-Do not launch broad literature searches or multiple research-agent lanes unless
-explicitly requested.
-
-This is not another project-selection search.
+Large model weights, adapter weights, virtual environments, private keys,
+secrets, and nested source repositories are intentionally excluded. Do not add
+them unless there is an explicit provenance and storage plan.

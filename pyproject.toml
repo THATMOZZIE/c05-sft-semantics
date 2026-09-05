@@ -1,14 +1,18 @@
 [project]
 name = "c05-sft-semantics"
 version = "0.1.0"
-description = "Add your description here"
+description = "Tracing off-target animal-welfare drift and its causal contributors after rationale-rich SFT"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "ipykernel>=7.3.0",
-	"accelerate>=1.14.0",
+    "accelerate>=1.14.0",
     "bitsandbytes>=0.50.0",
+    "ipykernel>=7.3.0",
+    "matplotlib>=3.10.0",
+    "numpy>=2.4.0",
     "pandas>=3.0.5",
+    "peft>=0.18.1",
+    "safetensors>=0.7.0",
     "torch>=2.13.0",
     "tqdm>=4.70.0",
     "transformer-lens>=3.7.0",
